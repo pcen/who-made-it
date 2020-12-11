@@ -1,0 +1,13 @@
+@import './constants.css';
+
+:root {
+  --app-padding: 20px;
+}
+
+.App {
+  text-align: center;
+  background-color: var(--offwhite);
+  padding: var(--app-padding);
+  height: calc(100vh - 2 * var(--app-padding));
+  font-family: 'Risque';
+}
