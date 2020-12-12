@@ -8,10 +8,10 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Switch>
-          <Route exact path='/' component={Default} />
+          <Route exact path='/who-made-it/' component={Default} />
           {
             Routes.map((route) => {
-              return (<Route path={route.path} component={route.component} />);
+              return (<Route path={`/who-made-it${route.path}`} component={route.component} />);
             })
           }
         </Switch>
