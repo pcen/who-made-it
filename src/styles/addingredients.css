@@ -4,14 +4,14 @@
   padding: 50px;
 }
 
-.ingredientsTitlePage{
+.ingredientsTitlePage {
   font-size: 50px;
   color: white;
   position: relative;
 }
 
 @font-face {
-  font-family: 'Risque';
+  font-family: "Risque";
   src: url(../fonts/Risque-Regular.ttf);
   font-weight: normal;
 }
@@ -60,7 +60,6 @@
   width: 100%;
   position: relative;
   display: flex;
-  
 }
 
 .searchTerm {
