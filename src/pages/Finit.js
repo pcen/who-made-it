@@ -29,7 +29,7 @@ const KillerProfile = props => {
   return (
     <div className="itemBoxOnePerson">
       <img className="itemImage" src={image}></img>
-      <p class="personName">{name}</p>
+      <p class="killerName">{name}</p>
       <p class="foodName">{recipe}</p>
     </div>
   )

@@ -43,3 +43,9 @@
     width: 800px;
     margin: 0px auto;
 }
+
+.killerName {
+    font-size: 35px;
+    color: var(--blood-red);
+    background: none;
+}
