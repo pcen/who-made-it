@@ -30,9 +30,6 @@ const RecipeSteps = (props) => {
   const step = getURLInt('step', useLocation());
   const guessed = getURLStr('guessed', useLocation());
 
-  console.log('current guess:');
-  console.log(props.guess);
-
   const nextStep = () => {
     if (step < recipe.steps.length) {
       console.log(step + 1);

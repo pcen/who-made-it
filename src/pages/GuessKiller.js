@@ -40,14 +40,11 @@ const KillerProfile = props => {
 //This is the main function for the guess killer page
 const GuessKiller = props => {
   const { recipe, suspects, guess, setGuess } = props;
+  const history = useHistory();
 
   const [selectedSuspect, setSelectedSuspect] = useState('');
   const step = getURLInt('step', useLocation());
   const guessed = getURLStr('guessed', useLocation());
-
-  console.log('guess: ' + guess);
-
-  const history = useHistory();
 
   // Link the go back button to the previous page
   const toSteps = () => {
