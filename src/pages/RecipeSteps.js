@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import "../styles/steps.css";
 import '../styles/guesskiller.css';
 import { Grid, Button } from '@material-ui/core';
