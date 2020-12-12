@@ -96,16 +96,13 @@ const AddIngredients = (props) => {
           Add anything and everything that you have in your kitchen! Based on
           your ingredients, we will generate mysterious recipes for you.
         </h1>
-        <p>Click on the ingredients card to select</p>
+        <br></br>
+        <p>Click on each ingredient card to select</p>
       </div>
+      <br></br>
+      <br></br>
+      <br></br>
 
-      <br></br>
-      <br></br>
-
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
       <Grid
         container
         direction="row"
