@@ -8,7 +8,6 @@ import Elizabeth from '../assets/beth.png';
 import Margaret from '../assets/marge.png';
 import Raymond from '../assets/ray.png';
 
-
 //This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
 //To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
