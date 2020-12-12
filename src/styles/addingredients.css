@@ -3,18 +3,34 @@
   padding: 50px;
 }
 
+.ingredients {
+  padding-left: 60px;
+  margin-top: 0px;
+}
+
 .ingredientsTitlePage {
   font-size: 50px;
   color: white;
   position: relative;
   padding-top: 0.6em;
   padding-bottom: 0.3em;
+
   margin: 0;
 }
-
 .ingredientsInstructions {
+  padding-left: 60px;
+  padding-right: 40px;
+}
+
+.ingredientsInstructions h1 {
   color: white;
   font-size: 25px;
+  margin-bottom: 2px;
+}
+.ingredientsInstructions p {
+  color: white;
+  font-size: 23px;
+  margin-bottom: 0px;
 }
 
 @font-face {
@@ -41,6 +57,7 @@
   width: 120px;
   margin-bottom: 3em;
   position: relative;
+  height: 170px;
 }
 
 .foodItemBoxSelected {
@@ -63,8 +80,9 @@
 }
 
 .foodItemImage {
-  width: 100px;
-  height: auto;
+  width: auto;
+  max-width: 90%;
+  height: 100px;
 }
 
 @keyframes animate {
@@ -111,4 +129,16 @@
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;
+}
+
+.generate button {
+  width: 300px;
+  font-size: large;
+}
+
+.generate button:hover {
+  width: 300px;
+  font-size: large;
+  background-color: black;
+  color: white;
 }
