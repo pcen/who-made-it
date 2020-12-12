@@ -1,5 +1,4 @@
 import React from 'react';
-import Recipes from '../Components/Recipes';
 import { Button } from "@material-ui/core";
 import drink from '../assets/drink2.png';
 import { commaAndAndSeparate } from '../logic/utils';

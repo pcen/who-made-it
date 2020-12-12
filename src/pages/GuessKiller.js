@@ -55,8 +55,8 @@ const GuessKiller = props => {
   };
 
   {/* Link the submit button to go back to the steps with guessed true*/}
-  const toResults = () => {
-    history.push(`/recipe-steps?step=${step}&guessed=${guessed}`);
+  const makeGuess = () => {
+    history.push(`/recipe-steps?step=${step}&guessed=true`);
   };
 
   return (
@@ -83,7 +83,7 @@ const GuessKiller = props => {
           <Button variant="contained" className="buttonBlack" onClick={toSteps}>
             Go Back
           </Button>
-          <Button variant="contained" className="buttonRed" onClick={toResults}>
+          <Button variant="contained" className="buttonRed" onClick={makeGuess}>
             Submit
           </Button>
         </div>

@@ -26,18 +26,16 @@ const SuspectProfile = props => {
 // To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
   const { recipe, suspects } = props;
-
   const history = useHistory();
-
   const step = getURLInt('step', useLocation());
-  const stepsRemaining = recipe.steps.length - step;
-
   const guessed = getURLStr('guessed', useLocation());
 
   const nextStep = () => {
     if (step < recipe.steps.length) {
       console.log(step + 1);
       history.push(`/recipe-steps?step=${step + 1}&guessed=${guessed}`);
+    } else {
+
     }
   };
 
@@ -72,12 +70,6 @@ const RecipeSteps = (props) => {
               }
             </ul>
           </div>
-          {/*
-          Progress Tracker
-          <div className='stepsProgress'>
-            {`Steps Remaining: ${stepsRemaining}`}
-          </div>
-          */}
         </Grid>
 
         <Grid container item xs={3}>
@@ -106,13 +98,13 @@ const RecipeSteps = (props) => {
           <Grid item xs={12} style={{ paddingTop: '20px' }}>
             {/* The Menu Options */}
             <Button variant='contained' className='buttonGrey' onClick={toGuess}>
-              Solved It?
+              {guessed === 'false' ? 'Solved It?' : 'Change Guess'}
             </Button>
             <Button variant='contained' className='buttonBlack' onClick={previousStep}>
               Prior Step
             </Button>
             <Button variant='contained' className='buttonRed' onClick={nextStep}>
-              Next Step
+              {step === recipe.steps.length ? 'Et Fini!' : 'Next Step'}
             </Button>
           </Grid>
         </Grid>

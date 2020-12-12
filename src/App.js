@@ -1,13 +1,11 @@
 import React, { useState } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Routes, { Default } from './Routes';
-import Recipes from './Components/Recipes';
-import Suspects from './Components/Suspects';
 
 import './styles/app.css';
 
 function App() {
-  const [recipe, setRecipe] = useState(Recipes.drinks.ScotchTomCollins);
+  const [recipe, setRecipe] = useState({});
   const [recipeOptions, setRecipeOptions] = useState([]);
   const [suspects, setSuspects] = useState({});
 
