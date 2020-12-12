@@ -3,7 +3,7 @@ import '../styles/steps.css';
 import '../styles/buttons.css';
 import { Grid, Button } from '@material-ui/core';
 import { useLocation, useHistory } from 'react-router-dom';
-import { getURLInt } from '../logic/utils';
+import { getURLInt, getURLStr } from '../logic/utils';
 
 // Import Suspect Images
 import Elizabeth from '../assets/beth.png';
@@ -32,21 +32,23 @@ const RecipeSteps = (props) => {
   const step = getURLInt('step', useLocation());
   const stepsRemaining = recipe.steps.length - step;
 
+  const guessed = getURLStr('guessed', useLocation());
+
   const nextStep = () => {
     if (step < recipe.steps.length) {
       console.log(step + 1);
-      history.push(`/recipe-steps?step=${step + 1}`);
+      history.push(`/recipe-steps?step=${step + 1}&guessed=${guessed}`);
     }
   };
 
   const previousStep = () => {
     if (step > 1) {
-      history.push(`/recipe-steps?step=${step - 1}`);
+      history.push(`/recipe-steps?step=${step - 1}&guessed=${guessed}`);
     }
   };
 
   const toGuess = () => {
-    history.push(`/guess-killer?step=${step}`);
+    history.push(`/guess-killer?step=${step}&guessed=${guessed}`);
   };
 
   return (
@@ -70,10 +72,12 @@ const RecipeSteps = (props) => {
               }
             </ul>
           </div>
-          {/* Progress Tracker */}
+          {/*
+          Progress Tracker
           <div className='stepsProgress'>
             {`Steps Remaining: ${stepsRemaining}`}
           </div>
+          */}
         </Grid>
 
         <Grid container item xs={3}>
