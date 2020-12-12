@@ -1,3 +1,9 @@
 {
-  "recipeOne": ["add ingredient", "stir", "add ice"]
+    "drinks": {
+        "ingredients": ["Hello", "There"],
+        "test": [
+            {"a":"z", "c":1},
+            {"b":"x", "d":2}
+        ]
+    }
 }
