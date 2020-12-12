@@ -154,10 +154,12 @@
   }
 }
 
- {
-  /* Setting up the food/drink option cards */
-}
+/* Setting up the food/drink option cards */
+
 .homeOptionCard {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   height: 420px;
   background: white;
   border-radius: 40px;
@@ -165,6 +167,8 @@
 }
 
 .homeOptionCardDrink {
+  display: flex;
+  flex-direction: column;
   background-color: #f5f5f5 !important;
   position: relative;
 }
@@ -184,4 +188,10 @@
   font-size: 50px;
   text-align: center;
   position: relative;
+  color: var(--black);
+  text-decoration: none;
+}
+
+.homeOptionCardText:hover {
+  color: var(--blood-red);
 }

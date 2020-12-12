@@ -1,4 +1,5 @@
-import React from "react";
+import React from 'react';
+import { Link } from 'react-router-dom';
 import { Grid } from "@material-ui/core";
 
 import drink from "../assets/drink.jpg";
@@ -24,18 +25,19 @@ const Home = (props) => {
           </ul>
         </div>
         <h1>Who made it</h1>
+        <br></br>
         <h2>What would you like to make today? </h2>
         <Grid item xs={3} className="homeOptionCard homeOptionCardDrink">
           <img
             class="homeOptionCardImage homeOptionCardDrink"
             src={drink}
           ></img>
-          <div class="homeOptionCardText">Drink</div>
+          <Link class="homeOptionCardText" to='/add-ingredients'>Drink</Link>
         </Grid>
         <Grid item xs={1}></Grid>
         <Grid item xs={3} className="homeOptionCard">
           <img class="homeOptionCardImage" src={burger}></img>
-          <div class="homeOptionCardText">Food</div>
+          <Link class="homeOptionCardText" to='/add-ingredients'>Food</Link>
         </Grid>
       </Grid>
     </div>
