@@ -24,6 +24,7 @@ const DayDescriptors = ['Last', 'One rainy', 'One dark and stormy', 'One dreary'
 
 const Locations = ['at a party', 'at a dinner engagement', 'at the dance'];
 
+const Actors = ['Elizabeth', 'Margaret', 'Raymond'];
 const ActorsBecameSuspects = 'Elizabeth, Margaret, and Raymond became suspects in a mysterious poisoning';
 
 const Victims = ['Mr. Robert Hughes', 'Mrs. Betty Green', 'Mr. Charles Clarke', 'Mrs. Dorothy Jones'];
@@ -51,4 +52,4 @@ const generateStory = (recipe, options) => {
   return story;
 }
 
-export { generateStory };
+export { generateStory, Actors };
