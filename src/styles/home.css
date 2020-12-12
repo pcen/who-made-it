@@ -33,7 +33,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
-  line-height: 58px;
+  line-height: 50px;
   text-align: center;
 
   color: #ffffff;
@@ -45,7 +45,7 @@
 }
 
 .circles {
-  position: relative;
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
@@ -190,6 +190,7 @@
   position: relative;
   color: var(--black);
   text-decoration: none;
+  position: relative;
 }
 
 .homeOptionCardText:hover {
