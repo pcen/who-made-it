@@ -47,6 +47,13 @@ const GuessKiller = (props) => {
                 </div>
             </Grid>
         </Grid>
+        <Button variant="contained" className="buttonBlack">
+            Go Back
+        </Button>
+        <Button variant="contained" className="buttonRed">
+            Submit
+        </Button>
+
         </div>
     </React.Fragment>
   );
