@@ -1,14 +1,19 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
+
+//Import suspect pictures
 import beth from '../assets/beth.png';
 import marge from '../assets/marge.png';
 import ray from '../assets/ray.png';
 
+//import history for page linking
 import { useHistory } from 'react-router-dom';
 
+//Import css styles
 import '../styles/guesskiller.css';
 import '../styles/buttons.css';
 
+//Function formats each suspect's image, name, and dish
 const KillerProfile = props => {
   const { image, name, item, onSelect, selected } = props;
 
@@ -30,6 +35,7 @@ const KillerProfile = props => {
   );
 }
 
+//This is the main function for the guess killer page
 const GuessKiller = props => {
   const { recipe, suspects } = props;
   const [guess, setGuess] = useState('');
@@ -38,10 +44,14 @@ const GuessKiller = props => {
 
   const history = useHistory();
 
+  {/* Link the go back button to the previous page */}
   const toSteps = () => {
     history.push('/recipe-steps');
   };
 
+  {/* Link the submit button to the results pages
+      Using some logic to ensure it goes to the proper page out of correct and incorrect
+   */}
   const toResults = () => {
     if(guess==='Margaret'){
       history.push('/correct-guess');
@@ -62,6 +72,7 @@ const GuessKiller = props => {
         <br></br>
         <br></br>
 
+        {/* Potential Suspects */}
         <div className='killer-profiles'>
           <KillerProfile image={beth} name='Elizabeth' item={suspects.Elizabeth.recipe} onSelect={setGuess} selected={guess} />
           <KillerProfile image={marge} name='Margaret' item={suspects.Margaret.recipe} onSelect={setGuess} selected={guess} />
@@ -69,6 +80,7 @@ const GuessKiller = props => {
         </div>
         <br></br><br></br>
 
+        {/* Button group to go back or submit your answer */}
         <div className='guess-killer-buttons'>
           <Button variant="contained" className="buttonBlack" onClick={toSteps}>
             Go Back

@@ -101,10 +101,10 @@ const RecipeSteps = (props) => {
               Solved It?
             </Button>
             <Button variant='contained' className='buttonBlack' onClick={previousStep}>
-              Go Back
+              Prior Step
             </Button>
             <Button variant='contained' className='buttonRed' onClick={nextStep}>
-              Next
+              Next Step
             </Button>
           </Grid>
         </Grid>
