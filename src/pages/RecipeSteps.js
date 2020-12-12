@@ -1,5 +1,6 @@
 import React from 'react';
 import "../styles/steps.css";
+import '../styles/guesskiller.css';
 import { Grid } from '@material-ui/core';
 
 // Import Suspect Images
@@ -51,24 +52,27 @@ const RecipeSteps = (props) => {
             </Grid>
             <Grid container item xs={12}>
               <Grid item xs={4}>
-                Elizabeth
-                 <br></br>
-                 Scotch Tom Collins
+                <img className="itemImageSmall" src={Elizabeth}></img>
+                <br></br>
+                <p class="personNameSmall">Elizabeth</p>
+                <p  class="foodNameSmall">Scotch Tom Collins</p>
               </Grid>
               <Grid item xs={4}>
-                Elizabeth
-                 <br></br>
-                 Scotch Tom Collins
+                <img className="itemImageSmallMarge" src={Margaret}></img>
+                <br></br>
+                <p class="personNameSmall">Margaret</p>
+                <p  class="foodNameSmall">Scotch Rickey</p>
               </Grid>
               <Grid item xs={4}>
-                Elizabeth
-                 <br></br>
-                 Scotch Tom Collins
+                <img className="itemImageSmall" src={Raymond}></img>
+                <br></br>
+                <p class="personNameSmall">Raymond</p>
+                <p  class="foodNameSmall">Whiskey Sour</p>
               </Grid>
             </Grid>
             <Grid item xs={12}>
               {/* The Menu Options */}
-              Random text so I can see the background color :)
+              Buttons Will Go Here
             </Grid>
 
           </Grid>

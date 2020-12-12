@@ -74,3 +74,23 @@
     position: fixed;
     bottom: 55px;
   }
+
+  .personNameSmall{
+    font-size: 20px;
+    color: #812a2a;
+}
+
+.foodNameSmall{
+    font-size: 14px;
+}
+
+.itemImageSmall{
+    height: 200px;
+    width: auto;
+}
+
+.itemImageSmallMarge{
+    height: 300px;
+    width: auto;
+    margin: -50px;
+}
