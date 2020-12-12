@@ -12,6 +12,8 @@ import Raymond from '../assets/ray.png';
 //This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
 //To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
+  const [stepNumber, setStepNumber] = useState(0);
+
   return (
     <React.Fragment>
       <div className="steps">
@@ -44,7 +46,7 @@ const RecipeSteps = (props) => {
               </div>
             </div>
           </Grid>
-          
+
           <Grid container item xs={8} style={{height: 'calc(100vh - 200px)', marginTop: '1em',}}>
             <Grid item xs={12}>
               {/* The Suspects */}
@@ -82,9 +84,9 @@ const RecipeSteps = (props) => {
                   Next
               </Button>
             </Grid>
-            
+
           </Grid>
-          
+
         </Grid>
       </div>
     </React.Fragment>
