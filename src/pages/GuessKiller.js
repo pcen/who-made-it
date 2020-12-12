@@ -34,7 +34,7 @@ const GuessKiller = (props) => {
             </Grid>
             <Grid item xs={3}>
                 <div className="itemBox">
-                <img className="itemImageMarge" src={marge}></img>
+                <img className="itemImage" src={marge}></img>
                 <p class="personName">Margaret</p>
                 <p class="foodName">Scotch Rickey</p>
                 </div>

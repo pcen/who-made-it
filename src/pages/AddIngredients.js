@@ -25,69 +25,69 @@ const AddIngredients = (props) => {
           alignItems="center"
         >
           <Grid item xs={2}>
-            <div className="itemBox">
+            <div className="foodItemBox">
               <p>Lemon</p>
-              <img className="itemImage" src={lemon}></img>
+              <img className="foodItemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Sugar</p>
-              <img className="itemImage" src={sugar}></img>
+              <img className="foodItemImage" src={sugar}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Scotch</p>
-              <img className="itemImage" src={alcohol}></img>
+              <img className="foodItemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Soda</p>
-              <img className="itemImage" src={soda}></img>
+              <img className="foodItemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Lemon</p>
-              <img className="itemImage" src={lemon}></img>
+              <img className="foodItemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Rum</p>
-              <img className="itemImage" src={alcohol}></img>
+              <img className="foodItemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Soda</p>
-              <img className="itemImage" src={soda}></img>
+              <img className="foodItemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Lemon</p>
-              <img className="itemImage" src={lemon}></img>
+              <img className="foodItemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Vodka</p>
-              <img className="itemImage" src={alcohol}></img>
+              <img className="foodItemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Soda</p>
-              <img className="itemImage" src={soda}></img>
+              <img className="foodItemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="foodItemBox">
               <p>Lemon</p>
-              <img className="itemImage" src={lemon}></img>
+              <img className="foodItemImage" src={lemon}></img>
             </div>
           </Grid>
           
