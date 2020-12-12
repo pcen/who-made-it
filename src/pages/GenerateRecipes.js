@@ -40,12 +40,13 @@ const GenerateRecipes = (props) => {
           })}
           <br></br>
           <div className="descriptiveText">
-            The recipe that you make will be the same one that was poisoned, leading you to the killer.
+            The recipe that you will make is the same one that was used to poison a victim. Guessing which recipe you are making will lead you
+            to the killer!
             So put your detective hat on and prepre to follow along with one of these delicious recipes to help you solve the mystery!
           </div>
 
           <Button variant="contained" className="buttonRedLong" onClick={toStory}>
-            Continue to the Mystery
+            Read about the Mystery
           </Button>
 
         </div>
