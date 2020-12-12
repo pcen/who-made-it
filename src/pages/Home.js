@@ -25,6 +25,7 @@ const Home = (props) => {
             class="homeOptionCardImage homeOptionCardDrink"
             src={drink}
           ></img>
+          <br></br>
           <Link class="homeOptionCardText" to="/add-ingredients">
             Drink
           </Link>
@@ -32,11 +33,15 @@ const Home = (props) => {
         <Grid item xs={1}></Grid>
         <Grid item xs={3} className="homeOptionCard">
           <img class="homeOptionCardImage" src={burger}></img>
+          <br></br>
           <Link class="homeOptionCardText" to="/add-ingredients">
             Food
           </Link>
         </Grid>
       </Grid>
+      <br></br><br></br>
+      <p className="instructions">Choose a Drink or Food item that you would like to make today. Based on the ingredients you have, 
+      you will solve a mystery.</p>
     </div>
   );
 };

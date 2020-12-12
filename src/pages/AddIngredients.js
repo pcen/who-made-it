@@ -1,5 +1,7 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import SearchBar from "material-ui-search-bar";
+
 import "../styles/addingredients.css";
 import lemon from "../assets/lemon.jpg";
 import alcohol from "../assets/alcohol bottle.png";
@@ -60,13 +62,19 @@ const AddIngredients = (props) => {
 
   return (
     <div className="background">
-      <div className="title">What ingredients do you have?</div>
+      <br></br><br></br>
+      <div className="ingredientsTitlePage">What ingredients do you have?</div>
+      <br></br>
+      <div className="ingredientsInstructions">Add anything and everything that you have in your kitchen! Based on your ingredients, we will generate mysterious recipes for you.</div>
+
       <br></br>
       <br></br>
       <div className="searchBar">
-        {/* <input type="text" className="searchTerm" placeholder="Search for an Ingredient">
-          <button type="submit" className="searchButton">Search</button>
-        </input> */}
+        <SearchBar
+          // value={this.state.value}
+          // onChange={(newValue) => this.setState({ value: newValue })}
+          // onRequestSearch={() => doSomethingWith(this.state.value)}
+        />
       </div>
       <br></br>
       <br></br>

@@ -25,6 +25,8 @@ const TheStory = (props) => {
 
   return (
     <div className='story-container'>
+      <div className="storyTitle">TITLE PLACEHOLDER</div>
+      <br></br><br></br>
       <div className='story'>{story}</div>
       <br></br>
       <div className='actors-container'>
