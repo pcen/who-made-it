@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import "../styles/steps.css";
-import '../styles/guesskiller.css';
+import '../styles/steps.css';
+import '../styles/buttons.css';
 import { Grid, Button } from '@material-ui/core';
 
 // Import Suspect Images
@@ -8,92 +8,93 @@ import Elizabeth from '../assets/beth.png';
 import Margaret from '../assets/marge.png';
 import Raymond from '../assets/ray.png';
 
-//This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
-//To help them figure out who the killer is, as soon as they find out what they are making
+const SuspectProfile = props => {
+  const { name, item, image } = props;
+  return (
+    <Grid item xs={4}>
+      <img alt='Elizabeth' className='itemImageSmall' src={image}></img>
+      <br></br>
+      <p class='personNameSmall'>{name}</p>
+      <p class='foodNameSmall'>{item}</p>
+    </Grid>
+  );
+}
+
+// This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
+// To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
-  const [stepNumber, setStepNumber] = useState(0);
+  const recipe = props.recipe;
+  console.log(recipe);
+
+  const [stepNumber, setStepNumber] = useState(1);
+  const stepsRemaining = recipe.steps.length - stepNumber;
+
+  const nextStep = () => {
+    if (stepNumber < recipe.steps.length) { setStepNumber(stepNumber + 1); }
+  };
+
+  const previousStep = () => {
+    if (stepNumber > 1) { setStepNumber(stepNumber - 1); }
+  };
 
   return (
-    <React.Fragment>
-      <div className="background">
-      <div className="steps">
-        {/* The Title */}
-        <h1>Follow along with the recipe (minus the poison) to solve the mystery and find out who the killer is</h1>
+    <div className='steps'>
+      {/* The Title */}
+      <h1>Follow along with the recipe (minus the poison) to solve the mystery and find out who the killer is</h1>
 
-        <Grid container
-              direction="row"
-        >
+      <Grid container direction='row'>
 
-          <Grid container item xs={4}>
-            <div className="stepsPanel">
-              {/* The Recipe Steps */}
-              {/* Step 1 */}
-              <Grid item xs={12} className="stepNumber">
-                <h2>Step 1</h2>
-              </Grid>
-              <div className="stepsDetails">
-                {/* Ingredients required for step 1 */}
-                <div>Ingredients Needed</div>
-                <ul>
-                  <li>1 glass</li>
-                  <li>1 Lump of Ice</li>
-                </ul>
-                <br></br>
-                {/* Instructions for step 1 */}
-                <div>Find a glass and add the lump of ice</div>
-                {/* Progress Tracker */}
-                <div className="stepsProgress"># Steps Remaining</div>
+        <Grid container item xs={4}>
+          <div className='stepsPanel'>
+            {/* The Recipe Steps */}
+            <Grid item xs={12} className='stepNumber'>
+              <h2>{`Step ${stepNumber}`}</h2>
+            </Grid>
+            <div className='stepsDetails'>
+              {/* Ingredients required for step 1 */}
+              <div>Ingredients Needed</div>
+              <ul>
+                <li>1 glass</li>
+                <li>1 Lump of Ice</li>
+              </ul>
+              <br></br>
+              {/* Instructions for step 1 */}
+              <div>{recipe.steps[stepNumber - 1]}</div>
+              {/* Progress Tracker */}
+              <div className='stepsProgress'>
+                {`# Steps Remaining: ${stepsRemaining}`}
               </div>
             </div>
-          </Grid>
-
-          <Grid container item xs={8} style={{height: 'calc(100vh - 200px)', marginTop: '1em',}}>
-          <div className="white-card">  
-
-            <Grid item xs={12}>
-              {/* The Suspects */}
-              <h2 class="stepsSubtitle">Suspects</h2>
-            </Grid>
-            <Grid container item xs={12}>
-              <Grid item xs={4}>
-                <img className="itemImageSmall" src={Elizabeth}></img>
-                <br></br>
-                <p class="personNameSmall">Elizabeth</p>
-                <p  class="foodNameSmall">Scotch Tom Collins</p>
-              </Grid>
-              <Grid item xs={4}>
-                <img className="itemImageSmall" src={Margaret}></img>
-                <br></br>
-                <p class="personNameSmall">Margaret</p>
-                <p  class="foodNameSmall">Scotch Rickey</p>
-              </Grid>
-              <Grid item xs={4}>
-                <img className="itemImageSmall" src={Raymond}></img>
-                <br></br>
-                <p class="personNameSmall">Raymond</p>
-                <p  class="foodNameSmall">Whiskey Sour</p>
-              </Grid>
-            </Grid>
-            <Grid item xs={12}>
-              {/* The Menu Options */}
-              <Button variant="contained" className="buttonGrey">
-                Solved It?
-              </Button>
-              <Button variant="contained" className="buttonBlack">
-                  Go Back
-              </Button>
-              <Button variant="contained" className="buttonRed">
-                  Next
-              </Button>
-            </Grid>
-            </div>
-
-          </Grid>
-
+          </div>
         </Grid>
-      </div>
-      </div>
-    </React.Fragment>
+
+        <Grid container item xs={8} style={{ height: 'calc(100vh - 200px)', marginTop: '1em', }}>
+          <Grid item xs={12}>
+            {/* The Suspects */}
+            <h2 class='stepsSubtitle'>Suspects</h2>
+          </Grid>
+          <Grid container item xs={12}>
+            <SuspectProfile name='Elizabeth' item='Scotch Tom Collins' image={Elizabeth} />
+            <SuspectProfile name='Margaret' item='Scotch Rickey' image={Margaret} />
+            <SuspectProfile name='Raymond' item='Whiskey Sour' image={Raymond} />
+          </Grid>
+          <Grid item xs={12}>
+            {/* The Menu Options */}
+            <Button variant='contained' className='buttonGrey'
+              onClick={() => { }}
+            >
+              Solved It?
+            </Button>
+            <Button variant='contained' className='buttonBlack' onClick={previousStep}>
+              Go Back
+            </Button>
+            <Button variant='contained' className='buttonRed' onClick={nextStep}>
+              Next
+            </Button>
+          </Grid>
+        </Grid>
+      </Grid>
+    </div>
   );
 }
 
