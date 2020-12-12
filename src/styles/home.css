@@ -16,7 +16,7 @@
   background-size: cover;
   height: 100%;
   opacity: 0.9;
-  margin-top: 0px;
+  margin: 0px;
 }
 
 .home h1 {
@@ -25,7 +25,7 @@
   text-align: center;
   margin: 0px;
   padding-top: 0.6em;
-  padding-bottom: 0.em;
+  padding-bottom: 0;
   /* color: #812a2a; */
   color: white;
   -webkit-text-stroke-width: 1px;
@@ -210,5 +210,5 @@
   font-size: 20px;
   width: 780px;
   margin: 0px auto;
-  text-align: left;
+  text-align: center;
 }

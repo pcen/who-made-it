@@ -14,9 +14,10 @@ import "../styles/home.css";
 const Home = (props) => {
   return (
     <div className="home">
+
       <h1>WHO MADE IT?</h1>
       <h2>What would you like to make today? </h2>
-      
+
       <Grid container direction="row" alignItems="center" justify="center">
         {/* Card to display drink option */}
         <Grid item xs={3} className="homeOptionCard homeOptionCardDrink">
