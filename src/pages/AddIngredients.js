@@ -12,7 +12,6 @@ import { Button } from "@material-ui/core";
 
 const IngredientCard = props => {
   const { value, image, onClick } = props;
-  const label = `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
 
   const [selected, setSelected] = useState(false);
 
@@ -20,13 +19,12 @@ const IngredientCard = props => {
     onClick(value, !selected);
     setSelected(!selected);
   }
-
   const currentClassName = selected ? 'foodItemBoxSelected' : 'foodItemBox';
 
   return (
     <Grid item xs={2}>
       <div className={currentClassName} onClick={handleClick}>
-        <p style={{userSelect: 'none'}}>{label}</p>
+        <p style={{userSelect: 'none'}}>{value}</p>
         <img alt={value} className="foodItemImage" src={image}></img>
       </div>
     </Grid>
