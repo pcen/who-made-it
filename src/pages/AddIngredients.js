@@ -66,7 +66,11 @@ const AddIngredients = (props) => {
         <div className="title">What ingredients do you have?</div>
         <br></br>
         <br></br>
-        <div className="searchBar"> Search an ingredient... </div>
+        <div className="searchBar"> 
+        <input type = "text" className="searchTerm" placeholder="Search for an Ingredient">
+          <button type="submit" className="searchButton">Search</button>
+        </input>
+        </div>
         <br></br>
         <br></br>
         <br></br>
