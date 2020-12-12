@@ -11,8 +11,8 @@
 }
 
 .steps {
-  background-color: var(--white);
-  height: 100vh;
+  background-color: var(--blood-red);
+  height: calc(100vh);
 }
 
 .steps h1 {
@@ -21,7 +21,7 @@
   font-size: 30px;
   line-height: 40px;
   text-align: center;
-  color: var(--black);
+  color: white;
   max-width: 85%;
   margin: 0px auto;
   padding-top: 0.5em;
@@ -32,18 +32,21 @@
   font-size: 35px;
   line-height: 55px;
   font-family: Risque;
-  padding: 0px;
+  padding-left: 30px;
   margin: 0px;
+  text-align: left;
+}
+
+.stepsSubtitleSuspects{
+  text-align: center !important;
+
 }
 
 .ingredientsContainer {
   text-decoration: none;
-  background-color: #C4C4C4;
   border-radius: 10px 10px 0px 0px;
-  height: calc(100vh - 200px);
   width: 100%;
-  height: 90%;
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 .ingredientsList {
@@ -52,12 +55,9 @@
 }
 
 .stepsPanel {
-  background-color: #C4C4C4;
   border-radius: 10px 10px 0px 0px;
-  height: calc(100vh - 200px);
   width: 100%;
-  height: 90%;
-  margin: 1em;
+  /* margin: 1em; */
 }
 
 .stepsDetails {
@@ -70,7 +70,6 @@
   background-color: #FFFFFF;
   height: calc(100vh - 200px);
   width: 100%;
-  margin: 1em;
 }
 
 .stepNumber {
@@ -80,33 +79,13 @@
   height: 55px;
 }
 
-.stepsSuspect {
-  width: 33% !important;
-}
-
-.stepsSubtitle {
-  width: 100%;
-  height: 55px;
-  padding: 0px;
-}
-
-.stepsProgress {
-  font-size: 35px;
-  line-height: 50px;
-  font-family: Risque;
-  padding: 10px 0px 0px 20px;
-  margin: 0px;
-  position: fixed;
-  bottom: 55px;
-}
-
 .personNameSmall {
-  font-size: 20px;
+  font-size: 25px;
   color: #812a2a;
 }
 
 .foodNameSmall {
-  font-size: 14px;
+  font-size: 25px;
 }
 
 .itemImageSmall {
@@ -119,3 +98,30 @@
   width: auto;
   margin: -50px;
 }
+
+.white-card-suspects{
+  width: 60%;
+  margin-right: 10px;
+  padding: 0px 100px 0px 100px;
+  height: 550px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px auto;
+}
+
+.white-card-row1{
+  width: 73%;
+  margin-right: 10px;
+  /* padding: 0px 100px 0px 100px; */
+  height: 250px;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  border-radius: 20px;
+  margin: 0px auto;
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
