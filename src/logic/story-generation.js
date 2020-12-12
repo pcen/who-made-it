@@ -11,14 +11,6 @@ const commaAndAndSeparate = a => {
   return a.join(', ').replace(/,(?!.*,)/gmi, ' and');
 }
 
-const getIngredientArray = recipe => {
-  let ingredientArray = [];
-  recipe.ingredients.forEach(item => {
-    ingredientArray.push(item.ingredient);
-  });
-  return ingredientArray;
-}
-
 const Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const DayDescriptors = ['Last', 'One rainy', 'One dark and stormy', 'One dreary'];
 
@@ -36,7 +28,7 @@ const generateStory = (recipe, options) => {
   let victimFirstName = victim.split(' ')[1];
   let victimDescriptor = randFrom(VictimDescriptors);
   let atLocation = randFrom(Locations);
-  let ingredients = commaAndAndSeparate(getIngredientArray(recipe));
+  let ingredients = commaAndAndSeparate(recipe.ingredients);
 
   let story = `
     ${day}, ${atLocation}, ${ActorsBecameSuspects}.

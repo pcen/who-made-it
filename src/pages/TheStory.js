@@ -1,33 +1,12 @@
 import React from 'react';
-import { generateStory, Actors } from '../logic/story-generation';
+import { generateStory } from '../logic/story-generation';
+import Recipes from '../Components/Recipes';
 
 import Elizabeth from '../assets/beth.png';
 import Margaret from '../assets/marge.png';
 import Raymond from '../assets/ray.png';
 
 import '../styles/the-story.css';
-
-const SampleRecipe = {
-  ingredients: [
-    {
-      ingredient: 'lemon',
-      amount: '5-6 dashes',
-    },
-    {
-      ingredient: 'scotch',
-      amount: '1 large glass',
-    },
-    {
-      ingredient: 'ice',
-      amount: '2-3 lumps',
-    },
-    {
-      ingredient: 'soda',
-      amount: '1 glass',
-    },
-  ],
-  steps: []
-};
 
 const ActorProfile = props => {
   const { image, name, item } = props;
@@ -42,7 +21,7 @@ const ActorProfile = props => {
 
 const TheStory = (props) => {
   const { recipe, options } = props;
-  let story = generateStory(SampleRecipe, ['Scotch Tom Collins', 'Scotch Rickey', 'Whiskey Sour']);
+  let story = generateStory(Recipes.drinks.ScotchTomCollins, ['Scotch Tom Collins', 'Scotch Rickey', 'Whiskey Sour']);
 
   return (
     <div className='story-container'>
