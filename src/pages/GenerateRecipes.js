@@ -9,8 +9,13 @@ import '../styles/generaterecipes.css';
 
 const GenerateRecipes = (props) => {
 
-  const { recipeOptions } = props;
-  console.log('Recipe options: ' + recipeOptions);
+  const { recipeOptions, recipe, suspects } = props;
+  console.log('Recipe options:');
+  console.log(recipeOptions);
+  console.log('Suspects:');
+  console.log(suspects);
+  console.log('Your recipe:');
+  console.log(recipe);
 
   const history = useHistory();
 
@@ -30,15 +35,13 @@ const GenerateRecipes = (props) => {
           <div className="descriptiveText">Without knowing which, you will be making one of the following recipes:</div>
           <br></br>
           {/* Three potential recipe options */}
-          {
-            recipeOptions.map(r => {
-              return (<div className="drinkName">{r.name}</div>)
-            })
-          }
+          {recipeOptions.map(r => {
+            return (<div className="drinkName">{r.name}</div>)
+          })}
           <br></br>
           <div className="descriptiveText">
             Put your detective hat on and prepre to follow along with one of these delicious recipes to help you solve the mystery!
-                </div>
+          </div>
 
           <Button variant="contained" className="buttonRedLong" onClick={toStory}>
             Continue to the Mystery

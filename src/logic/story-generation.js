@@ -1,15 +1,4 @@
-const randInt = (min, max) => {
-  return Math.floor(Math.random() * (max - min + 1)) + min;
-}
-
-const randFrom = list => {
-  let index = randInt(0, list.length - 1);
-  return list[index];
-}
-
-const commaAndAndSeparate = a => {
-  return a.join(', ').replace(/,(?!.*,)/gmi, ' and');
-}
+import { randFrom, commaAndAndSeparate } from './utils';
 
 const Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const DayDescriptors = ['Last', 'One rainy', 'One dark and stormy', 'One dreary'];

@@ -26,26 +26,22 @@ import mint from "../assets/mint.png";
 import tomato from "../assets/tomato.png";
 
 import { Button } from "@material-ui/core";
-import { getURLStr, arrayInSet } from '../logic/utils';
+import { getURLStr, arrayInSet, randFrom } from '../logic/utils';
 import { useHistory, useLocation } from "react-router-dom";
 
 const IngredientCard = (props) => {
   const { value, image, onClick } = props;
-  const label = `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
-
   const [selected, setSelected] = useState(false);
-
   const handleClick = () => {
     setSelected(!selected);
     onClick(value.toLowerCase(), !selected);
   };
-
   const currentClassName = selected ? "foodItemBoxSelected" : "foodItemBox";
 
   return (
     <Grid item xs={2}>
       <div className={currentClassName} onClick={handleClick}>
-        <p style={{ userSelect: "none" }}>{label}</p>
+        <p style={{ userSelect: "none" }}>{value}</p>
         <img alt={value} className="foodItemImage" src={image}></img>
       </div>
     </Grid>
@@ -64,25 +60,31 @@ const AddIngredients = (props) => {
     } else {
       selected.delete(value);
     }
-
-    console.log(selected);
   };
 
+  // Set the recipe of each of the suspects as well as the
+  // recipe the user will make to deduce who dunit
+  const setUpRecipes = (possibilities) => {
+    props.setRecipeOptions(possibilities);
+    props.setSuspects({
+      Elizabeth: { recipe: possibilities[0].name, },
+      Margaret: { recipe: possibilities[1].name, },
+      Raymond: { recipe: possibilities[2].name, },
+    });
+    props.setRecipe(randFrom(possibilities));
+  }
+
   const onGenerateRecipes = () => {
+    // Find all the possible recipes the user can make
     var possibleRecipes = [];
     Object.keys(recipes).forEach(key => {
-      let ings = recipes[key].ingredients;
-      console.log(ings);
-      console.log(selected);
-      if (arrayInSet(ings, selected) === true) {
-        console.log('adding ' + ings + 'to possible recipes');
+      if (arrayInSet(recipes[key].ingredients, selected) === true) {
         possibleRecipes.push(recipes[key]);
       }
     });
-    // Enough possible recipes exist
-    console.log('possible recipes: ' + possibleRecipes);
+    // Enough possible recipes exist to continue
     if (possibleRecipes.length >= 3) {
-      props.setRecipeOptions(possibleRecipes.slice(0, 3));
+      setUpRecipes(possibleRecipes.slice(0, 3));
       history.push('/generate-recipes');
     }
   }

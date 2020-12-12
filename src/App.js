@@ -9,7 +9,7 @@ import './styles/app.css';
 function App() {
   const [recipe, setRecipe] = useState(Recipes.drinks.ScotchTomCollins);
   const [recipeOptions, setRecipeOptions] = useState([]);
-  const [suspects, setSuspects] = useState(Suspects);
+  const [suspects, setSuspects] = useState({});
 
   return (
     <div className="App">
