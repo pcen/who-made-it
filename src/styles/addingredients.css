@@ -7,6 +7,9 @@
   font-size: 50px;
   color: white;
   position: relative;
+  padding-top: 0.6em;
+  padding-bottom: 0.3em;
+  margin: 0;
 }
 
 .ingredientsInstructions{
@@ -38,6 +41,14 @@
   width: 120px;
   margin-bottom: 3em;
   position: relative;
+}
+
+.foodItemBox:hover {
+  cursor: pointer;
+}
+
+.highlightFoodItemBox {
+  background-color: green;
 }
 
 .foodItemImage {

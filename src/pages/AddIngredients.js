@@ -15,6 +15,7 @@ const AddIngredients = (props) => {
   const onIngredientClick = (prop) => {
     console.log(ingredientArray.push(prop));
     console.log(ingredientArray);
+
   };
 
 
@@ -62,9 +63,7 @@ const AddIngredients = (props) => {
 
   return (
     <div className="background">
-      <br></br><br></br>
       <div className="ingredientsTitlePage">What ingredients do you have?</div>
-      <br></br>
       <div className="ingredientsInstructions">Add anything and everything that you have in your kitchen! Based on your ingredients, we will generate mysterious recipes for you.</div>
 
       <br></br>

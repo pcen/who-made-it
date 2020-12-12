@@ -33,7 +33,7 @@ const TheStory = (props) => {
 
   return (
     <div className='story-container'>
-      <div className="storyTitle">TITLE PLACEHOLDER</div>
+      <div className="storyTitle">A Speakeasy Mystery</div>
       <br></br><br></br>
       <div className='story'>{story}</div>
       <Button variant='contained' className='buttonBlack' onClick={toSteps}>
