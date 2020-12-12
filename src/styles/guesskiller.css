@@ -3,11 +3,9 @@
 .guess-killer-container {
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #812a2a;
   align-items: center;
-  height: 100vh;
-  overflow-y: hidden;
 }
 
 .killer-profiles {
@@ -69,4 +67,5 @@
 
 .guess-killer-buttons {
   display: flex;
+  justify-content: center;
 }
