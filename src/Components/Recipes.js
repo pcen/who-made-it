@@ -38,9 +38,8 @@ const Recipes = {
       ],
       name: 'White Wine Spritzer',
     },
-
     Margarita: {
-      ingredients: ['tequilla', 'lime', 'ice', 'salt'],
+      ingredients: ['tequila', 'lime', 'ice', 'salt'],
       steps: [
         'run a lime wedge around rim of glass',
         'dip the rim in a course salt',
@@ -62,7 +61,7 @@ const Recipes = {
       name: 'Cosmopolitan',
     },
     MoscowMule: {
-      ingredients: ['lemon', 'scotch', 'ice', 'soda'],
+      ingredients: ['lemon', 'ginger beer', 'scotch', 'ice', 'soda water'],
       steps: [
         'add 2 shots of vodka to a glass',
         'add 1/2 ounce of lime to glass',
@@ -124,7 +123,7 @@ const Recipes = {
       name: 'Gimlet',
     },
     DarkandStormy: {
-      ingredients: ['rum', 'ginger'],
+      ingredients: ['rum', 'ginger beer'],
       steps: [
         'add two shots of ginger beer to a glass',
         'optional: add 0.5 shots of lime juice to glass',
@@ -153,7 +152,7 @@ const Recipes = {
       name: 'Southside',
     },
     GingerSpritz: {
-      ingredients: ['white wine', 'ginger', 'lime'],
+      ingredients: ['white wine', 'ginger beer', 'lime'],
       steps: [
         'add 3 shots of white win to a glass',
         'add 2 shots of ginger beer to the glass',

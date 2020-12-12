@@ -9,20 +9,21 @@ import wine from "../assets/wine.jpg";
 import lemon from "../assets/lemon.jpg";
 import alcohol from "../assets/alcohol bottle.png";
 import soda from "../assets/soda.png";
-import sugar from "../assets/sugar.jpg";
 import whiskey from "../assets/whiskey.png";
 import Sparkling from "../assets/sparkling.png";
 import orange from "../assets/orange.png";
 import tonic from "../assets/tonic.png";
 import honey from "../assets/honey.png";
 import rum from "../assets/rum.png";
-import tequilla from "../assets/tequilla.png";
-import rye from "../assets/rye.png";
+import tequila from "../assets/tequila.png";
 import bourbon from "../assets/bourbon.png";
 import ginger from "../assets/ginger.png";
 import gin from "../assets/gin.png";
 import mint from "../assets/mint.png";
 import tomato from "../assets/tomato.png";
+import cranberry from '../assets/cranberry.jpg';
+import vermouth from '../assets/vermouth.jpg';
+import champagne from '../assets/champagne.png';
 
 import { Button } from "@material-ui/core";
 import { getURLStr, arrayInSet, randFrom } from '../logic/utils';
@@ -118,12 +119,6 @@ const AddIngredients = (props) => {
           image={lemon}
           onClick={onIngredientClick}
         />
-
-        <IngredientCard
-          value="Sugar"
-          image={sugar}
-          onClick={onIngredientClick}
-        />
         <IngredientCard
           value="Scotch"
           image={alcohol}
@@ -140,11 +135,15 @@ const AddIngredients = (props) => {
           onClick={onIngredientClick}
         />
         <IngredientCard
-          value="Tequilla"
-          image={tequilla}
+          value="Tequila"
+          image={tequila}
           onClick={onIngredientClick}
         />
-        <IngredientCard value="Rum" image={rum} onClick={onIngredientClick} />
+        <IngredientCard
+          value="Rum"
+          image={rum}
+          onClick={onIngredientClick}
+        />
         <IngredientCard
           value="Whiskey"
           image={whiskey}
@@ -181,7 +180,7 @@ const AddIngredients = (props) => {
           onClick={onIngredientClick}
         />
         <IngredientCard
-          value="bourbon"
+          value="Bourbon"
           image={bourbon}
           onClick={onIngredientClick}
         />
@@ -191,29 +190,48 @@ const AddIngredients = (props) => {
           onClick={onIngredientClick}
         />
         <IngredientCard
-          value="mint"
+          value="Mint"
           image={mint}
           onClick={onIngredientClick}
         />
-        <IngredientCard value="gin" image={gin} onClick={onIngredientClick} />
         <IngredientCard
-          value="ginger"
+          value="Gin"
+          image={gin}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Ginger Beer"
           image={ginger}
           onClick={onIngredientClick}
         />
         <IngredientCard
-          value="rye"
-          image={rye}
+          value="Rye"
+          image={alcohol}
           onClick={onIngredientClick}
         />
         <IngredientCard
-          value="tomato"
+          value="Tomato"
           image={tomato}
           onClick={onIngredientClick}
         />
         <IngredientCard
-          value="triple sec"
+          value="Triple Sec"
           image={alcohol}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Cranberry Juice"
+          image={cranberry}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Vermouth"
+          image={vermouth}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Champagne"
+          image={champagne}
           onClick={onIngredientClick}
         />
       </Grid>
