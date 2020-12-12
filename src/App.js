@@ -1,36 +1,34 @@
-import React, { createContext } from 'react';
+import React, { useState } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 import Routes, { Default } from './Routes';
 import Recipes from './Components/Recipes';
 
 import './styles/app.css';
 
-const RecipeContext = createContext({});
-
 function App() {
+  const [recipe, setRecipe] = useState(Recipes.drinks.ScotchTomCollins);
 
   return (
     <div className="App">
-      <RecipeContext.Provider value={Recipes.drinks.ScotchTomCollins}>
-        <HashRouter basename='/'>
-          <Switch>
-            <Route exact path='/' component={Default} />
-            {
-              Routes.map((route) => {
-                return (
-                  <Route
-                    path={route.path}
-                    component={route.component}
+      <HashRouter basename='/'>
+        <Switch>
+          <Route exact path='/' component={Default} />
+          {
+            Routes.map((route) => {
+              return (
+                <Route path={route.path}>
+                  <route.component
+                    recipe={recipe}
+                    setRecipe={setRecipe}
                   />
-                );
-              })
-            }
-          </Switch>
-        </HashRouter>
-      </RecipeContext.Provider>
+                </Route>
+              );
+            })
+          }
+        </Switch>
+      </HashRouter>
     </div>
   );
 }
 
-export { RecipeContext };
 export default App;

@@ -1,9 +1,11 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
-import '../styles/guesskiller.css';
 import beth from '../assets/beth.png';
 import marge from '../assets/marge.png';
 import ray from '../assets/ray.png';
+
+import '../styles/guesskiller.css';
+import '../styles/buttons.css';
 
 const KillerProfile = props => {
   const { image, name, item, onSelect, selected } = props;
