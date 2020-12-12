@@ -69,3 +69,9 @@
   display: flex;
   justify-content: center;
 }
+
+.white-card{
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+}

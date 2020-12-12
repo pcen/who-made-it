@@ -26,7 +26,7 @@ const GenerateRecipes = (props) => {
   return (
     <React.Fragment>
       <div className="background">
-        <div className="white-card">
+        <div className="white-card-generate-recipes">
           <div className="title">Generating recipes...</div>
           <br></br>
           <div className="selectedIngredients">

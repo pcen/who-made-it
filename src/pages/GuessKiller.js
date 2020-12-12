@@ -19,9 +19,7 @@ import '../styles/buttons.css';
 const KillerProfile = props => {
   const { image, name, item, onSelect, selected } = props;
 
-  const handleClick = (event) => {
-    onSelect(name);
-  };
+  const handleClick = () => { onSelect(name); };
 
   return (
     <div className='killer-profile'>
