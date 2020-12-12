@@ -1,4 +1,4 @@
-.steps {
+  .steps {
     background-color: #FFFFFF;
     height: 100vh;
   }
@@ -19,12 +19,26 @@
     padding-bottom: 0.5em;
   }
 
+  .steps h2 {
+    font-size: 35px;
+    line-height: 55px;
+    font-family: Risque;
+    padding: 0px;
+    margin: 0px;
+  }
+
   .stepsPanel {
       background-color: #C4C4C4;
       border-radius: 10px 10px 0px 0px;
       height: calc(100vh - 200px);
       width: 100%;
       margin: 1em;
+  }
+
+  .stepsDetails {
+      text-align: left;
+      padding: 1em;
+      font-size: 24px;
   }
 
   .stepsSuspectsMenu {
@@ -37,8 +51,6 @@
   .stepNumber {
     background-color: #812A2A;
     border-radius: 10px;
-    font-size: 35px;
     color: #FFFFFF;
-    line-height: 55px;
     height: 55px;
   }

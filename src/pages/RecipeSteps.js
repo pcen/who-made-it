@@ -22,9 +22,9 @@ const RecipeSteps = (props) => {
               {/* The Recipe Steps */}
               {/* Step 1 */}
               <Grid item xs={12} className="stepNumber">
-                <div>Step 1</div>
+                <h2>Step 1</h2>
               </Grid>
-              <div>
+              <div className="stepsDetails">
                 {/* Ingredients required for step 1 */}
                 <div>Ingredients Needed</div>
                 <ul>
@@ -33,7 +33,7 @@ const RecipeSteps = (props) => {
                 </ul>
                 <br></br>
                 {/* Instructions for step 1 */}
-                <div>Find a glass and add the ice</div>
+                <div>Find a glass and add the lumps of ice</div>
               </div>
             </div>
           </Grid>
@@ -41,7 +41,18 @@ const RecipeSteps = (props) => {
           <Grid container item xs={8}>
               <div className="stepsSuspectsMenu">
                 {/* The Suspects */}
-                Random text so I can see the background color :)           
+                <h2>Suspects</h2>
+                <Grid item xs={4}>
+                  Elizabeth
+                  <br></br>
+                  Food Item 1
+                </Grid>
+                <Grid item xs={4}>
+                  Margaret
+                </Grid>
+                <Grid item xs={4}>
+                  Raymond
+                </Grid>
                 {/* The Menu Options */}
                 Random text so I can see the background color :)
               </div>
