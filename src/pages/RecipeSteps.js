@@ -44,31 +44,40 @@ const RecipeSteps = (props) => {
 
       <Grid container direction='row'>
 
-        <Grid container item xs={4}>
+        <Grid container item xs={3}>
+          <div className='ingredientsContainer'>
+            {/* The Ingredients List */}
+            <Grid item xs={12} className='stepNumber'>
+              <h2>{`Ingredients`}</h2>
+            </Grid>
+            <ul className='ingredientsList'>
+              {
+                recipe.ingredients.map(ingredient => {
+                  return <li>{ingredient}</li>
+                })
+              }
+            </ul>
+          </div>
+          {/* Progress Tracker */}
+          <div className='stepsProgress'>
+            {`Steps Remaining: ${stepsRemaining}`}
+          </div>
+        </Grid>
+
+        <Grid container item xs={3}>
           <div className='stepsPanel'>
             {/* The Recipe Steps */}
             <Grid item xs={12} className='stepNumber'>
               <h2>{`Step ${stepNumber}`}</h2>
             </Grid>
             <div className='stepsDetails'>
-              {/* Ingredients required for step 1 */}
-              <div>Ingredients Needed</div>
-              <ul>
-                <li>1 glass</li>
-                <li>1 Lump of Ice</li>
-              </ul>
-              <br></br>
-              {/* Instructions for step 1 */}
+              {/* Instructions */}
               <div>{recipe.steps[stepNumber - 1]}</div>
-              {/* Progress Tracker */}
-              <div className='stepsProgress'>
-                {`# Steps Remaining: ${stepsRemaining}`}
-              </div>
             </div>
           </div>
         </Grid>
 
-        <Grid container item xs={8} style={{ height: 'calc(100vh - 200px)', marginTop: '1em', }}>
+        <Grid container item xs={6} style={{ height: 'calc(100vh - 200px)', marginTop: '1em', }}>
           <Grid item xs={12}>
             {/* The Suspects */}
             <h2 class='stepsSubtitle'>Suspects</h2>
@@ -78,11 +87,9 @@ const RecipeSteps = (props) => {
             <SuspectProfile name='Margaret' item='Scotch Rickey' image={Margaret} />
             <SuspectProfile name='Raymond' item='Whiskey Sour' image={Raymond} />
           </Grid>
-          <Grid item xs={12}>
+          <Grid item xs={12} style={{ paddingTop: '20px' }}>
             {/* The Menu Options */}
-            <Button variant='contained' className='buttonGrey'
-              onClick={() => { }}
-            >
+            <Button variant='contained' className='buttonGrey' onClick={() => { }}>
               Solved It?
             </Button>
             <Button variant='contained' className='buttonBlack' onClick={previousStep}>

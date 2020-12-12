@@ -36,6 +36,21 @@
   margin: 0px;
 }
 
+.ingredientsContainer {
+  text-decoration: none;
+  background-color: #C4C4C4;
+  border-radius: 10px 10px 0px 0px;
+  height: calc(100vh - 200px);
+  width: 100%;
+  height: 90%;
+  margin: 1em;
+}
+
+.ingredientsList {
+  text-align: left;
+  font-size: 17.5pt;
+}
+
 .stepsPanel {
   background-color: #C4C4C4;
   border-radius: 10px 10px 0px 0px;
@@ -79,7 +94,7 @@
   font-size: 35px;
   line-height: 50px;
   font-family: Risque;
-  padding: 0px;
+  padding: 10px 0px 0px 20px;
   margin: 0px;
   position: fixed;
   bottom: 55px;
@@ -103,18 +118,4 @@
   height: 300px;
   width: auto;
   margin: -50px;
-}
-
-.buttonGrey{
-  background-color: #C4C4C4 !important;
-  font-family: "Risque" !important;
-  font-size: 25px !important;
-  color: black !important;
-  width: 350px;
-  height: 50px;
-  margin: 20px 20px 0px 20px !important;
-}
-
-.white-card{
-  border-radius: 20px !important;
 }
