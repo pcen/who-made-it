@@ -1,16 +1,23 @@
-.home {
-  background: url("../assets/background.png") no-repeat center center fixed;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  height: 100vh;
-  opacity: 0.9;
-}
 @font-face {
   font-family: "Bubblegum Sans";
   src: url("../fonts/BubblegumSans-Regular.otf") format("opentype");
 }
+
+@font-face {
+  font-family: "Risque";
+  src: url("../fonts/Risque-Regular.ttf") format("truetype");
+}
+
+.home {
+  background: url("../assets/background.png");
+  background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+  height: 100%;
+  opacity: 0.9;
+}
+
 .home h1 {
   font-family: "Bubblegum Sans";
   font-size: 90px;
@@ -20,10 +27,6 @@
   color: #ffffff;
 }
 
-@font-face {
-  font-family: "Risque";
-  src: url("../fonts/Risque-Regular.ttf") format("truetype");
-}
 .home h2 {
   font-family: "Risque";
   font-style: normal;
@@ -35,81 +38,9 @@
   color: #ffffff;
 }
 
-.home .Card_drink {
-  position: absolute;
-  width: 300px;
-  height: 420px;
-  left: 25%;
-  top: 329px;
-
-  background: #f5f5f5;
-  border-radius: 40px;
-}
-
-.home .Card_drink img {
-  position: absolute;
-  width: 264px;
-  height: 350px;
-  left: 20px;
-  top: 0px;
-  border-radius: 40px;
-}
-
-.home .Card_drink h1 {
-  position: absolute;
-  width: 223px;
-  height: 63px;
-  left: 40px;
-  top: 320px;
-
-  font-family: "Risque";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 58px;
-  text-align: center;
-
-  color: #2b1618;
-}
-
-.home .Card_burger {
-  position: absolute;
-  width: 300px;
-  height: 420px;
-  left: 60%;
-  top: 329px;
-
-  background: #ffffff;
-  border-radius: 40px;
-}
-.home .Card_burger img {
-  position: absolute;
-  width: 250px;
-  height: 320px;
-  left: 10%;
-  top: 5%;
-  border-radius: 40px;
-}
-
-.home .Card_burger h1 {
-  position: absolute;
-  width: 223px;
-  height: 63px;
-  left: 15%;
-  top: 75%;
-
-  font-family: "Risque";
-  font-style: normal;
-  font-weight: normal;
-  font-size: 50px;
-  line-height: 58px;
-  text-align: center;
-
-  color: #2b1618;
-}
 .area {
   width: 100%;
-  height: 100vh;
+  height: 100%;
 }
 
 .circles {
@@ -219,4 +150,31 @@
     opacity: 0;
     border-radius: 90%;
   }
+}
+
+
+{/* Setting up the food/drink option cards */}
+.homeOptionCard {
+  height: 420px;
+  background: white;
+  border-radius: 40px;
+}
+
+.homeOptionCardDrink {
+  background-color: #f5f5f5 !important;
+}
+
+.homeOptionCardImage {
+  width: auto;
+  height: 300px;
+  max-width: 80%;
+  border-radius: 40px;
+}
+
+.homeOptionCardText {
+  font-family: "Risque";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 50px;
+  text-align: center;
 }
