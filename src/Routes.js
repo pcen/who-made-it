@@ -2,6 +2,7 @@ import AddIngredients from './pages/AddIngredients';
 import GuessKiller from './pages/GuessKiller';
 import RecipeSteps from './pages/RecipeSteps';
 import Home from './pages/Home';
+import TheStory from './pages/TheStory';
 
 const Routes = [
   {
@@ -15,6 +16,10 @@ const Routes = [
   {
     path: '/recipe-steps',
     component: RecipeSteps,
+  },
+  {
+    path: '/story',
+    component: TheStory,
   },
 ];
 
