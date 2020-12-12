@@ -12,3 +12,9 @@
     height: 70px;
     margin: 20px !important;
 }
+
+.white-card{
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}

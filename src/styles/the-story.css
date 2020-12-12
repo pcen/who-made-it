@@ -8,10 +8,14 @@
   align-items: center;
   font-size: 18pt;
   line-height: 20pt;
+  background-color: #812a2a;
+  height: calc(100vh - 100px);
+  padding: 50px;
 }
 
 .story {
   width: 80%;
+  color: white;
 }
 
 .actors-container {
