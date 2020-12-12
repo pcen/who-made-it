@@ -23,7 +23,7 @@ const SuspectProfile = props => {
 // This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
 // To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
-  const recipe = props.recipe;
+  const { recipe, suspects } = props;
   console.log(recipe);
 
   const [stepNumber, setStepNumber] = useState(1);
@@ -83,9 +83,9 @@ const RecipeSteps = (props) => {
             <h2 class='stepsSubtitle'>Suspects</h2>
           </Grid>
           <Grid container item xs={12}>
-            <SuspectProfile name='Elizabeth' item='Scotch Tom Collins' image={Elizabeth} />
-            <SuspectProfile name='Margaret' item='Scotch Rickey' image={Margaret} />
-            <SuspectProfile name='Raymond' item='Whiskey Sour' image={Raymond} />
+            <SuspectProfile name='Elizabeth' item={suspects.Elizabeth.recipe} image={Elizabeth} />
+            <SuspectProfile name='Margaret' item={suspects.Margaret.recipe} image={Margaret} />
+            <SuspectProfile name='Raymond' item={suspects.Raymond.recipe} image={Raymond} />
           </Grid>
           <Grid item xs={12} style={{ paddingTop: '20px' }}>
             {/* The Menu Options */}
