@@ -7,11 +7,15 @@ import marge from '../assets/marge.png';
 import ray from '../assets/ray.png';
 
 //import history for page linking
-import { useHistory } from 'react-router-dom';
+import { useHistory, useLocation } from 'react-router-dom';
 
 //Import css styles
 import '../styles/guesskiller.css';
 import '../styles/buttons.css';
+
+const getURLInt = (name, location) => {
+  return parseInt(new URLSearchParams(location.search).get(name));
+}
 
 //Function formats each suspect's image, name, and dish
 const KillerProfile = props => {
@@ -40,13 +44,15 @@ const GuessKiller = props => {
   const { recipe, suspects } = props;
   const [guess, setGuess] = useState('');
 
+  const step = getURLInt('step', useLocation());
+
   console.log('guess: ' + guess);
 
   const history = useHistory();
 
   {/* Link the go back button to the previous page */}
   const toSteps = () => {
-    history.push('/recipe-steps');
+    history.push(`/recipe-steps?step=${step}`);
   };
 
   {/* Link the submit button to the results pages
