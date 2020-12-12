@@ -1,7 +1,7 @@
 import React from 'react';
-import './styles/app.css';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import Routes, { Default } from './Routes';
+import './styles/app.css';
 
 function App() {
   return (
