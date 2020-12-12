@@ -38,7 +38,7 @@ const RecipeSteps = (props) => {
       console.log(step + 1);
       history.push(`/recipe-steps?step=${step + 1}&guessed=${guessed}`);
     } else {
-
+      history.push('/finit');
     }
   };
 

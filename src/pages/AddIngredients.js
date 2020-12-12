@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Grid } from "@material-ui/core";
-import SearchBar from "material-ui-search-bar";
 
 import "../styles/addingredients.css";
 import "../styles/buttons.css";
@@ -49,7 +48,8 @@ const IngredientCard = (props) => {
 };
 
 const AddIngredients = (props) => {
-  const [selected, setSelected] = useState(new Set(['ice']));
+  const assumedIngredients = ['ice', 'salt', 'sugar'];
+  const [selected, setSelected] = useState(new Set(assumedIngredients));
   const type = getURLStr('type', useLocation());
   const recipes = type === 'drink' ? Recipes.drinks : Recipes.food;
   const history = useHistory();
@@ -86,6 +86,8 @@ const AddIngredients = (props) => {
     if (possibleRecipes.length >= 3) {
       setUpRecipes(possibleRecipes.slice(0, 3));
       history.push('/generate-recipes');
+    } else {
+      console.log('not enough matching recipes');
     }
   }
 
@@ -188,17 +190,30 @@ const AddIngredients = (props) => {
           image={wine}
           onClick={onIngredientClick}
         />
-        <IngredientCard value="mint" image={mint} onClick={onIngredientClick} />
+        <IngredientCard
+          value="mint"
+          image={mint}
+          onClick={onIngredientClick}
+        />
         <IngredientCard value="gin" image={gin} onClick={onIngredientClick} />
         <IngredientCard
           value="ginger"
           image={ginger}
           onClick={onIngredientClick}
         />
-        <IngredientCard value="rye" image={rye} onClick={onIngredientClick} />
+        <IngredientCard
+          value="rye"
+          image={rye}
+          onClick={onIngredientClick}
+        />
         <IngredientCard
           value="tomato"
           image={tomato}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="triple sec"
+          image={alcohol}
           onClick={onIngredientClick}
         />
       </Grid>

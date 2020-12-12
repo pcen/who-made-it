@@ -1,3 +1,18 @@
+.itemBoxOnePerson{
+    align-items: center;
+    margin: 0px auto;
+}
+
+.buttonRedLong{
+    background-color: #812a2a !important;
+    font-family: "Risque" !important;
+    font-size: 25px !important;
+    color: white !important;
+    width: 380px;
+    height: 70px;
+    margin: 20px !important;
+}
+
 .redBackground{
     background-color: #812a2a;
     height: calc(100vh - 70px);
@@ -27,4 +42,10 @@
     font-size: 22px;
     width: 800px;
     margin: 0px auto;
+}
+
+.killerName {
+    font-size: 35px;
+    color: var(--blood-red);
+    background: none;
 }

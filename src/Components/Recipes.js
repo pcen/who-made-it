@@ -1,14 +1,14 @@
 const Recipes = {
   drinks: {
-    // Scotch Tom Collins
-    ScotchTomCollins: {
-      ingredients: ['lemon', 'whisky', 'ice', 'club soda'],
+    TomCollins: {
+      ingredients: ['lemon', 'whisky', 'ice', 'soda water'],
       steps: [
         'combine sugar and 1/3 cup water in a jar',
         'pour in 1.5 shots of whisky',
-        'add 1/2 cup of club soda',
+        'add 1/2 cup of soda water',
         'squeeze in lemon juice'
-      ]
+      ],
+      name: 'Tom Collins',
     },
     CapeCodder: {
       ingredients: ['cranberry juice', 'vodka', 'lime', 'ice'],
@@ -17,7 +17,8 @@ const Recipes = {
         'add 1-2 ice cubes',
         'squeeze in 3/4 ounce lime juice',
         'add 3 ounces of cranberry juice',
-      ]
+      ],
+      name: 'Cape Codder',
     },
     Daiquiri: {
       ingredients: ['rum', 'lime', 'sugar'],
@@ -25,15 +26,17 @@ const Recipes = {
         'step 1',
         'step 2',
         'step 3',
-      ]
+      ],
+      name: 'Daiquiri',
     },
     WhiteWineSprizer: {
-      ingredients: ['white wine', 'club soda', 'lemon'],
+      ingredients: ['white wine', 'soda water', 'lemon'],
       steps: [
-        'add 1/4 cup of club soda to a glass',
+        'add 1/4 cup of soda water to a glass',
         'add 3/4 cup of white wine to the glass',
         'garnish with a lemon rind',
-      ]
+      ],
+      name: 'White Wine Spritzer',
     },
 
     Margarita: {
@@ -44,7 +47,8 @@ const Recipes = {
         'pour one shot of tequila into glass',
         'add 1-2 ice cubes',
         'add a lime wedge'
-      ]
+      ],
+      name: "Margarita",
     },
     Cosmopolitan: {
       ingredients: ['vodka', 'triple sec', 'lime', 'cranberry juice'],
@@ -54,7 +58,8 @@ const Recipes = {
         'add 1 tablespoon of triple sec',
         'add 2 tablespoons of cranberry juice',
         'squeeze in 1/2 ounce of lime juice'
-      ]
+      ],
+      name: 'Cosmopolitan',
     },
     MoscowMule: {
       ingredients: ['lemon', 'scotch', 'ice', 'soda'],
@@ -64,7 +69,8 @@ const Recipes = {
         'add 2-3 ice cubes',
         'stir in 1/2 cup of ginger beer',
         'drop in lime wedge'
-      ]
+      ],
+      name: 'Moscow Mule',
     },
     ClassicMartini: {
       ingredients: ['gin', 'vermouth', 'ice', 'lemon'],
@@ -73,7 +79,8 @@ const Recipes = {
         'add half a shot of vermouth to the glass',
         'add cubed ice and stir for 30 seconds',
         'add a lemon peel to the glass'
-      ]
+      ],
+      name: 'Classic Martini',
     },
     VodkaMartini: {
       ingredients: ['vodka', 'vermouth', 'ice', 'lemon'],
@@ -82,18 +89,20 @@ const Recipes = {
         'add half a shot of vermouth to the glass',
         'add cubed ice and stir for 30 seconds',
         'add a lemon peel to the glass'
-      ]
+      ],
+      name: 'Vodka Martini',
     },
     Mojito: {
-      ingredients: ['mint leaves', 'rum', 'lime', 'club soda'],
+      ingredients: ['mint', 'rum', 'lime', 'soda water'],
       steps: [
         'add 1-2 lime wedges to a glass',
         'add 2 tablespoons of sugar',
         'optional step: add 2-3 ice cubes',
         'add 1 shot of rum',
-        'add 1/2 cup of club soda',
+        'add 1/2 cup of soda water',
         'add 5-10 mint leaves'
-      ]
+      ],
+      name: 'Mojito',
     },
     French75: {
       ingredients: ['gin', 'sugar', 'lemon', 'champagne'],
@@ -102,7 +111,8 @@ const Recipes = {
         'add 1.5 shots of gin to the glass',
         'add 0.5 tablespoon of sugar and 1 tablespoon of water',
         'add 1.5 shots of champagne'
-      ]
+      ],
+      name: 'French 75',
     },
     Gimlet: {
       ingredients: ['gin', 'sugar', 'lime'],
@@ -110,25 +120,28 @@ const Recipes = {
         'add 1.5 shots of gin to a glass',
         'add 0.5 shot of lime juice',
         'add 0.5 tablespoon of sugar and 1 tablespoon of water',
-      ]
+      ],
+      name: 'Gimlet',
     },
     DarkandStormy: {
-      ingredients: ['rum', 'ginger beer'],
+      ingredients: ['rum', 'ginger'],
       steps: [
         'add two shots of ginger beer to a glass',
         'optional: add 0.5 shots of lime juice to glass',
         'add 1.5 shots of rum to glass',
         'add icecubes and stir'
-      ]
+      ],
+      name: 'Dark and Stormy',
     },
     MaiTai: {
-      ingredients: ['rum', 'orange juice', 'sugar', 'triple sec'],
+      ingredients: ['rum', 'orange', 'sugar', 'triple sec'],
       steps: [
         'add 2 shots of rum to a glass',
         'add 0.5 cup of orange juice to the glass',
         'add 1 shot of triple sec to the glass',
         'add 0.5 tabespoon of sugar to the glass'
-      ]
+      ],
+      name: 'Mai Tai',
     },
     Southside: {
       ingredients: ['gin', 'mint', 'lime'],
@@ -136,40 +149,35 @@ const Recipes = {
         'add 1.5 shots of gin to a glass',
         'add 0.5 shot of lime juice',
         'add 1-2 mint leaves',
-      ]
-    },
-    Cosmopolitan: {
-      ingredients: ['vodka', 'triple sec', 'cranberry juice', 'lime'],
-      steps: [
-        'add 1 shot of vodka to glass',
-        'add 0.5 shot of lime juice',
-        'add 0.5 shot of triple sec',
-        'add 0.5 shot of cranberry juice'
-      ]
+      ],
+      name: 'Southside',
     },
     GingerSpritz: {
-      ingredients: ['white wine', 'ginger beer', 'lime'],
+      ingredients: ['white wine', 'ginger', 'lime'],
       steps: [
         'add 3 shots of white win to a glass',
         'add 2 shots of ginger beer to the glass',
         'garnish with half a lime',
-      ]
+      ],
+      name: 'Ginger Spritz',
     },
     Screwdriver: {
-      ingredients: ['orange juice', 'tequila', 'ice'],
+      ingredients: ['orange', 'tequila', 'ice'],
       steps: [
         'add 2-3 ice cubes to a glass',
         'add 1.5 shots of tequila to a glass',
         'add 4 shots of orange juice to the glass',
-      ]
+      ],
+      name: 'Screwdriver',
     },
     OrangeBlossom: {
-      ingredients: ['orange juice', 'gin', 'vermouth'],
+      ingredients: ['orange', 'gin', 'vermouth'],
       steps: [
         'add 1 shot of gin to a glass',
         'add 1 shot of vermouth',
         'add 1 shot of orange juice',
-      ]
+      ],
+      name: 'Orange Blossom',
     },
     BishopCocktail: {
       ingredients: ['rum', 'red wine', 'sugar', 'lime'],
@@ -178,28 +186,23 @@ const Recipes = {
         'add 2 shots of rum to the glass',
         'add 1 shot of red wine',
         'squeeze in half a lime'
-      ]
+      ],
+      name: 'Bishop Cocktail',
     },
     RedWineSpritzer: {
-      ingredients: ['red wine', 'club soda', 'ice', 'mint leaves'],
+      ingredients: ['red wine', 'soda water', 'ice', 'mint'],
       steps: [
         'fill glass 1/2 full of ice',
         'pour wine over ice till 1/2 full',
-        'fill remaining glass with club soda',
+        'fill remaining glass with soda water',
         'garnish with mint leaves'
-      ]
+      ],
+      name: 'Red Wine Spritzer',
     },
-    Screwdriver: {
-      ingredients: ['orange juice', 'tequila', 'ice'],
-      steps: [
-        'add 2-3 ice cubes to a glass',
-        'add 1.5 shots of tequila to a glass',
-        'add 4 shots of orange juice to the glass',
-      ]
-    },
+  },
+  food: {
 
-
-    }
-
-
+  },
 };
+
+export default Recipes;
