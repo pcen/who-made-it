@@ -2,12 +2,45 @@
 
 .story-container {
   display: flex;
-  padding-top: 40px;
+  flex-direction: column;
+  padding-top: 20px;
   justify-content: center;
-  font-size: 16pt;
-  line-height: 22pt;
+  align-items: center;
+  font-size: 18pt;
+  line-height: 20pt;
 }
 
 .story {
-  width: 60%;
+  width: 80%;
+}
+
+.actors-container {
+  display: flex;
+  width: 65%;
+  background-color: var(--white);
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20px;
+  padding: 5px 10px 5px 10px;
+  border-radius: 20px;
+  border: 5px solid var(--blood-red);
+}
+
+.actor-profile {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: center;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+
+.actor-name {
+  font-size: 18pt;
+}
+
+.actor-image {
+  height: 280px;
+  width: auto;
+  padding: 5px, 0px, 10px, 0px;
 }
