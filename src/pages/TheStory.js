@@ -33,13 +33,14 @@ const TheStory = (props) => {
 
   return (
     <div className='story-container'>
-      <br></br><br></br>
       <div className="storyTitle">A Speakeasy Mystery</div>
       <br></br><br></br>
       <div className='story'>{story}</div>
+      <br></br>
       <Button variant='contained' className='buttonBlack' onClick={toSteps}>
         Begin!
       </Button>
+      <br></br>
 
       <div className='actors-container'>
         <ActorProfile name='Elizabeth' image={Elizabeth} item={suspects.Elizabeth.recipe} />

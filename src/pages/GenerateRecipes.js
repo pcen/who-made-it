@@ -33,19 +33,20 @@ const GenerateRecipes = (props) => {
             {`Your ingredients: ${commaAndAndSeparate(recipe.ingredients).toLowerCase()}`}
           </div>
           <img className="drinkImage" src={drink}></img>
-          <br></br>
+          <br></br><br></br>
           <div className="descriptiveText">Without knowing which, you will be making one of the following recipes:</div>
-          <br></br>
+          <br></br><br></br>
           {/* Three potential recipe options */}
           {recipeOptions.map(r => {
             return (<div className="drinkName">{r.name}</div>)
           })}
-          <br></br>
+          <br></br><br></br>
           <div className="descriptiveText">
             The recipe that you will make is the same one that was used to poison a victim. Guessing which recipe you are making will lead you
             to the killer!
             So put your detective hat on and prepare to follow along with one of these delicious recipes to help you solve the mystery!
           </div>
+          <br></br><br></br>
 
           <Button variant="contained" className="buttonRedLong" onClick={toStory}>
             Read about the Mystery
