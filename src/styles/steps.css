@@ -1,3 +1,5 @@
+@import './constants.css';
+
 @font-face {
   font-family: "Risque";
   src: url("../fonts/Risque-Regular.ttf") format("truetype");
@@ -7,105 +9,113 @@
   font-family: "Bubblegum Sans";
   src: url("../fonts/BubblegumSans-Regular.otf") format("opentype");
 }
-  
-  .steps {
-    background-color: #FFFFFF;
-    height: 100vh;
-  }
 
-  .steps h1 {
-    font-family: Bubblegum Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 50px;
-    line-height: 58px;
-    text-align: center;
-    color: #000000;
-    max-width: 70%;
-    margin: 0px auto;
-    padding-top: 0.5em;
-    padding-bottom: 0.5em;
-  }
-
-  .steps h2 {
-    font-size: 35px;
-    line-height: 55px;
-    font-family: Risque;
-    padding: 0px;
-    margin: 0px;
-  }
-
-  .stepsPanel {
-      background-color: #C4C4C4;
-      border-radius: 10px 10px 0px 0px;
-      height: calc(100vh - 200px);
-      width: 100%;
-      margin: 1em;
-  }
-
-  .stepsDetails {
-      text-align: left;
-      padding: 1em;
-      font-size: 24px;
-  }
-
-  .stepsSuspectsMenu {
-      background-color: #FFFFFF;
-      height: calc(100vh - 200px);
-      width: 100%;
-      margin: 1em;
-  }
-
-  .stepNumber {
-    background-color: #812A2A;
-    border-radius: 10px 10px 0px 0px;
-    color: #FFFFFF;
-    height: 55px;
-  }
-
-  .stepsSuspect {
-      width: 33% !important;
-  }
-
-  .stepsSubtitle {
-      width: 100%;
-      height: 55px;
-      padding: 0px;
-  }
-
-  .stepsProgress {
-    font-size: 35px;
-    line-height: 50px;
-    font-family: Risque;
-    padding: 0px;
-    margin: 0px;
-    position: fixed;
-    bottom: 55px;
-  }
-
-  .personNameSmall{
-    font-size: 20px;
-    color: #812a2a;
+.steps {
+  background-color: var(--white);
+  height: 100vh;
 }
 
-.foodNameSmall{
-    font-size: 14px;
+.steps h1 {
+  font-family: Bubblegum Sans;
+  font-weight: normal;
+  font-size: 30px;
+  line-height: 40px;
+  text-align: center;
+  color: var(--black);
+  max-width: 85%;
+  margin: 0px auto;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
 }
 
-.itemImageSmall{
-    height: 200px;
-    width: auto;
+.steps h2 {
+  font-size: 35px;
+  line-height: 55px;
+  font-family: Risque;
+  padding: 0px;
+  margin: 0px;
 }
 
-.itemImageSmallMarge{
-    height: 300px;
-    width: auto;
-    margin: -50px;
+.stepsPanel {
+  background-color: #C4C4C4;
+  border-radius: 10px 10px 0px 0px;
+  height: calc(100vh - 200px);
+  width: 100%;
+  height: 90%;
+  margin: 1em;
+}
+
+.stepsDetails {
+  text-align: left;
+  padding: 1em;
+  font-size: 24px;
+}
+
+.stepsSuspectsMenu {
+  background-color: #FFFFFF;
+  height: calc(100vh - 200px);
+  width: 100%;
+  margin: 1em;
+}
+
+.stepNumber {
+  background-color: #812A2A;
+  border-radius: 10px 10px 0px 0px;
+  color: #FFFFFF;
+  height: 55px;
+}
+
+.stepsSuspect {
+  width: 33% !important;
+}
+
+.stepsSubtitle {
+  width: 100%;
+  height: 55px;
+  padding: 0px;
+}
+
+.stepsProgress {
+  font-size: 35px;
+  line-height: 50px;
+  font-family: Risque;
+  padding: 0px;
+  margin: 0px;
+  position: fixed;
+  bottom: 55px;
+}
+
+.personNameSmall {
+  font-size: 20px;
+  color: #812a2a;
+}
+
+.foodNameSmall {
+  font-size: 14px;
+}
+
+.itemImageSmall {
+  height: 200px;
+  width: auto;
+}
+
+.itemImageSmallMarge {
+  height: 300px;
+  width: auto;
+  margin: -50px;
 }
 
 .buttonGrey{
+<<<<<<< HEAD
+  background-color: #C4C4C4 !important;
+  font-family: "Risque" !important;
+  font-size: 25px !important;
+  color: black !important;
+  width: 350px;
+  height: 50px;
+  margin: 20px 20px 0px 20px !important;
+}
+=======
     background-color: #C4C4C4 !important;
     font-family: "Risque" !important;
     font-size: 25px !important;
@@ -118,3 +128,4 @@
 .white-card{
   border-radius: 20px !important;
 }
+>>>>>>> main
