@@ -17,7 +17,7 @@ const Recipes = {
 
     // Scotch Rickey
     ScotchRickey: {
-      ingredients: ['lemon', 'ice', 'scotch'],
+      ingredients: ['lemon', 'lime', 'ice', 'scotch'],
       steps: [
         'Squeeze juice of half a lime and quarter of a lemon into an ice-fillled highball glass',
         'Pour 1oz scotch',
