@@ -1,4 +1,7 @@
 import React from 'react';
+import "../styles/steps.css";
+
+import { Grid } from '@material-ui/core';
 
 
 //This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
@@ -6,28 +9,46 @@ import React from 'react';
 const RecipeSteps = (props) => {
   return (
     <React.Fragment>
-      {/* The Title */}
-      <div>Follow along with the recipe (minus the poison) to solve the mystery and find out who the killer is</div>
+      <div className="steps">
+        {/* The Title */}
+        <h1>Follow along with the recipe (minus the poison) to solve the mystery and find out who the killer is</h1>
 
-      {/* The Recipe Steps */}
-      {/* Step 1 */}
-      <div>Step 1</div>
-      <div>
-        {/* Ingredients required for step 1 */}
-        <div>Ingredients Needed</div>
-        <ul>
-          <li>1 glass</li>
-          <li>2 - 3 Lumps of Ice</li>
-        </ul>
-        <br></br>
-        {/* Instructions for step 1 */}
-        <div>Find a glass and add the ice</div>
+        <Grid container
+              direction="row"
+        >
+
+          <Grid container item xs={4}>
+            <div className="stepsPanel">
+              {/* The Recipe Steps */}
+              {/* Step 1 */}
+              <Grid item xs={12} className="stepNumber">
+                <div>Step 1</div>
+              </Grid>
+              <div>
+                {/* Ingredients required for step 1 */}
+                <div>Ingredients Needed</div>
+                <ul>
+                  <li>1 glass</li>
+                  <li>2 - 3 Lumps of Ice</li>
+                </ul>
+                <br></br>
+                {/* Instructions for step 1 */}
+                <div>Find a glass and add the ice</div>
+              </div>
+            </div>
+          </Grid>
+          
+          <Grid container item xs={8}>
+              <div className="stepsSuspectsMenu">
+                {/* The Suspects */}
+                Random text so I can see the background color :)           
+                {/* The Menu Options */}
+                Random text so I can see the background color :)
+              </div>
+          </Grid>
+          
+        </Grid>
       </div>
-      
-
-      {/* The Suspects */}
-
-      {/* The Menu Options */}
     </React.Fragment>
   );
 }
