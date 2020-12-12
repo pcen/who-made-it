@@ -58,7 +58,6 @@ const GuessKiller = props => {
       if (Object.keys(guess).length !== 0) {
         guessedAt = Math.max(guess.step, guessedAt);
       }
-      console.log('guessedAt' + guessedAt);
       setGuess({
         suspect: selectedSuspect,
         step: guessedAt,
