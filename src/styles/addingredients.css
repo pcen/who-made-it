@@ -1,33 +1,52 @@
-.background{
-    background-color: #812a2a;
-    height: calc(100vh - 140px);
-    padding: 50px;
+.background {
+  /* background-color: #812a2a; */
+  background-color: #ffffff;
+  height: calc(100vh - 100px);
+  padding: 50px;
 }
 
-.title{
-    font-size: 30px;
-    color: white;
+.title {
+  font-size: 30px;
+  color: white;
+  position: relative;
 }
 
-.searchBar{
-    background-color: white;
-    width: 300px;
-    margin: 0px auto;
-    font-size: 20px;
-    padding: 20px;
-    border-radius: 12px;
+.searchBar {
+  background-color: white;
+  width: 300px;
+  margin: 0px auto;
+  font-size: 20px;
+  padding: 20px;
+  border-radius: 12px;
+  position: relative;
 }
 
-.foodItemBox{
-    border-radius: 12px;
-    background-color: white;
-    padding: 20px;
-    color: black;
-    width: 120px;
-    margin-bottom: 3em;
+.foodItemBox {
+  border-radius: 12px;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  width: 120px;
+  margin-bottom: 3em;
+  position: relative;
+  border: 5px solid rgba(134, 5, 5, 0.877);
 }
 
-.foodItemImage{
-    width: 100px;
-    height: auto;
+.foodItemImage {
+  width: 100px;
+  height: auto;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+    border-radius: 90%;
+  }
+
+  100% {
+    transform: translateY(1000px) rotate(720deg);
+    opacity: 0;
+    border-radius: 90%;
+  }
 }
