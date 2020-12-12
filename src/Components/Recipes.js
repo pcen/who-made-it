@@ -1,4 +1,6 @@
 const Recipes = {
+
+  // Drink Recipes
   drinks: {
     // Scotch Tom Collins
     ScotchTomCollins: {
@@ -37,7 +39,12 @@ const Recipes = {
       ],
       name: 'Whiskey Sour',
     },
-  }
+  },
+
+  // Food Recipes
+  food: {
+
+  },
 };
 
 export default Recipes;

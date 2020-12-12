@@ -22,7 +22,7 @@ const Home = (props) => {
               src={drink}
             ></img>
             <br></br>
-            <Link class="homeOptionCardText" to="/add-ingredients">
+            <Link class="homeOptionCardText" to="/add-ingredients?type=drink">
               Drink
             </Link>
           </Grid>
@@ -32,7 +32,7 @@ const Home = (props) => {
           <Grid item xs={3} className="homeOptionCard">
             <img class="homeOptionCardImage" src={burger}></img>
             <br></br>
-            <Link class="homeOptionCardText" to="/add-ingredients">
+            <Link class="homeOptionCardText" to="/add-ingredients?type=food">
               Food
             </Link>
           </Grid>

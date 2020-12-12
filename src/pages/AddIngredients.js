@@ -3,12 +3,15 @@ import { Grid } from "@material-ui/core";
 import SearchBar from "material-ui-search-bar";
 
 import "../styles/addingredients.css";
+import "../styles/buttons.css";
 import lemon from "../assets/lemon.jpg";
 import alcohol from "../assets/alcohol bottle.png";
 import soda from "../assets/soda.png";
 import sugar from "../assets/sugar.jpg";
-import recipes from "../Components/Recipes.js";
+import Recipes from "../Components/Recipes.js";
 import { Button } from "@material-ui/core";
+import { getURLStr, arrayInSet } from '../logic/utils';
+import { useLocation } from "react-router-dom";
 
 const IngredientCard = props => {
   const { value, image, onClick } = props;
@@ -31,10 +34,10 @@ const IngredientCard = props => {
   );
 }
 
-var ingredientArray = [];
-
 const AddIngredients = (props) => {
   const [selected, setSelected] = useState(new Set());
+  const type = getURLStr('type', useLocation());
+  const recipes = type === 'drink' ? Recipes.drinks : Recipes.food;
 
   const onIngredientClick = (value, adding) => {
     if (adding) {
@@ -46,39 +49,15 @@ const AddIngredients = (props) => {
     console.log(selected);
   };
 
-  var potentialRecipies = [];
+  const onGenerateRecipes = () => {
+    console.log(recipes);
+    Object.keys(recipes).forEach(key => {
+      let ings = recipes[key].ingredients;
+      if (arrayInSet(ings, selected)) {
 
-  const Recipes = {
-    drinks: {
-      // Scotch Tom Collins
-      ScotchTomCollins: {
-        ingredients: ["lemon", "scotch", "ice", "soda"],
-        steps: ["step 1", "step 2", "step 3"],
-        name: "Scotch Tom Colins",
-      },
-      ScotchRickey: {
-        ingredients: ["lemon", "scotch", "ice", "soda", "lime"],
-        steps: ["step 1", "step 2", "step 3"],
-        name: "Scotch Rickey",
-      },
-    },
-  };
-
-  const recipeGenerator = () => {
-    console.log("text");
-
-    for (var i in Recipes.drinks) {
-      var name = Recipes.drinks[i].name;
-      var tmp = Recipes.drinks[i].ingredients;
-
-      if (tmp.every((r) => ingredientArray.includes(r))) {
-        console.log("Found all of", tmp, "in", ingredientArray);
-        potentialRecipies.push(name);
-      } else {
-        console.log("Did not find all of", tmp, "in", ingredientArray);
       }
-    }
-  };
+    })
+  }
 
   return (
     <div className="background">
@@ -116,7 +95,9 @@ const AddIngredients = (props) => {
         <IngredientCard value='Wine' image={alcohol} onClick={onIngredientClick} />
       </Grid>
       <div className="generate">
-        <Button variant="contained" size="large">
+        <Button className='buttonBlackWide' variant="contained" size="large"
+          onClick={onGenerateRecipes}
+        >
           Generate Recipes
         </Button>
       </div>

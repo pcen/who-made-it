@@ -6,4 +6,11 @@ const getURLStr = (name, location) => {
   return new URLSearchParams(location.search).get(name);
 }
 
-export { getURLInt, getURLStr };
+const arrayInSet = (array, set) => {
+  array.forEach(element => {
+    if (!set.has(element)) { return false; }
+  });
+  return true;
+}
+
+export { getURLInt, getURLStr, arrayInSet };
