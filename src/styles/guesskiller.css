@@ -5,11 +5,35 @@
 }
 
 .title{
-    font-size: 30px;
-    color: black;
+    font-size: 50px;
+    color: #812a2a;
 }
 
 .subtitle{
-    font-size: 30px;
+    font-size: 35px;
     color: black;
+}
+
+.itemBox{
+    width: 200px;
+}
+
+.itemImage{
+    height: 300px;
+    width: auto;
+}
+
+.itemImageMarge{
+    height: 400px;
+    width: auto;
+    margin: -50px;
+}
+
+.personName{
+    font-size: 30px;
+    color: #812a2a;
+}
+
+.foodName{
+    font-size: 20px;
 }
