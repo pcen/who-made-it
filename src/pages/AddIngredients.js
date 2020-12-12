@@ -7,10 +7,18 @@ import lemon from "../assets/lemon.jpg";
 import alcohol from "../assets/alcohol bottle.png";
 import soda from "../assets/soda.png";
 import sugar from "../assets/sugar.jpg";
+import whiskey from "../assets/whiskey.png";
+import Sparkling from "../assets/sparkling.png";
+import orange from "../assets/orange.png";
+import tonic from "../assets/tonic.png";
+import honey from "../assets/honey.png";
+import ice from "../assets/ice.png";
+import rum from "../assets/rum.png";
+import tequilla from "../assets/tequilla.png";
 import recipes from "../Components/Recipes.js";
 import { Button } from "@material-ui/core";
 
-const IngredientCard = props => {
+const IngredientCard = (props) => {
   const { value, image, onClick } = props;
   const label = `${value.charAt(0).toUpperCase()}${value.slice(1)}`;
 
@@ -19,19 +27,19 @@ const IngredientCard = props => {
   const handleClick = () => {
     setSelected(!selected);
     onClick(value);
-  }
+  };
 
-  const currentClassName = selected ? 'foodItemBoxSelected' : 'foodItemBox';
+  const currentClassName = selected ? "foodItemBoxSelected" : "foodItemBox";
 
   return (
     <Grid item xs={2}>
       <div className={currentClassName} onClick={handleClick}>
-        <p style={{userSelect: 'none'}}>{label}</p>
+        <p style={{ userSelect: "none" }}>{label}</p>
         <img alt={value} className="foodItemImage" src={image}></img>
       </div>
     </Grid>
   );
-}
+};
 
 var ingredientArray = [];
 
@@ -96,19 +104,71 @@ const AddIngredients = (props) => {
       <br></br>
       <br></br>
       <br></br>
-      <Grid container direction="row" justify="center" alignItems="center">
-        <IngredientCard value='Lemon' image={lemon} onClick={onIngredientClick} />
-        <IngredientCard value='Sugar' image={sugar} onClick={onIngredientClick} />
-        <IngredientCard value='Scotch' image={alcohol} onClick={onIngredientClick} />
-        <IngredientCard value='Soda Water' image={soda} onClick={onIngredientClick} />
-        <IngredientCard value='Ice' image={lemon} onClick={onIngredientClick} />
-        <IngredientCard value='Rum' image={alcohol} onClick={onIngredientClick} />
-        <IngredientCard value='Whiskey' image={alcohol} onClick={onIngredientClick} />
-        <IngredientCard value='Tonic Water' image={soda} onClick={onIngredientClick} />
-        <IngredientCard value='Lime' image={lemon} onClick={onIngredientClick} />
-        <IngredientCard value='Vodka' image={alcohol} onClick={onIngredientClick} />
-        <IngredientCard value='Sparkling Water' image={soda} onClick={onIngredientClick} />
-        <IngredientCard value='Wine' image={alcohol} onClick={onIngredientClick} />
+      <Grid
+        container
+        direction="row"
+        justify="center"
+        alignItems="center"
+        className="ingredients"
+      >
+        <IngredientCard
+          value="Lemon"
+          image={lemon}
+          onClick={onIngredientClick}
+          className="card"
+        />
+
+        <IngredientCard
+          value="Sugar"
+          image={sugar}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Scotch"
+          image={alcohol}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Soda Water"
+          image={soda}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Tequilla"
+          image={tequilla}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard value="Rum" image={rum} onClick={onIngredientClick} />
+        <IngredientCard
+          value="Whiskey"
+          image={whiskey}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Tonic Water"
+          image={tonic}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Honey"
+          image={honey}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Vodka"
+          image={alcohol}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Sparkling Water"
+          image={Sparkling}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Orange"
+          image={orange}
+          onClick={onIngredientClick}
+        />
       </Grid>
       <div className="generate">
         <Button variant="contained" size="large">

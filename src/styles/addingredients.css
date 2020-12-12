@@ -3,12 +3,20 @@
   padding: 50px;
 }
 
+.ingredients {
+  padding-left: 60px;
+}
+
+.ingredients .card {
+  max-height: 100px;
+}
 .ingredientsTitlePage {
   font-size: 50px;
   color: white;
   position: relative;
   padding-top: 0.6em;
   padding-bottom: 0.3em;
+
   margin: 0;
 }
 
@@ -41,6 +49,7 @@
   width: 120px;
   margin-bottom: 3em;
   position: relative;
+  height: 170px;
 }
 
 .foodItemBoxSelected {
@@ -63,8 +72,9 @@
 }
 
 .foodItemImage {
-  width: 100px;
-  height: auto;
+  width: auto;
+  max-width: 90%;
+  height: 100px;
 }
 
 @keyframes animate {
