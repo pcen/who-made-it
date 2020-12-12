@@ -30,10 +30,34 @@
 }
 
 .personName{
-    font-size: 30px;
+    font-size: 35px;
     color: #812a2a;
 }
 
 .foodName{
     font-size: 20px;
+}
+
+@font-face {
+    font-family: "Risque";
+    src: url("../fonts/Risque-Regular.ttf") format("truetype");
+  }
+
+.buttonBlack{
+    background-color: black !important;
+    font-family: "Risque" !important;
+    font-size: 25px !important;
+    color: white !important;
+    width: 180px;
+    height: 70px;
+    margin: 20px !important;
+}
+.buttonRed{
+    background-color: #812a2a !important;
+    font-family: "Risque" !important;
+    font-size: 25px !important;
+    color: white !important;
+    width: 180px;
+    height: 70px;
+    margin: 20px !important;
 }
