@@ -1,3 +1,13 @@
+@font-face {
+  font-family: "Risque";
+  src: url("../fonts/Risque-Regular.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "Bubblegum Sans";
+  src: url("../fonts/BubblegumSans-Regular.otf") format("opentype");
+}
+  
   .steps {
     background-color: #FFFFFF;
     height: 100vh;

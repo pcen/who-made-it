@@ -1,4 +1,5 @@
 import React from "react";
+import {Grid} from '@material-ui/core';
 
 import drink from "../assets/drink.jpg";
 import burger from "../assets/burger.png";
@@ -9,7 +10,7 @@ const Home = (props) => {
     <div className="home">
       <h1>Who made it</h1>
       <h2>What would you like to make today? </h2>
-      <div class="area">
+      {/*<div class="area">
         <ul class="circles">
           <li></li>
           <li></li>
@@ -22,16 +23,22 @@ const Home = (props) => {
           <li></li>
           <li></li>
         </ul>
-      </div>
-      <div className="Card_drink">
-        <img src={drink}></img>
-        <h1>Drink</h1>
-      </div>
+      </div>*/}
 
-      <div className="Card_burger">
-        <img src={burger}></img>
-        <h1>Food</h1>
-      </div>
+      <Grid container 
+            direction="row" 
+            alignItems="center"
+            justify="middle"
+      >
+        <Grid item xs={3} className="homeOptionCard homeOptionCardDrink">
+          <img class="homeOptionCardImage homeOptionCardDrink" src={drink}></img>
+          <div class="homeOptionCardText">Drink</div>
+        </Grid>
+        <Grid item xs={3} className="homeOptionCard">
+          <img class="homeOptionCardImage" src={burger}></img>
+          <div class="homeOptionCardText">Food</div>
+        </Grid>
+      </Grid>
     </div>
   );
 };
