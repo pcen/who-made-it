@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
 import { generateStory } from '../logic/story-generation';
 import { useHistory } from 'react-router-dom';
 
@@ -33,18 +33,27 @@ const TheStory = (props) => {
 
   return (
     <div className='story-container'>
-      <br></br><br></br>
       <div className="storyTitle">A Speakeasy Mystery</div>
       <br></br><br></br>
       <div className='story'>{story}</div>
+      <br></br>
       <Button variant='contained' className='buttonBlack' onClick={toSteps}>
         Begin!
       </Button>
+      <br></br><br></br>
 
-      <div className='actors-container'>
+      <div className="white-card-story">
+        
+          <div className="title">The Suspects</div>
+          <br></br><br></br>
+        {/* Potential Suspects */}
+        <div className='killer-profiles'>
         <ActorProfile name='Elizabeth' image={Elizabeth} item={suspects.Elizabeth.recipe} />
-        <ActorProfile name='Margaret' image={Margaret} item={suspects.Margaret.recipe} />
-        <ActorProfile name='Raymond' image={Raymond} item={suspects.Raymond.recipe} />
+            <ActorProfile name='Margaret' image={Margaret} item={suspects.Margaret.recipe} />
+            <ActorProfile name='Raymond' image={Raymond} item={suspects.Raymond.recipe} />
+        </div>
+        <br></br><br></br>
+
       </div>
     </div>
   );

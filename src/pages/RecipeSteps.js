@@ -89,6 +89,13 @@ const RecipeSteps = (props) => {
           </div>
         </Grid>
         </Grid>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <Button variant='contained' className='buttonBlack' onClick={previousStep}>
+              Prior Step
+            </Button>
+            <Button variant='contained' className='buttonGrey' onClick={nextStep}>
+              {step === recipe.steps.length ? 'Et Fini!' : 'Next Step'}
+            </Button>
         </div>
 
         <div class="white-card-suspects">
@@ -107,15 +114,10 @@ const RecipeSteps = (props) => {
           </Grid>
           <Grid item xs={12}>
             {/* The Menu Options */}
-            <Button variant='contained' className='buttonGrey' onClick={toGuess}>
+            <Button variant='contained' className='buttonRed' onClick={toGuess}>
               {guessed === 'false' ? 'Solved It?' : 'Change Guess'}
             </Button>
-            <Button variant='contained' className='buttonBlack' onClick={previousStep}>
-              Prior Step
-            </Button>
-            <Button variant='contained' className='buttonRed' onClick={nextStep}>
-              {step === recipe.steps.length ? 'Et Fini!' : 'Next Step'}
-            </Button>
+            
           </Grid>
         </Grid>
         </div>

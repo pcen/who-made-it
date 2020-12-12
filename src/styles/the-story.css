@@ -9,24 +9,25 @@
   line-height: 20pt;
   background-color: #812a2a;
   padding: 50px;
-  height: calc(100vh - 100px);
+  height: 100vh;
+
 }
 
 .story {
-  width: 80%;
+  width: 75%;
   color: white;
 }
 
 .actors-container {
-  display: flex;
   width: 65%;
   background-color: var(--white);
-  justify-content: space-between;
   align-items: center;
-  margin-top: 20px;
   padding: 5px 20px 5px 20px;
   border-radius: 20px;
-  border: 5px solid var(--blood-red);
+
+  justify-content: center;
+  margin: 0px auto;
+
 }
 
 .actor-profile {
@@ -51,4 +52,24 @@
 .storyTitle{
   color: white;
   font-size: 50px;
+}
+
+.suspectsTitle{
+  font-size: 35px;
+  line-height: 55px;
+  font-family: Risque;
+  padding-left: 30px;
+  margin: 0px;
+  text-align: center;
+}
+
+.white-card-story{
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 800px;
+  height: 442px;
 }

@@ -11,7 +11,6 @@ const Home = (props) => {
     <React.Fragment>
       <div class="homeBackground"></div>
       <div class="home">
-      <br></br><br></br>
         <h1>WHO MADE IT?</h1>
         <h2>What would you like to make today? </h2><br></br>
 
