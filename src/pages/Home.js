@@ -9,16 +9,10 @@ import "../styles/home.css";
 const Home = (props) => {
   return (
     <div className="home">
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
-      <br></br>
+
       <h1>WHO MADE IT?</h1>
       <h2>What would you like to make today? </h2>
-      <br></br>
-      <br></br>
-      <br></br>
+
       <Grid container direction="row" alignItems="center" justify="center">
         <Grid item xs={3} className="homeOptionCard homeOptionCardDrink">
           <img
@@ -40,8 +34,10 @@ const Home = (props) => {
         </Grid>
       </Grid>
       <br></br><br></br>
-      <p className="instructions">Choose a Drink or Food item that you would like to make today. Based on the ingredients you have, 
-      you will solve a mystery.</p>
+      <p className="instructions">
+        Choose whether you would like to make a delicious Drink or fantastic Food item today.
+        Based on the ingredients you have in your kitchen, you will solve a mystery!
+        </p>
     </div>
   );
 };
