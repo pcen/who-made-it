@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '@material-ui/core';
+import { Button, Grid } from '@material-ui/core';
 import { generateStory } from '../logic/story-generation';
 import { useHistory } from 'react-router-dom';
 
@@ -43,9 +43,18 @@ const TheStory = (props) => {
       <br></br>
 
       <div className='actors-container'>
-        <ActorProfile name='Elizabeth' image={Elizabeth} item={suspects.Elizabeth.recipe} />
-        <ActorProfile name='Margaret' image={Margaret} item={suspects.Margaret.recipe} />
-        <ActorProfile name='Raymond' image={Raymond} item={suspects.Raymond.recipe} />
+        <Grid container direction="row">
+          <Grid item xs={12}>
+            <br></br>
+            <div class="suspectsTitle">The Suspects</div>
+            <br></br>
+          </Grid>
+          <Grid container item xs={12}>
+            <ActorProfile name='Elizabeth' image={Elizabeth} item={suspects.Elizabeth.recipe} />
+            <ActorProfile name='Margaret' image={Margaret} item={suspects.Margaret.recipe} />
+            <ActorProfile name='Raymond' image={Raymond} item={suspects.Raymond.recipe} />
+          </Grid>
+        </Grid>
       </div>
     </div>
   );
