@@ -10,22 +10,22 @@ const GenerateRecipes = (props) => {
     return (
         <React.Fragment>
           <div className="background">
-            <br></br>
-            <br></br>
             <div className="white-card">
                 <div className="title">Generating recipes...</div>
                 <br></br>
-                <div className="selectedIngredients">You selected: lemon, scotch, soda, ice</div>
+                <div className="selectedIngredients">Your ingredients: lemon, scotch, soda, ice</div>
                 <img className="drinkImage" src={drink}></img>
                 <br></br>
-                <div className="descriptiveText">You will be making one of the following recipes:</div>
+                <div className="descriptiveText">WIthout knowing which, you will be making one of the following recipes:</div>
                 <br></br>
+                {/* Three potential recipe options */}
                 <div className="drinkName">Scotch Tom Collins</div>
                 <div className="drinkName">Scotch Rickey</div>
                 <div className="drinkName">Whiskey Sour</div>
                 <br></br>
-                <br></br>
-                <div className="descriptiveText">ADD MORE INSTRUCTIONS!!!!!!!!!!!!!!!!!!!!!!!!</div>
+                <div className="descriptiveText">
+                  Put your detective hat on and prepre to follow along with one of these delicious recipes to help you solve the mystery!
+                </div>
     
                 
     
