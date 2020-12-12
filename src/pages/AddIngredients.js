@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
+import "../styles/addingredients.css";
 import lemon from "../assets/lemon.jpg";
 import alcohol from "../assets/alcohol bottle.png";
 import soda from "../assets/soda.png";
 import sugar from "../assets/sugar.jpg";
-
-import "../styles/addingredients.css";
+import recipes from "../Components/Recipes.js";
 
 var ingredientArray = [];
 
@@ -15,22 +15,58 @@ const AddIngredients = (props) => {
     console.log(ingredientArray);
   };
 
+
+    var potentialRecipies = []
+
+    const Recipes = {
+      drinks: {
+        // Scotch Tom Collins
+        ScotchTomCollins: {
+          ingredients: ['lemon', 'scotch', 'ice', 'soda'],
+          steps: [
+            'step 1',
+            'step 2',
+            'step 3',
+          ],
+          name:'Scotch Tom Colins'
+        },
+        ScotchRickey: {
+          ingredients: ['lemon', 'scotch', 'ice', 'soda', 'lime'],
+          steps: [
+            'step 1',
+            'step 2',
+            'step 3',
+          ],
+          name:'Scotch Rickey'
+        },
+      }
+    }
+
+    const recipeGenerator = () => {
+      console.log("text")
+
+      for(var i in Recipes.drinks)
+      {
+        var name = Recipes.drinks[i].name;
+        var tmp = Recipes.drinks[i].ingredients;
+
+        if(tmp.every(r => ingredientArray.includes(r))){
+          console.log('Found all of', tmp, 'in', ingredientArray);
+          potentialRecipies.push(name)
+        }else{
+          console.log('Did not find all of', tmp, 'in', ingredientArray);
+        }
+      }
+    }
+
+
   return (
     <React.Fragment>
       <div className="background">
         <div className="title">What ingredients do you have?</div>
         <br></br>
         <br></br>
-        <div className="search">
-          <input
-            type="text"
-            className="searchTerm"
-            placeholder="search for an ingredient"
-          ></input>
-          <button type="submit" className="searchButton">
-            Search
-          </button>
-        </div>
+        <div className="searchBar"> Search an ingredient... </div>
         <br></br>
         <br></br>
         <br></br>
@@ -39,7 +75,7 @@ const AddIngredients = (props) => {
           <Grid item xs={2}>
             <div
               className="foodItemBox"
-              onClick={(e) => onIngredientClick("lemon")}
+              onClick={recipeGenerator}
             >
               <p>Lemon</p>
               <img className="foodItemImage" src={lemon}></img>
@@ -57,7 +93,7 @@ const AddIngredients = (props) => {
           <Grid item xs={2}>
             <div
               className="foodItemBox"
-              onClick={(e) => onIngredientClick("lemon")}
+              onClick={(e) => onIngredientClick("scotch")}
             >
               <p>Scotch</p>
               <img className="foodItemImage" src={alcohol}></img>
@@ -66,7 +102,7 @@ const AddIngredients = (props) => {
           <Grid item xs={2}>
             <div
               className="foodItemBox"
-              onClick={(e) => onIngredientClick("lemon")}
+              onClick={(e) => onIngredientClick("soda")}
             >
               <p>Soda</p>
               <img className="foodItemImage" src={soda}></img>
@@ -75,7 +111,7 @@ const AddIngredients = (props) => {
           <Grid item xs={2}>
             <div
               className="foodItemBox"
-              onClick={(e) => onIngredientClick("lemon")}
+              onClick={(e) => onIngredientClick("ice")}
             >
               <p>Lemon</p>
               <img className="foodItemImage" src={lemon}></img>

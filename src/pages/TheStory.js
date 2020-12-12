@@ -26,6 +26,7 @@ const TheStory = (props) => {
   return (
     <div className='story-container'>
       <div className='story'>{story}</div>
+      <br></br>
       <div className='actors-container'>
         <ActorProfile name='Elizabeth' image={Elizabeth} item={'Scotch Tom Collins'} />
         <ActorProfile name='Margaret' image={Margaret} item={'Scotch Rickey'} />
