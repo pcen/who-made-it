@@ -72,10 +72,12 @@ const RecipeSteps = (props) => {
               }
             </ul>
           </div>
-          {/* Progress Tracker */}
+          {/*
+          Progress Tracker
           <div className='stepsProgress'>
             {`Steps Remaining: ${stepsRemaining}`}
           </div>
+          */}
         </Grid>
 
         <Grid container item xs={3}>

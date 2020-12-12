@@ -54,9 +54,7 @@ const GuessKiller = props => {
     history.push(`/recipe-steps?step=${step}&guessed=${guessed}`);
   };
 
-  {/* Link the submit button to the results pages
-      Using some logic to ensure it goes to the proper page out of correct and incorrect
-   */}
+  {/* Link the submit button to go back to the steps with guessed true*/}
   const toResults = () => {
     history.push(`/recipe-steps?step=${step}&guessed=${guessed}`);
   };
