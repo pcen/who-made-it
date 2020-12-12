@@ -4,7 +4,7 @@ const Recipes = {
   drinks: {
     // Scotch Tom Collins
     ScotchTomCollins: {
-      ingredients: ['lemon', 'scotch', 'ice', 'soda'],
+      ingredients: ['lemon', 'scotch', 'ice', 'soda water'],
       steps: [
         'Fill a cocktail shaker with ice',
         'Squeeze 5-6 dashes of lemon juice into the shaker',
@@ -17,7 +17,7 @@ const Recipes = {
 
     // Scotch Rickey
     ScotchRickey: {
-      ingredients: ['lemon', 'lime', 'ice', 'scotch'],
+      ingredients: ['lemon', 'ice', 'scotch'],
       steps: [
         'Squeeze juice of half a lime and quarter of a lemon into an ice-fillled highball glass',
         'Pour 1oz scotch',
@@ -29,7 +29,7 @@ const Recipes = {
 
     // Whiskey Sour
     WhiskeySour: {
-      ingredients: ['lemon', 'scotch', 'ice', 'soda', 'sugar'],
+      ingredients: ['lemon', 'scotch', 'ice', 'soda water', 'sugar'],
       steps: [
         'Fill a cocktail shaker with ice',
         'Pour scotch, juice of half a lemon and half teaspoon of sugar into the shaker',

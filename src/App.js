@@ -8,6 +8,7 @@ import './styles/app.css';
 
 function App() {
   const [recipe, setRecipe] = useState(Recipes.drinks.ScotchTomCollins);
+  const [recipeOptions, setRecipeOptions] = useState([]);
   const [suspects, setSuspects] = useState(Suspects);
 
   return (
@@ -21,6 +22,8 @@ function App() {
                 <route.component
                   recipe={recipe}
                   setRecipe={setRecipe}
+                  recipeOptions={recipeOptions}
+                  setRecipeOptions={setRecipeOptions}
                   suspects={suspects}
                   setSuspects={setSuspects}
                 />

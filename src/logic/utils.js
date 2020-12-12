@@ -7,10 +7,7 @@ const getURLStr = (name, location) => {
 }
 
 const arrayInSet = (array, set) => {
-  array.forEach(element => {
-    if (!set.has(element)) { return false; }
-  });
-  return true;
+  return array.every((e) => { return set.has(e); })
 }
 
 export { getURLInt, getURLStr, arrayInSet };

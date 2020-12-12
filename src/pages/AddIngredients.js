@@ -27,7 +27,7 @@ import tomato from "../assets/tomato.png";
 
 import { Button } from "@material-ui/core";
 import { getURLStr, arrayInSet } from '../logic/utils';
-import { useLocation } from "react-router-dom";
+import { useHistory, useLocation } from "react-router-dom";
 
 const IngredientCard = (props) => {
   const { value, image, onClick } = props;
@@ -37,7 +37,7 @@ const IngredientCard = (props) => {
 
   const handleClick = () => {
     setSelected(!selected);
-    onClick(value);
+    onClick(value.toLowerCase(), !selected);
   };
 
   const currentClassName = selected ? "foodItemBoxSelected" : "foodItemBox";
@@ -53,9 +53,10 @@ const IngredientCard = (props) => {
 };
 
 const AddIngredients = (props) => {
-  const [selected, setSelected] = useState(new Set());
+  const [selected, setSelected] = useState(new Set(['ice']));
   const type = getURLStr('type', useLocation());
   const recipes = type === 'drink' ? Recipes.drinks : Recipes.food;
+  const history = useHistory();
 
   const onIngredientClick = (value, adding) => {
     if (adding) {
@@ -68,13 +69,22 @@ const AddIngredients = (props) => {
   };
 
   const onGenerateRecipes = () => {
-    console.log(recipes);
+    var possibleRecipes = [];
     Object.keys(recipes).forEach(key => {
       let ings = recipes[key].ingredients;
-      if (arrayInSet(ings, selected)) {
-
+      console.log(ings);
+      console.log(selected);
+      if (arrayInSet(ings, selected) === true) {
+        console.log('adding ' + ings + 'to possible recipes');
+        possibleRecipes.push(recipes[key]);
       }
-    })
+    });
+    // Enough possible recipes exist
+    console.log('possible recipes: ' + possibleRecipes);
+    if (possibleRecipes.length >= 3) {
+      props.setRecipeOptions(possibleRecipes.slice(0, 3));
+      history.push('/generate-recipes');
+    }
   }
 
   return (
