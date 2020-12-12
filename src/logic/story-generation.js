@@ -11,7 +11,7 @@ const ActorsBecameSuspects = 'Elizabeth, Margaret, and Raymond became suspects i
 const Victims = ['Mr. Robert Hughes', 'Mrs. Betty Green', 'Mr. Charles Clarke', 'Mrs. Dorothy Jones'];
 const VictimDescriptors = ['esteemed', 'benevolent', 'influential', 'controversial']
 
-const generateStory = (recipe, options) => {
+const generateStory = recipe => {
   let day = randFrom(DayDescriptors).concat(' ', randFrom(Days));
   let victim = randFrom(Victims);
   let victimFirstName = victim.split(' ')[1];

@@ -25,10 +25,13 @@ const SuspectProfile = props => {
 // This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
 // To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
-  const { recipe, suspects } = props;
+  const { recipe, suspects, guess } = props;
   const history = useHistory();
   const step = getURLInt('step', useLocation());
   const guessed = getURLStr('guessed', useLocation());
+
+  console.log('current guess:');
+  console.log(guess);
 
   const nextStep = () => {
     if (step < recipe.steps.length) {
@@ -91,7 +94,7 @@ const RecipeSteps = (props) => {
         <div class="white-card-suspects">
         <Grid container item xs={12}>
           <Grid item xs={12}>
-            
+
             {/* The Suspects */}
             <br></br><br></br>
             <h2 class='stepsSubtitleSuspects'>The Suspects</h2>

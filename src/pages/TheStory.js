@@ -25,7 +25,7 @@ const TheStory = (props) => {
   const { recipe, suspects } = props;
   const history = useHistory();
 
-  let story = generateStory(recipe, ['Scotch Tom Collins', 'Scotch Rickey', 'Whiskey Sour']);
+  let story = generateStory(recipe);
 
   const toSteps = () => {
     history.push('/recipe-steps?step=1&guessed=false');
