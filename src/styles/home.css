@@ -8,15 +8,24 @@
   src: url("../fonts/Risque-Regular.ttf") format("truetype");
 }
 
-.home {
+.homeBackground {
   background: url("../assets/background.png");
+  opacity: 0.9;
+	/* Full height */
+  min-height: 100%; 
+  /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
-  opacity: 0.9;
-  margin: 0px;
+}
+
+.home {
+  position: absolute;
+  top: 0;
+  left: 0;
+	bottom: 0;
+  right: 0;
 }
 
 .home h1 {
