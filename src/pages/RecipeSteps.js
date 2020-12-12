@@ -1,9 +1,9 @@
-import React, { useState } from 'react';
+import React from 'react';
 import '../styles/steps.css';
 import '../styles/buttons.css';
 import { Grid, Button } from '@material-ui/core';
-
-import { useHistory } from 'react-router-dom';
+import { useLocation, useHistory } from 'react-router-dom';
+import { getURLInt } from '../logic/utils';
 
 // Import Suspect Images
 import Elizabeth from '../assets/beth.png';
@@ -26,23 +26,27 @@ const SuspectProfile = props => {
 // To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
   const { recipe, suspects } = props;
-  console.log(recipe);
-
-  const [stepNumber, setStepNumber] = useState(1);
-  const stepsRemaining = recipe.steps.length - stepNumber;
-
-  const nextStep = () => {
-    if (stepNumber < recipe.steps.length) { setStepNumber(stepNumber + 1); }
-  };
-
-  const previousStep = () => {
-    if (stepNumber > 1) { setStepNumber(stepNumber - 1); }
-  };
 
   const history = useHistory();
 
+  const step = getURLInt('step', useLocation());
+  const stepsRemaining = recipe.steps.length - step;
+
+  const nextStep = () => {
+    if (step < recipe.steps.length) {
+      console.log(step + 1);
+      history.push(`/recipe-steps?step=${step + 1}`);
+    }
+  };
+
+  const previousStep = () => {
+    if (step > 1) {
+      history.push(`/recipe-steps?step=${step - 1}`);
+    }
+  };
+
   const toGuess = () => {
-    history.push('/guess-killer');
+    history.push(`/guess-killer?step=${step}`);
   };
 
   return (
@@ -76,11 +80,11 @@ const RecipeSteps = (props) => {
           <div className='stepsPanel'>
             {/* The Recipe Steps */}
             <Grid item xs={12} className='stepNumber'>
-              <h2>{`Step ${stepNumber}`}</h2>
+              <h2>{`Step ${step}`}</h2>
             </Grid>
             <div className='stepsDetails'>
               {/* Instructions */}
-              <div>{recipe.steps[stepNumber - 1]}</div>
+              <div>{recipe.steps[step - 1]}</div>
             </div>
           </div>
         </Grid>
@@ -88,7 +92,7 @@ const RecipeSteps = (props) => {
         <Grid container item xs={6} style={{ height: 'calc(100vh - 200px)', marginTop: '1em', }}>
           <Grid item xs={12}>
             {/* The Suspects */}
-            <h2 class='stepsSubtitle'>Suspects</h2>
+            <h2 class='stepsSubtitle'>The Suspects</h2>
           </Grid>
           <Grid container item xs={12}>
             <SuspectProfile name='Elizabeth' item={suspects.Elizabeth.recipe} image={Elizabeth} />
@@ -101,10 +105,10 @@ const RecipeSteps = (props) => {
               Solved It?
             </Button>
             <Button variant='contained' className='buttonBlack' onClick={previousStep}>
-              Go Back
+              Prior Step
             </Button>
             <Button variant='contained' className='buttonRed' onClick={nextStep}>
-              Next
+              Next Step
             </Button>
           </Grid>
         </Grid>
