@@ -28,12 +28,13 @@ const Home = (props) => {
       <Grid container 
             direction="row" 
             alignItems="center"
-            justify="middle"
+            justify="center"
       >
         <Grid item xs={3} className="homeOptionCard homeOptionCardDrink">
           <img class="homeOptionCardImage homeOptionCardDrink" src={drink}></img>
           <div class="homeOptionCardText">Drink</div>
         </Grid>
+        <Grid item xs={1}></Grid>
         <Grid item xs={3} className="homeOptionCard">
           <img class="homeOptionCardImage" src={burger}></img>
           <div class="homeOptionCardText">Food</div>

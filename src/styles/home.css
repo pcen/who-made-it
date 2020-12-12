@@ -165,8 +165,9 @@
 }
 
 .homeOptionCardImage {
-  width: 264px;
-  height: 350px;
+  width: auto;
+  height: 300px;
+  max-width: 80%;
   border-radius: 40px;
 }
 
