@@ -9,7 +9,12 @@ import "../styles/home.css";
 const Home = (props) => {
   return (
     <div className="home">
-      <h1>Who made it</h1>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <br></br>
+      <h1>WHO MADE IT?</h1>
       <h2>What would you like to make today? </h2>
       <br></br>
       <br></br>

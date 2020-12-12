@@ -25,7 +25,8 @@
   line-height: 105px;
   text-align: center;
   margin-top: 0px;
-  color: #ffffff;
+  /* color: #812a2a; */
+  color: white;
 }
 
 .home h2 {
@@ -35,7 +36,6 @@
   font-size: 50px;
   line-height: 50px;
   text-align: center;
-
   color: #ffffff;
 }
 
@@ -164,7 +164,6 @@
   background: white;
   border-radius: 40px;
   position: relative;
-  border: 10px solid rgba(134, 5, 5, 0.877);
   cursor: pointer;
 }
 
