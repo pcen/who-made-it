@@ -1,0 +1,44 @@
+.steps {
+    background-color: #FFFFFF;
+    height: 100vh;
+  }
+
+  .steps h1 {
+    font-family: Bubblegum Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 50px;
+    line-height: 58px;
+    text-align: center;
+    color: #000000;
+    max-width: 70%;
+    margin: 0px auto;
+    padding-top: 0.5em;
+    padding-bottom: 0.5em;
+  }
+
+  .stepsPanel {
+      background-color: #C4C4C4;
+      border-radius: 10px 10px 0px 0px;
+      height: calc(100vh - 200px);
+      width: 100%;
+      margin: 1em;
+  }
+
+  .stepsSuspectsMenu {
+      background-color: #FFFFFF;
+      height: calc(100vh - 200px);
+      width: 100%;
+      margin: 1em;
+  }
+
+  .stepNumber {
+    background-color: #812A2A;
+    border-radius: 10px;
+    font-size: 35px;
+    color: #FFFFFF;
+    line-height: 55px;
+    height: 55px;
+  }
