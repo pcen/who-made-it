@@ -2,4 +2,8 @@ const getURLInt = (name, location) => {
   return parseInt(new URLSearchParams(location.search).get(name));
 }
 
-export { getURLInt };
+const getURLStr = (name, location) => {
+  return new URLSearchParams(location.search).get(name);
+}
+
+export { getURLInt, getURLStr };
