@@ -26,7 +26,6 @@
   text-align: center;
   margin-top: 0px;
   color: #ffffff;
-  position: relative;
 }
 
 .home h2 {
@@ -36,7 +35,6 @@
   font-size: 50px;
   line-height: 58px;
   text-align: center;
-  position: relative;
 
   color: #ffffff;
 }
@@ -47,7 +45,7 @@
 }
 
 .circles {
-  position: absolute;
+  position: relative;
   top: 0;
   left: 0;
   width: 100%;

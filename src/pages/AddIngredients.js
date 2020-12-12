@@ -21,7 +21,16 @@ const AddIngredients = (props) => {
         <div className="title">What ingredients do you have?</div>
         <br></br>
         <br></br>
-        <div className="searchBar"> Search an ingredient... </div>
+        <div className="search">
+          <input
+            type="text"
+            className="searchTerm"
+            placeholder="search for an ingredient"
+          ></input>
+          <button type="submit" className="searchButton">
+            Search
+          </button>
+        </div>
         <br></br>
         <br></br>
         <br></br>

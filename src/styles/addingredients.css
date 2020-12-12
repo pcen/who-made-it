@@ -50,3 +50,36 @@
     border-radius: 90%;
   }
 }
+
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 87%;
+  border: 3px solid rgba(134, 5, 5, 0.877);
+  border-right: none;
+  padding: 5px;
+  height: 20px;
+  border-radius: 5px 0 0 5px;
+  outline: none;
+  color: #9dbfaf;
+}
+
+.searchTerm:focus {
+  color: rgba(134, 5, 5, 0.877);
+}
+
+.searchButton {
+  width: 100px;
+  height: 36px;
+  border: 1px solid rgba(134, 5, 5, 0.877);
+  background: rgba(134, 5, 5, 0.877);
+  text-align: center;
+  color: #fff;
+  border-radius: 0 5px 5px 0;
+  cursor: pointer;
+  font-size: 20px;
+}
