@@ -21,11 +21,11 @@ const Recipes = {
       name: 'Cape Codder',
     },
     Daiquiri: {
-      ingredients: ['rum', 'lime', 'sugar'],
+      ingredients: ['rum', 'lime', 'sugar', 'ice'],
       steps: [
-        'step 1',
-        'step 2',
-        'step 3',
+        'add all the ingredients into a shaker with ice, and shake until well-chilled',
+        'Strain into a chilled coupe',
+        'garnish with a lime twist',
       ],
       name: 'Daiquiri',
     },
@@ -50,7 +50,7 @@ const Recipes = {
       name: "Margarita",
     },
     Cosmopolitan: {
-      ingredients: ['vodka', 'triple sec', 'lime', 'cranberry juice'],
+      ingredients: ['vodka', 'triple sec', 'lime', 'cranberry juice', 'ice'],
       steps: [
         'add 1 shot of vodka',
         'add ice cubes',
@@ -61,7 +61,7 @@ const Recipes = {
       name: 'Cosmopolitan',
     },
     MoscowMule: {
-      ingredients: ['lemon', 'ginger beer', 'scotch', 'ice', 'soda water'],
+      ingredients: ['vodka', 'ginger beer', 'lime', 'ice'],
       steps: [
         'add 2 shots of vodka to a glass',
         'add 1/2 ounce of lime to glass',
@@ -92,7 +92,7 @@ const Recipes = {
       name: 'Vodka Martini',
     },
     Mojito: {
-      ingredients: ['mint', 'rum', 'lime', 'soda water'],
+      ingredients: ['mint', 'rum', 'lime', 'soda water', 'sugar'],
       steps: [
         'add 1-2 lime wedges to a glass',
         'add 2 tablespoons of sugar',
@@ -123,7 +123,7 @@ const Recipes = {
       name: 'Gimlet',
     },
     DarkandStormy: {
-      ingredients: ['rum', 'ginger beer'],
+      ingredients: ['rum', 'ginger beer', 'ice'],
       steps: [
         'add two shots of ginger beer to a glass',
         'optional: add 0.5 shots of lime juice to glass',
