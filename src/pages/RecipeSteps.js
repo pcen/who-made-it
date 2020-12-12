@@ -1,6 +1,7 @@
 import React from 'react';
 import "../styles/steps.css";
-import { Grid } from '@material-ui/core';
+import '../styles/guesskiller.css';
+import { Grid, Button } from '@material-ui/core';
 
 // Import Suspect Images
 import Elizabeth from '../assets/beth.png';
@@ -38,6 +39,8 @@ const RecipeSteps = (props) => {
                 <br></br>
                 {/* Instructions for step 1 */}
                 <div>Find a glass and add the lump of ice</div>
+                {/* Progress Tracker */}
+                <div className="stepsProgress"># Steps Remaining</div>
               </div>
             </div>
           </Grid>
@@ -49,26 +52,37 @@ const RecipeSteps = (props) => {
             </Grid>
             <Grid container item xs={12}>
               <Grid item xs={4}>
-                Elizabeth
-                 <br></br>
-                 Scotch Tom Collins
+                <img className="itemImageSmall" src={Elizabeth}></img>
+                <br></br>
+                <p class="personNameSmall">Elizabeth</p>
+                <p  class="foodNameSmall">Scotch Tom Collins</p>
               </Grid>
               <Grid item xs={4}>
-                Elizabeth
-                 <br></br>
-                 Scotch Tom Collins
+                <img className="itemImageSmall" src={Margaret}></img>
+                <br></br>
+                <p class="personNameSmall">Margaret</p>
+                <p  class="foodNameSmall">Scotch Rickey</p>
               </Grid>
               <Grid item xs={4}>
-                Elizabeth
-                 <br></br>
-                 Scotch Tom Collins
+                <img className="itemImageSmall" src={Raymond}></img>
+                <br></br>
+                <p class="personNameSmall">Raymond</p>
+                <p  class="foodNameSmall">Whiskey Sour</p>
               </Grid>
             </Grid>
             <Grid item xs={12}>
               {/* The Menu Options */}
-              Random text so I can see the background color :)
+              <Button variant="contained" className="buttonGrey">
+                Solved It?
+              </Button>
+              <Button variant="contained" className="buttonBlack">
+                  Go Back
+              </Button>
+              <Button variant="contained" className="buttonRed">
+                  Next
+              </Button>
             </Grid>
-
+            
           </Grid>
           
         </Grid>

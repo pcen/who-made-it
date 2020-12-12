@@ -50,7 +50,7 @@
 
   .stepNumber {
     background-color: #812A2A;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     color: #FFFFFF;
     height: 55px;
   }
@@ -64,3 +64,43 @@
       height: 55px;
       padding: 0px;
   }
+
+  .stepsProgress {
+    font-size: 35px;
+    line-height: 50px;
+    font-family: Risque;
+    padding: 0px;
+    margin: 0px;
+    position: fixed;
+    bottom: 55px;
+  }
+
+  .personNameSmall{
+    font-size: 20px;
+    color: #812a2a;
+}
+
+.foodNameSmall{
+    font-size: 14px;
+}
+
+.itemImageSmall{
+    height: 200px;
+    width: auto;
+}
+
+.itemImageSmallMarge{
+    height: 300px;
+    width: auto;
+    margin: -50px;
+}
+
+.buttonGrey{
+    background-color: #C4C4C4 !important;
+    font-family: "Risque" !important;
+    font-size: 25px !important;
+    color: black !important;
+    width: 350px;
+    height: 70px;
+    margin: 20px !important;
+}
