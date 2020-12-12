@@ -7,18 +7,25 @@
   height: 100vh;
   opacity: 0.9;
 }
+@font-face {
+  font-family: "Bubblegum Sans";
+  src: url("../fonts/BubblegumSans-Regular.otf") format("opentype");
+}
 .home h1 {
-  font-family: Bubblegum Sans;
-  font-style: normal;
-  font-weight: normal;
+  font-family: "Bubblegum Sans";
   font-size: 90px;
   line-height: 105px;
   text-align: center;
   margin-top: 0px;
   color: #ffffff;
 }
+
+@font-face {
+  font-family: "Risque";
+  src: url("../fonts/Risque-Regular.ttf") format("truetype");
+}
 .home h2 {
-  font-family: Risque;
+  font-family: "Risque";
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
@@ -55,7 +62,7 @@
   left: 40px;
   top: 320px;
 
-  font-family: Risque;
+  font-family: "Risque";
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
@@ -91,7 +98,7 @@
   left: 15%;
   top: 75%;
 
-  font-family: Risque;
+  font-family: "Risque";
   font-style: normal;
   font-weight: normal;
   font-size: 50px;
