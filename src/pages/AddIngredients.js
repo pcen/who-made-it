@@ -17,8 +17,8 @@ const IngredientCard = props => {
   const [selected, setSelected] = useState(false);
 
   const handleClick = () => {
+    onClick(value, !selected);
     setSelected(!selected);
-    onClick(value);
   }
 
   const currentClassName = selected ? 'foodItemBoxSelected' : 'foodItemBox';
@@ -36,9 +36,16 @@ const IngredientCard = props => {
 var ingredientArray = [];
 
 const AddIngredients = (props) => {
-  const onIngredientClick = (prop) => {
-    console.log(ingredientArray.push(prop));
-    console.log(ingredientArray);
+  const [selected, setSelected] = useState(new Set());
+
+  const onIngredientClick = (value, adding) => {
+    if (adding) {
+      selected.add(value);
+    } else {
+      selected.delete(value);
+    }
+
+    console.log(selected);
   };
 
   var potentialRecipies = [];
