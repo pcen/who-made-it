@@ -7,8 +7,6 @@ const CorrectGuess = (props) => {
   return (
     <React.Fragment>
       <div className="background">
-        <br></br>
-        <br></br>
         <div className="white-card">
             <div className="title">Great job! You'd make a good detective!</div>
             <br></br>

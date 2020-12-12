@@ -8,6 +8,8 @@
 
 .descriptiveText{
     font-size: 25px;
+    max-width: 60%;
+    margin: 0px auto;
 }
 
 .drinkImage{
