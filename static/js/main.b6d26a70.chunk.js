@@ -1,2 +1,0 @@
-(this["webpackJsonpwho-made-it"]=this["webpackJsonpwho-made-it"]||[]).push([[0],{10:function(e,t,n){},11:function(e,t,n){"use strict";n.r(t);var c=n(0),i=n(1),o=n.n(i),r=n(3),s=n.n(r);n(9);var d=function(){return Object(c.jsx)("div",{className:"App",children:Object(c.jsx)("div",{children:"Who Made It?"})})};n(10);s.a.render(Object(c.jsx)(o.a.StrictMode,{children:Object(c.jsx)(d,{})}),document.getElementById("root"))},9:function(e,t,n){}},[[11,1,2]]]);
-//# sourceMappingURL=main.b6d26a70.chunk.js.map
