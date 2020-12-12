@@ -20,9 +20,14 @@ const CorrectGuess = (props) => {
               <p class="foodName">Scotch Rickey</p>
             </div>
 
+            <div className="storyConclusion">The esteemed Mr. Robert Hughes once had a secret affair with none other than
+            Margaret. After a brutal separation, Margaret was quick to get her revenge. She added a drop of poison
+            to her Scotch Tom Collins and served it to Mr. Hughes on the night of the murder. She skipped town, 
+            thinking she had escaped. Luckily, an esteemed detective such as yourself rose to the challenge of solving 
+            this mystery!</div>
 
             <Button variant="contained" className="buttonRedLong">
-              Continue to the Recipe
+              Go to Home
             </Button>
 
         </div>
