@@ -1,0 +1,33 @@
+.background{
+    background-color: #812a2a;
+    height: calc(100vh - 140px);
+    padding: 50px;
+}
+
+.title{
+    font-size: 30px;
+    color: white;
+}
+
+.searchBar{
+    background-color: white;
+    width: 300px;
+    margin: 0px auto;
+    font-size: 20px;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+.itemBox{
+    border-radius: 12px;
+    background-color: white;
+    padding: 20px;
+    color: black;
+    width: 120px;
+    margin-bottom: 3em;
+}
+
+.itemImage{
+    width: 100px;
+    height: auto;
+}
