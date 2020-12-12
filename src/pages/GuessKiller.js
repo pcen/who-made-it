@@ -4,6 +4,8 @@ import beth from '../assets/beth.png';
 import marge from '../assets/marge.png';
 import ray from '../assets/ray.png';
 
+import { useHistory } from 'react-router-dom';
+
 import '../styles/guesskiller.css';
 import '../styles/buttons.css';
 
@@ -34,6 +36,12 @@ const GuessKiller = props => {
 
   console.log('guess: ' + guess);
 
+  const history = useHistory();
+
+  const toSteps = () => {
+    history.push('/recipe-steps');
+  };
+
   return (
     <div className="guess-killer-container">
       <div className="white-card">
@@ -53,7 +61,7 @@ const GuessKiller = props => {
         <br></br><br></br>
 
         <div className='guess-killer-buttons'>
-          <Button variant="contained" className="buttonBlack">
+          <Button variant="contained" className="buttonBlack" onClick={toSteps}>
             Go Back
           </Button>
           <Button variant="contained" className="buttonRed">

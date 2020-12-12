@@ -3,6 +3,8 @@ import '../styles/steps.css';
 import '../styles/buttons.css';
 import { Grid, Button } from '@material-ui/core';
 
+import { useHistory } from 'react-router-dom';
+
 // Import Suspect Images
 import Elizabeth from '../assets/beth.png';
 import Margaret from '../assets/marge.png';
@@ -35,6 +37,12 @@ const RecipeSteps = (props) => {
 
   const previousStep = () => {
     if (stepNumber > 1) { setStepNumber(stepNumber - 1); }
+  };
+
+  const history = useHistory();
+
+  const toGuess = () => {
+    history.push('/guess-killer');
   };
 
   return (
@@ -89,7 +97,7 @@ const RecipeSteps = (props) => {
           </Grid>
           <Grid item xs={12} style={{ paddingTop: '20px' }}>
             {/* The Menu Options */}
-            <Button variant='contained' className='buttonGrey' onClick={() => { }}>
+            <Button variant='contained' className='buttonGrey' onClick={toGuess}>
               Solved It?
             </Button>
             <Button variant='contained' className='buttonBlack' onClick={previousStep}>

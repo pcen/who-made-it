@@ -8,8 +8,6 @@ const IncorrectGuess = (props) => {
   return (
     <React.Fragment>
       <div className="background">
-        <br></br>
-        <br></br>
         <div className="white-card">
             <div className="title">So close! The killer was Margaret</div>
             <br></br>

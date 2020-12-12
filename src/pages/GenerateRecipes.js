@@ -3,9 +3,17 @@ import Recipes from '../Components/Recipes';
 import { Button } from "@material-ui/core";
 import drink from '../assets/drink2.png';
 
+import { useHistory } from 'react-router-dom';
+
 import '../styles/generaterecipes.css';
 
 const GenerateRecipes = (props) => {
+
+  const history = useHistory();
+
+  const toStory = () => {
+    history.push('/story');
+  };
   
     return (
         <React.Fragment>
@@ -29,7 +37,7 @@ const GenerateRecipes = (props) => {
     
                 
     
-                <Button variant="contained" className="buttonRedLong">
+                <Button variant="contained" className="buttonRedLong" onClick={toStory}>
                   Continue to the Mystery
                 </Button>
     
