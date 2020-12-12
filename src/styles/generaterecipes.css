@@ -1,0 +1,16 @@
+.drinkName{
+    font-size: 40px;
+}
+
+.selectedIngredients{
+    font-size: 30px;
+}
+
+.descriptiveText{
+    font-size: 25px;
+}
+
+.drinkImage{
+    height: 400px;
+    width: auto;
+}

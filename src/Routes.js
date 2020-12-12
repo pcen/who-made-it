@@ -5,7 +5,7 @@ import Home from './pages/Home';
 import TheStory from './pages/TheStory';
 import CorrectGuess from './pages/CorrectGuess';
 import IncorrectGuess from './pages/IncorrectGuess';
-import IncorrectGuess from './pages/GenerateRecipes';
+import GenerateRecipes from './pages/GenerateRecipes';
 
 const Routes = [
   {
