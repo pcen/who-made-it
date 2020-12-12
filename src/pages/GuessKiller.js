@@ -69,6 +69,7 @@ const GuessKiller = props => {
 
   return (
     <div className="guess-killer-container">
+      <br></br><br></br><br></br><br></br><br></br>
       <div className="white-card">
         <div>
           <div className="title">Select the Killer</div>
