@@ -1,4 +1,5 @@
 import AddIngredients from './pages/AddIngredients';
+import RecipeSteps from './pages/RecipeSteps';
 import Home from './pages/Home';
 import TheStory from './pages/TheStory';
 
@@ -10,6 +11,10 @@ const Routes = [
   {
     path: '/story',
     component: TheStory,
+  },
+  {
+    path: '/recipe-steps',
+    component: RecipeSteps,
   },
 ];
 
