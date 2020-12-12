@@ -51,17 +51,19 @@ const RecipeSteps = (props) => {
 
   return (
     <div className='steps'>
+      <br></br><br></br>
       {/* The Title */}
-      <h1>Follow along with the recipe (minus the poison) to solve the mystery and find out who the killer is</h1>
-
+      <h1>Follow the recipe (without poison) to find out which drink you're making and solve the mystery</h1>
+      <br></br>
       <Grid container direction='row'>
-
-        <Grid container item xs={3}>
+      <div class="white-card-row1">
+      <Grid container direction='row'>
+        <Grid item xs={6}>
           <div className='ingredientsContainer'>
             {/* The Ingredients List */}
-            <Grid item xs={12} className='stepNumber'>
+            {/* <Grid className='stepNumber'> */}
               <h2>{`Ingredients`}</h2>
-            </Grid>
+            {/* </Grid> */}
             <ul className='ingredientsList'>
               {
                 recipe.ingredients.map(ingredient => {
@@ -71,31 +73,36 @@ const RecipeSteps = (props) => {
             </ul>
           </div>
         </Grid>
-
-        <Grid container item xs={3}>
+        <Grid item xs={6}>
           <div className='stepsPanel'>
             {/* The Recipe Steps */}
-            <Grid item xs={12} className='stepNumber'>
+            {/* <Grid className='stepNumber'> */}
               <h2>{`Step ${step}`}</h2>
-            </Grid>
+            {/* </Grid> */}
             <div className='stepsDetails'>
               {/* Instructions */}
               <div>{recipe.steps[step - 1]}</div>
             </div>
           </div>
         </Grid>
+        </Grid>
+        </div>
 
-        <Grid container item xs={6} style={{ height: 'calc(100vh - 200px)', marginTop: '1em', }}>
+        <div class="white-card-suspects">
+        <Grid container item xs={12}>
           <Grid item xs={12}>
+            
             {/* The Suspects */}
-            <h2 class='stepsSubtitle'>The Suspects</h2>
+            <br></br><br></br>
+            <h2 class='stepsSubtitleSuspects'>The Suspects</h2>
+            <br></br>
           </Grid>
           <Grid container item xs={12}>
             <SuspectProfile name='Elizabeth' item={suspects.Elizabeth.recipe} image={Elizabeth} />
             <SuspectProfile name='Margaret' item={suspects.Margaret.recipe} image={Margaret} />
             <SuspectProfile name='Raymond' item={suspects.Raymond.recipe} image={Raymond} />
           </Grid>
-          <Grid item xs={12} style={{ paddingTop: '20px' }}>
+          <Grid item xs={12}>
             {/* The Menu Options */}
             <Button variant='contained' className='buttonGrey' onClick={toGuess}>
               {guessed === 'false' ? 'Solved It?' : 'Change Guess'}
@@ -108,6 +115,7 @@ const RecipeSteps = (props) => {
             </Button>
           </Grid>
         </Grid>
+        </div>
       </Grid>
     </div>
   );
