@@ -1,11 +1,11 @@
 import React from "react";
 import { Grid } from "@material-ui/core";
-import "../styles/addingredients.css";
 import lemon from "../assets/lemon.jpg";
 import alcohol from "../assets/alcohol bottle.png";
 import soda from "../assets/soda.png";
 import sugar from "../assets/sugar.jpg";
-import ingredientsJson from "../Components/Data/data.json";
+
+import "../styles/addingredients.css";
 
 var ingredientArray = [];
 
