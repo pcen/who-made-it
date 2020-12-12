@@ -20,7 +20,7 @@ const ActorProfile = props => {
 }
 
 const TheStory = (props) => {
-  const { recipe, options } = props;
+  const { recipe, suspects } = props;
   let story = generateStory(Recipes.drinks.ScotchTomCollins, ['Scotch Tom Collins', 'Scotch Rickey', 'Whiskey Sour']);
 
   return (
@@ -30,9 +30,9 @@ const TheStory = (props) => {
       <div className='story'>{story}</div>
       <br></br>
       <div className='actors-container'>
-        <ActorProfile name='Elizabeth' image={Elizabeth} item={'Scotch Tom Collins'} />
-        <ActorProfile name='Margaret' image={Margaret} item={'Scotch Rickey'} />
-        <ActorProfile name='Raymond' image={Raymond} item={'Whiskey Sour'} />
+        <ActorProfile name='Elizabeth' image={Elizabeth} item={suspects.Elizabeth.recipe} />
+        <ActorProfile name='Margaret' image={Margaret} item={suspects.Margaret.recipe} />
+        <ActorProfile name='Raymond' image={Raymond} item={suspects.Raymond.recipe} />
       </div>
     </div>
   );

@@ -29,6 +29,7 @@ const KillerProfile = props => {
 }
 
 const GuessKiller = props => {
+  const { recipe, suspects } = props;
   const [guess, setGuess] = useState('');
 
   console.log('guess: ' + guess);
@@ -36,29 +37,29 @@ const GuessKiller = props => {
   return (
     <div className="guess-killer-container">
       <div className="white-card">
-      <div>
-        <div className="title">Select the Killer</div>
+        <div>
+          <div className="title">Select the Killer</div>
+          <br></br>
+          <div className="subtitle">Be careful because you only get one try!</div>
+        </div>
         <br></br>
-        <div className="subtitle">Be careful because you only get one try!</div>
-      </div>
-      <br></br>
-      <br></br>
+        <br></br>
 
-      <div className='killer-profiles'>
-        <KillerProfile image={beth} name='Elizabeth' item='Scotch Tom Collins' onSelect={setGuess} selected={guess} />
-        <KillerProfile image={marge} name='Margaret' item='Scotch Rickey' onSelect={setGuess} selected={guess} />
-        <KillerProfile image={ray} name='Raymond' item='Whiskey Sour' onSelect={setGuess} selected={guess} />
-      </div>
-      <br></br><br></br>
+        <div className='killer-profiles'>
+          <KillerProfile image={beth} name='Elizabeth' item={suspects.Elizabeth.recipe} onSelect={setGuess} selected={guess} />
+          <KillerProfile image={marge} name='Margaret' item={suspects.Margaret.recipe} onSelect={setGuess} selected={guess} />
+          <KillerProfile image={ray} name='Raymond' item={suspects.Raymond.recipe} onSelect={setGuess} selected={guess} />
+        </div>
+        <br></br><br></br>
 
-      <div className='guess-killer-buttons'>
-        <Button variant="contained" className="buttonBlack">
-          Go Back
+        <div className='guess-killer-buttons'>
+          <Button variant="contained" className="buttonBlack">
+            Go Back
           </Button>
-        <Button variant="contained" className="buttonRed">
-          Submit
+          <Button variant="contained" className="buttonRed">
+            Submit
           </Button>
-      </div>
+        </div>
       </div>
     </div>
   );
