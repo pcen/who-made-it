@@ -42,6 +42,15 @@ const GuessKiller = props => {
     history.push('/recipe-steps');
   };
 
+  const toResults = () => {
+    if(guess==='Margaret'){
+      history.push('/correct-guess');
+    }
+    else{
+      history.push('incorrect-guess');
+    }
+  };
+
   return (
     <div className="guess-killer-container">
       <div className="white-card">
@@ -64,7 +73,7 @@ const GuessKiller = props => {
           <Button variant="contained" className="buttonBlack" onClick={toSteps}>
             Go Back
           </Button>
-          <Button variant="contained" className="buttonRed">
+          <Button variant="contained" className="buttonRed" onClick={toResults}>
             Submit
           </Button>
         </div>
