@@ -5,6 +5,7 @@ import Home from './pages/Home';
 import TheStory from './pages/TheStory';
 import CorrectGuess from './pages/CorrectGuess';
 import IncorrectGuess from './pages/IncorrectGuess';
+import IncorrectGuess from './pages/GenerateRecipes';
 
 const Routes = [
   {
@@ -30,6 +31,10 @@ const Routes = [
   {
     path: '/incorrect-guess',
     component: IncorrectGuess,
+  },
+  {
+    path: '/generate-recipes',
+    component: GenerateRecipes,
   },
 ];
 
