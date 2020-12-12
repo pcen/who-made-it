@@ -1,5 +1,5 @@
 import AddIngredients from './pages/AddIngredients';
-import RecipeSteps from '.pages/RecipeSteps';
+import RecipeSteps from './pages/RecipeSteps';
 import Home from './pages/Home';
 
 const Routes = [
