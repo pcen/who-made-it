@@ -52,3 +52,12 @@
   color: white;
   font-size: 50px;
 }
+
+.suspectsTitle{
+  font-size: 35px;
+  line-height: 55px;
+  font-family: Risque;
+  padding-left: 30px;
+  margin: 0px;
+  text-align: center;
+}
