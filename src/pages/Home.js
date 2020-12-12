@@ -1,8 +1,8 @@
 import React from "react";
 
-import drink from "../drink.jpg";
-import burger from "../burger.png";
-import background from "../background.png";
+import drink from "../assets/drink.jpg";
+import burger from "../assets/burger.png";
+import background from "../assets/background.png";
 import "../styles/home.css";
 const Home = (props) => {
   return (
