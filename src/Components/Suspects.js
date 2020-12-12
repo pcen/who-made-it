@@ -2,10 +2,10 @@ import Recipes from './Recipes';
 
 const Suspects = {
   Elizabeth: {
-    recipe: Recipes.drinks.ScotchTomCollins.name,
+    recipe: Recipes.drinks.ScotchRickey.name,
   },
   Margaret: {
-    recipe: Recipes.drinks.ScotchRickey.name,
+    recipe: Recipes.drinks.ScotchTomCollins.name,
   },
   Raymond: {
     recipe: Recipes.drinks.WhiskeySour.name,

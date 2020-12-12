@@ -11,7 +11,7 @@ const IncorrectGuess = (props) => {
         <div className="white-card">
             <div className="title">So close! The killer was Margaret</div>
             <br></br>
-            <div className="subtitle">Check back soon to solve another crime</div>
+            <div className="subtitle">Margaret got away with the murder</div>
             <br></br>
             <br></br>
 
@@ -21,8 +21,13 @@ const IncorrectGuess = (props) => {
               <p class="foodName">Scotch Rickey</p>
             </div>
 
+            <div className="storyConclusion">The esteemed Mr. Robert Hughes once had a secret affair with none other than
+            Margaret. After a brutal separation, Margaret was quick to get her revenge. She added a drop of poison
+            to her Scotch Tom Collins and served it to Mr. Hughes on the night of the murder. She skipped town and escaped!
+            Click play again to solve another mystery. Better luck next time!</div>
+
             <Button variant="contained" className="buttonRedLong">
-              Continue the Recipe
+              Play Again
             </Button>
         </div>
       </div>
