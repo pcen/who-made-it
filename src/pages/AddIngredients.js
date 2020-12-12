@@ -3,6 +3,7 @@ import { Grid } from "@material-ui/core";
 import SearchBar from "material-ui-search-bar";
 
 import "../styles/addingredients.css";
+import wine from "../assets/wine.jpg";
 import lemon from "../assets/lemon.jpg";
 import alcohol from "../assets/alcohol bottle.png";
 import soda from "../assets/soda.png";
@@ -132,6 +133,11 @@ const AddIngredients = (props) => {
           onClick={onIngredientClick}
         />
         <IngredientCard
+          value="Lime"
+          image={lemon}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
           value="Tequilla"
           image={tequilla}
           onClick={onIngredientClick}
@@ -145,6 +151,11 @@ const AddIngredients = (props) => {
         <IngredientCard
           value="Tonic Water"
           image={tonic}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="Red Wine"
+          image={wine}
           onClick={onIngredientClick}
         />
         <IngredientCard
@@ -170,6 +181,11 @@ const AddIngredients = (props) => {
         <IngredientCard
           value="bourbon"
           image={bourbon}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="White Wine"
+          image={wine}
           onClick={onIngredientClick}
         />
         <IngredientCard value="mint" image={mint} onClick={onIngredientClick} />
