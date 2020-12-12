@@ -15,6 +15,7 @@ const RecipeSteps = (props) => {
 
   return (
     <React.Fragment>
+      <div className="background">
       <div className="steps">
         {/* The Title */}
         <h1>Follow along with the recipe (minus the poison) to solve the mystery and find out who the killer is</h1>
@@ -47,6 +48,8 @@ const RecipeSteps = (props) => {
           </Grid>
 
           <Grid container item xs={8} style={{height: 'calc(100vh - 200px)', marginTop: '1em',}}>
+          <div className="white-card">  
+
             <Grid item xs={12}>
               {/* The Suspects */}
               <h2 class="stepsSubtitle">Suspects</h2>
@@ -83,10 +86,12 @@ const RecipeSteps = (props) => {
                   Next
               </Button>
             </Grid>
+            </div>
 
           </Grid>
 
         </Grid>
+      </div>
       </div>
     </React.Fragment>
   );

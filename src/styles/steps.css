@@ -114,3 +114,7 @@
     height: 70px;
     margin: 20px !important;
 }
+
+.white-card{
+  border-radius: 20px !important;
+}
