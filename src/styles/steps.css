@@ -50,7 +50,7 @@
 
   .stepNumber {
     background-color: #812A2A;
-    border-radius: 10px;
+    border-radius: 10px 10px 0px 0px;
     color: #FFFFFF;
     height: 55px;
   }
@@ -93,4 +93,14 @@
     height: 300px;
     width: auto;
     margin: -50px;
+}
+
+.buttonGrey{
+    background-color: #C4C4C4 !important;
+    font-family: "Risque" !important;
+    font-size: 25px !important;
+    color: black !important;
+    width: 350px;
+    height: 70px;
+    margin: 20px !important;
 }

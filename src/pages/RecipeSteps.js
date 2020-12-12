@@ -1,7 +1,7 @@
 import React from 'react';
 import "../styles/steps.css";
 import '../styles/guesskiller.css';
-import { Grid } from '@material-ui/core';
+import { Grid, Button } from '@material-ui/core';
 
 // Import Suspect Images
 import Elizabeth from '../assets/beth.png';
@@ -58,7 +58,7 @@ const RecipeSteps = (props) => {
                 <p  class="foodNameSmall">Scotch Tom Collins</p>
               </Grid>
               <Grid item xs={4}>
-                <img className="itemImageSmallMarge" src={Margaret}></img>
+                <img className="itemImageSmall" src={Margaret}></img>
                 <br></br>
                 <p class="personNameSmall">Margaret</p>
                 <p  class="foodNameSmall">Scotch Rickey</p>
@@ -72,9 +72,17 @@ const RecipeSteps = (props) => {
             </Grid>
             <Grid item xs={12}>
               {/* The Menu Options */}
-              Buttons Will Go Here
+              <Button variant="contained" className="buttonGrey">
+                Solved It?
+              </Button>
+              <Button variant="contained" className="buttonBlack">
+                  Go Back
+              </Button>
+              <Button variant="contained" className="buttonRed">
+                  Next
+              </Button>
             </Grid>
-
+            
           </Grid>
           
         </Grid>
