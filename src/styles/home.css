@@ -1,4 +1,4 @@
-.Home h1 {
+.home h1 {
   font-family: Bubblegum Sans;
   font-style: normal;
   font-weight: normal;
@@ -8,7 +8,7 @@
 
   color: #ffffff;
 }
-.Home h2 {
+.home h2 {
   font-family: Risque;
   font-style: normal;
   font-weight: normal;
@@ -19,7 +19,7 @@
   color: #ffffff;
 }
 
-.Home .Card_drink {
+.home .Card_drink {
   position: absolute;
   width: 300px;
   height: 420px;
@@ -30,7 +30,7 @@
   border-radius: 40px;
 }
 
-.Home .Card_drink img {
+.home .Card_drink img {
   position: absolute;
   width: 264px;
   height: 350px;
@@ -39,7 +39,7 @@
   border-radius: 40px;
 }
 
-.Home .Card_drink h1 {
+.home .Card_drink h1 {
   position: absolute;
   width: 223px;
   height: 63px;
@@ -56,7 +56,7 @@
   color: #2b1618;
 }
 
-.Home .Card_burger {
+.home .Card_burger {
   position: absolute;
   width: 300px;
   height: 420px;
@@ -66,7 +66,7 @@
   background: #ffffff;
   border-radius: 40px;
 }
-.Home .Card_burger img {
+.home .Card_burger img {
   position: absolute;
   width: 250px;
   height: 320px;
@@ -75,7 +75,7 @@
   border-radius: 40px;
 }
 
-.Home .Card_burger h1 {
+.home .Card_burger h1 {
   position: absolute;
   width: 223px;
   height: 63px;
