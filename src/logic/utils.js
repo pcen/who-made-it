@@ -20,7 +20,7 @@ const randFrom = list => {
 }
 
 const commaAndAndSeparate = a => {
-  return a.join(', ').replace(/,(?!.*,)/gmi, ' and');
+  return a.join(', ').replace(/,(?!.*,)/gmi, ', and');
 }
 
 export { getURLInt, getURLStr, arrayInSet, randInt, randFrom, commaAndAndSeparate };

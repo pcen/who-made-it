@@ -2,6 +2,7 @@ import React from 'react';
 import Recipes from '../Components/Recipes';
 import { Button } from "@material-ui/core";
 import drink from '../assets/drink2.png';
+import { commaAndAndSeparate } from '../logic/utils';
 
 import { useHistory } from 'react-router-dom';
 
@@ -29,7 +30,9 @@ const GenerateRecipes = (props) => {
         <div className="white-card">
           <div className="title">Generating recipes...</div>
           <br></br>
-          <div className="selectedIngredients">Your ingredients: lemon, scotch, soda, ice</div>
+          <div className="selectedIngredients">
+            {`Your ingredients: ${commaAndAndSeparate(recipe.ingredients).toLowerCase()}`}
+          </div>
           <img className="drinkImage" src={drink}></img>
           <br></br>
           <div className="descriptiveText">Without knowing which, you will be making one of the following recipes:</div>
