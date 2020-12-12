@@ -9,13 +9,11 @@ import ray from '../assets/ray.png';
 //import history for page linking
 import { useHistory, useLocation } from 'react-router-dom';
 
+import { getURLInt } from '../logic/utils';
+
 //Import css styles
 import '../styles/guesskiller.css';
 import '../styles/buttons.css';
-
-const getURLInt = (name, location) => {
-  return parseInt(new URLSearchParams(location.search).get(name));
-}
 
 //Function formats each suspect's image, name, and dish
 const KillerProfile = props => {
@@ -50,7 +48,7 @@ const GuessKiller = props => {
 
   const history = useHistory();
 
-  {/* Link the go back button to the previous page */}
+  {/* Link the go back button to the previous page */ }
   const toSteps = () => {
     history.push(`/recipe-steps?step=${step}`);
   };
@@ -59,10 +57,10 @@ const GuessKiller = props => {
       Using some logic to ensure it goes to the proper page out of correct and incorrect
    */}
   const toResults = () => {
-    if(guess==='Margaret'){
+    if (guess === 'Margaret') {
       history.push('/correct-guess');
     }
-    else{
+    else {
       history.push('incorrect-guess');
     }
   };

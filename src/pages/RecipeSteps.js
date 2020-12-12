@@ -2,8 +2,8 @@ import React from 'react';
 import '../styles/steps.css';
 import '../styles/buttons.css';
 import { Grid, Button } from '@material-ui/core';
-
 import { useLocation, useHistory } from 'react-router-dom';
+import { getURLInt } from '../logic/utils';
 
 // Import Suspect Images
 import Elizabeth from '../assets/beth.png';
@@ -20,10 +20,6 @@ const SuspectProfile = props => {
       <p class='foodNameSmall'>{item}</p>
     </Grid>
   );
-}
-
-const getURLInt = (name, location) => {
-  return parseInt(new URLSearchParams(location.search).get(name));
 }
 
 // This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
@@ -96,7 +92,7 @@ const RecipeSteps = (props) => {
         <Grid container item xs={6} style={{ height: 'calc(100vh - 200px)', marginTop: '1em', }}>
           <Grid item xs={12}>
             {/* The Suspects */}
-            <h2 class='stepsSubtitle'>Suspects</h2>
+            <h2 class='stepsSubtitle'>The Suspects</h2>
           </Grid>
           <Grid container item xs={12}>
             <SuspectProfile name='Elizabeth' item={suspects.Elizabeth.recipe} image={Elizabeth} />

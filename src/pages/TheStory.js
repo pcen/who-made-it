@@ -28,7 +28,7 @@ const TheStory = (props) => {
   let story = generateStory(recipe, ['Scotch Tom Collins', 'Scotch Rickey', 'Whiskey Sour']);
 
   const toSteps = () => {
-    history.push('/recipe-steps');
+    history.push('/recipe-steps?step=1');
   };
 
   return (

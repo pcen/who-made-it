@@ -43,6 +43,17 @@
   position: relative;
 }
 
+.foodItemBoxSelected {
+  border: solid 6px black;
+  border-radius: 12px;
+  background-color: white;
+  padding: 20px;
+  color: black;
+  width: 120px;
+  margin: -6px -6px calc(3em - 6px) -6px;
+  position: relative;
+}
+
 .foodItemBox:hover {
   cursor: pointer;
 }
