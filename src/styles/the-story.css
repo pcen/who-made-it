@@ -1,0 +1,13 @@
+@import './constants.css';
+
+.story-container {
+  display: flex;
+  padding-top: 40px;
+  justify-content: center;
+  font-size: 16pt;
+  line-height: 22pt;
+}
+
+.story {
+  width: 60%;
+}
