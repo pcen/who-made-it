@@ -40,21 +40,20 @@ const TheStory = (props) => {
       <Button variant='contained' className='buttonBlack' onClick={toSteps}>
         Begin!
       </Button>
-      <br></br>
+      <br></br><br></br>
 
-      <div className='actors-container'>
-        <Grid container direction="row">
-          <Grid item xs={12}>
-            <br></br>
-            <div class="suspectsTitle">The Suspects</div>
-            <br></br>
-          </Grid>
-          <Grid container item xs={12}>
-            <ActorProfile name='Elizabeth' image={Elizabeth} item={suspects.Elizabeth.recipe} />
+      <div className="white-card-story">
+        
+          <div className="title">The Suspects</div>
+          <br></br><br></br>
+        {/* Potential Suspects */}
+        <div className='killer-profiles'>
+        <ActorProfile name='Elizabeth' image={Elizabeth} item={suspects.Elizabeth.recipe} />
             <ActorProfile name='Margaret' image={Margaret} item={suspects.Margaret.recipe} />
             <ActorProfile name='Raymond' image={Raymond} item={suspects.Raymond.recipe} />
-          </Grid>
-        </Grid>
+        </div>
+        <br></br><br></br>
+
       </div>
     </div>
   );
