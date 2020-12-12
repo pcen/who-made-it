@@ -12,7 +12,7 @@
 
 .steps {
   background-color: var(--blood-red);
-  height: calc(100vh);
+  height: 100vh;
 }
 
 .steps h1 {
@@ -100,9 +100,8 @@
 }
 
 .white-card-suspects{
-  width: 60%;
+  width: 750px;
   margin-right: 10px;
-  padding: 0px 100px 0px 100px;
   height: 550px;
   align-items: center;
   justify-content: center;
@@ -112,10 +111,10 @@
 }
 
 .white-card-row1{
-  width: 73%;
+  width: 500px;
   margin-right: 10px;
   /* padding: 0px 100px 0px 100px; */
-  height: 250px;
+  height: 510px;
   align-items: center;
   justify-content: center;
   background-color: white;
