@@ -9,7 +9,7 @@ import ray from '../assets/ray.png';
 //import history for page linking
 import { useHistory, useLocation } from 'react-router-dom';
 
-import { getURLInt } from '../logic/utils';
+import { getURLInt, getURLStr } from '../logic/utils';
 
 //Import css styles
 import '../styles/guesskiller.css';
@@ -43,6 +43,7 @@ const GuessKiller = props => {
   const [guess, setGuess] = useState('');
 
   const step = getURLInt('step', useLocation());
+  const guessed = getURLStr('guessed', useLocation());
 
   console.log('guess: ' + guess);
 
@@ -50,19 +51,14 @@ const GuessKiller = props => {
 
   {/* Link the go back button to the previous page */ }
   const toSteps = () => {
-    history.push(`/recipe-steps?step=${step}`);
+    history.push(`/recipe-steps?step=${step}&guessed=${guessed}`);
   };
 
   {/* Link the submit button to the results pages
       Using some logic to ensure it goes to the proper page out of correct and incorrect
    */}
   const toResults = () => {
-    if (guess === 'Margaret') {
-      history.push('/correct-guess');
-    }
-    else {
-      history.push('incorrect-guess');
-    }
+    history.push(`/recipe-steps?step=${step}&guessed=${guessed}`);
   };
 
   return (
