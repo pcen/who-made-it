@@ -35,111 +35,67 @@ const AddIngredients = (props) => {
           alignItems="center"
         >
           <Grid item xs={2}>
-<<<<<<< HEAD
-            <div className="foodItemBox">
-=======
-            <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+            <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="foodItemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("sugar")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("sugar")}>
               <p>Sugar</p>
               <img className="foodItemImage" src={sugar}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Scotch</p>
               <img className="foodItemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Soda</p>
               <img className="foodItemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="foodItemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Rum</p>
               <img className="foodItemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Soda</p>
               <img className="foodItemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="foodItemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Vodka</p>
               <img className="foodItemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Soda</p>
               <img className="foodItemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-<<<<<<< HEAD
-          <div className="foodItemBox">
-=======
-          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
->>>>>>> 1ee4af61296579683e881bdadb123a757e1b8ea8
+          <div className="foodItemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="foodItemImage" src={lemon}></img>
             </div>
