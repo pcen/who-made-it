@@ -1,57 +1,92 @@
-.white-background{
-    background-color: white;
-    height: calc(100vh - 100px);
-    padding: 50px;
+@import './constants.css';
+
+.guess-killer-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  background-color: var(--white);
+  align-items: center;
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.killer-profiles {
+  display: flex;
+  width: 80%;
+  justify-content: space-between;
+}
+
+.killer-profile {
+  margin: 0px 20px 0px 20px;
 }
 
 .title{
-    font-size: 50px;
-    color: #812a2a;
+  font-size: 50px;
+  color: #812a2a;
 }
 
 .subtitle{
-    font-size: 35px;
-    color: black;
+  font-size: 35px;
+  color: black;
 }
 
 .itemBox{
-    width: 200px;
+  width: 200px;
 }
 
 .itemImage{
-    height: 300px;
-    width: auto;
+  height: 260px;
+  width: auto;
 }
 
 .personName{
-    font-size: 35px;
-    color: #812a2a;
+  font-size: 35px;
+  color: var(--blood-red);
+  background: none;
+  cursor: pointer;
+}
+
+.personName:hover {
+  color: var(--black);
+  text-decoration: underline var(--blood-red);
+}
+
+.personNameSelected{
+  font-size: 35px;
+  color: var(--black);
+  text-decoration: underline var(--blood-red);
+  cursor: pointer;
 }
 
 .foodName{
-    font-size: 20px;
+  font-size: 20px;
 }
 
 @font-face {
-    font-family: "Risque";
-    src: url("../fonts/Risque-Regular.ttf") format("truetype");
-  }
+  font-family: "Risque";
+  src: url("../fonts/Risque-Regular.ttf") format("truetype");
+}
+
+.guess-killer-buttons {
+  display: flex;
+}
 
 .buttonBlack{
-    background-color: black !important;
-    font-family: "Risque" !important;
-    font-size: 25px !important;
-    color: white !important;
-    width: 180px;
-    height: 70px;
-    margin: 20px !important;
+  background-color: black !important;
+  font-family: "Risque" !important;
+  font-size: 25px !important;
+  color: white !important;
+  width: 180px;
+  height: 50px;
+  margin: 20px 20px 0px 20px !important;
 }
+
 .buttonRed{
-    background-color: #812a2a !important;
-    font-family: "Risque" !important;
-    font-size: 25px !important;
-    color: white !important;
-    width: 180px;
-    height: 70px;
-    margin: 20px !important;
+  background-color: #812a2a !important;
+  font-family: "Risque" !important;
+  font-size: 25px !important;
+  color: white !important;
+  width: 180px;
+  height: 50px;
+  margin: 20px 20px 0px 20px !important;
 }
