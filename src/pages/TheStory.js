@@ -33,6 +33,7 @@ const TheStory = (props) => {
 
   return (
     <div className='story-container'>
+      <br></br><br></br>
       <div className="storyTitle">A Speakeasy Mystery</div>
       <br></br><br></br>
       <div className='story'>{story}</div>

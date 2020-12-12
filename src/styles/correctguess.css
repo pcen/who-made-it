@@ -1,3 +1,9 @@
+.redBackground{
+    background-color: #812a2a;
+    height: calc(100vh - 70px);
+    padding: 70px 100px 0px 100px;
+}
+
 .itemBoxOnePerson{
     align-items: center;
     margin: 0px auto;
@@ -8,8 +14,6 @@
     font-family: "Risque" !important;
     font-size: 25px !important;
     color: white !important;
-    width: 380px;
-    height: 70px;
     margin: 20px !important;
 }
 

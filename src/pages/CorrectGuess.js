@@ -6,7 +6,7 @@ import marge from '../assets/marge.png';
 const CorrectGuess = (props) => {
   return (
     <React.Fragment>
-      <div className="background">
+      <div className="redBackground">
         <div className="white-card">
             <div className="title">Great job! You'd make a good detective!</div>
             <br></br>
