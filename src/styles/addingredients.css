@@ -1,19 +1,25 @@
 .background {
-  /* background-color: #812a2a; */
-  background-color: #ffffff;
+  background-color: #812a2a;
   height: calc(100vh - 100px);
   padding: 50px;
 }
 
-.title {
-  font-size: 30px;
+.ingredientsTitlePage{
+  font-size: 50px;
   color: white;
   position: relative;
 }
 
+@font-face {
+  font-family: 'Risque';
+  src: url(../fonts/Risque-Regular.ttf);
+  font-weight: normal;
+}
+
 .searchBar {
   background-color: white;
-  width: 300px;
+  font-family: "Risque" !important;
+  width: 300px !important;
   margin: 0px auto;
   font-size: 20px;
   padding: 20px;
@@ -29,7 +35,6 @@
   width: 120px;
   margin-bottom: 3em;
   position: relative;
-  border: 5px solid rgba(134, 5, 5, 0.877);
 }
 
 .foodItemImage {
@@ -55,14 +60,14 @@
   width: 100%;
   position: relative;
   display: flex;
+  
 }
 
 .searchTerm {
   width: 87%;
-  border: 3px solid rgba(134, 5, 5, 0.877);
   border-right: none;
   padding: 5px;
-  height: 20px;
+  height: 22px;
   border-radius: 5px 0 0 5px;
   outline: none;
   color: #9dbfaf;
@@ -76,9 +81,9 @@
   width: 100px;
   height: 36px;
   border: 1px solid rgba(134, 5, 5, 0.877);
-  background: rgba(134, 5, 5, 0.877);
+  background: white;
   text-align: center;
-  color: #fff;
+  color: rgba(134, 5, 5, 0.877);
   border-radius: 0 5px 5px 0;
   cursor: pointer;
   font-size: 20px;

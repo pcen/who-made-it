@@ -18,7 +18,7 @@ const AddIngredients = (props) => {
   return (
     <React.Fragment>
       <div className="background">
-        <div className="title">What ingredients do you have?</div>
+        <div className="ingredientsTitlePage">What ingredients do you have?</div>
         <br></br>
         <br></br>
         <div className="search">
