@@ -39,9 +39,9 @@ const KillerProfile = props => {
 
 //This is the main function for the guess killer page
 const GuessKiller = props => {
-  const { recipe, suspects } = props;
-  const [guess, setGuess] = useState('');
+  const { recipe, suspects, guess, setGuess } = props;
 
+  const [selectedSuspect, setSelectedSuspect] = useState('');
   const step = getURLInt('step', useLocation());
   const guessed = getURLStr('guessed', useLocation());
 
@@ -49,14 +49,25 @@ const GuessKiller = props => {
 
   const history = useHistory();
 
-  {/* Link the go back button to the previous page */ }
+  // Link the go back button to the previous page
   const toSteps = () => {
     history.push(`/recipe-steps?step=${step}&guessed=${guessed}`);
   };
 
-  {/* Link the submit button to go back to the steps with guessed true*/}
+  // Link the submit button to go back to the steps with guessed true
   const makeGuess = () => {
-    history.push(`/recipe-steps?step=${step}&guessed=true`);
+    if (selectedSuspect !== '') {
+      let guessedAt = step;
+      if (Object.keys(guess).length !== 0) {
+        guessedAt = Math.max(guess.step, guessedAt);
+      }
+      console.log('guessedAt' + guessedAt);
+      setGuess({
+        suspect: selectedSuspect,
+        step: guessedAt,
+      });
+      history.push(`/recipe-steps?step=${step}&guessed=true`);
+    }
   };
 
   return (
@@ -72,9 +83,9 @@ const GuessKiller = props => {
 
         {/* Potential Suspects */}
         <div className='killer-profiles'>
-          <KillerProfile image={beth} name='Elizabeth' item={suspects.Elizabeth.recipe} onSelect={setGuess} selected={guess} />
-          <KillerProfile image={marge} name='Margaret' item={suspects.Margaret.recipe} onSelect={setGuess} selected={guess} />
-          <KillerProfile image={ray} name='Raymond' item={suspects.Raymond.recipe} onSelect={setGuess} selected={guess} />
+          <KillerProfile image={beth} name='Elizabeth' item={suspects.Elizabeth.recipe} onSelect={setSelectedSuspect} selected={selectedSuspect} />
+          <KillerProfile image={marge} name='Margaret' item={suspects.Margaret.recipe} onSelect={setSelectedSuspect} selected={selectedSuspect} />
+          <KillerProfile image={ray} name='Raymond' item={suspects.Raymond.recipe} onSelect={setSelectedSuspect} selected={selectedSuspect} />
         </div>
         <br></br><br></br>
 

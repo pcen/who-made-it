@@ -8,6 +8,7 @@ function App() {
   const [recipe, setRecipe] = useState({});
   const [recipeOptions, setRecipeOptions] = useState([]);
   const [suspects, setSuspects] = useState({});
+  const [guess, setGuess] = useState({});
 
   return (
     <div className="App">
@@ -24,6 +25,8 @@ function App() {
                   setRecipeOptions={setRecipeOptions}
                   suspects={suspects}
                   setSuspects={setSuspects}
+                  guess={guess}
+                  setGuess={setGuess}
                 />
               </Route>
             );
