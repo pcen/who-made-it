@@ -5,10 +5,20 @@ import lemon from '../assets/lemon.jpg';
 import alcohol from '../assets/alcohol bottle.png';
 import soda from '../assets/soda.png';
 import sugar from '../assets/sugar.jpg';
+import ingredientsJson from '../Components/Data/data.json'
+
+var ingredientArray = []
 
 const AddIngredients = (props) => {
+
+  const onIngredientClick = (prop) => {
+    console.log(ingredientArray.push(prop))
+    console.log(ingredientArray)
+   }
+
   return (
     <React.Fragment>
+
       <div className="background">
         <div className="title">What ingredients do you have?</div>
         <br></br>
@@ -25,72 +35,72 @@ const AddIngredients = (props) => {
           alignItems="center"
         >
           <Grid item xs={2}>
-            <div className="itemBox">
+            <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="itemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("sugar")}>
               <p>Sugar</p>
               <img className="itemImage" src={sugar}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Scotch</p>
               <img className="itemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Soda</p>
               <img className="itemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="itemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Rum</p>
               <img className="itemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Soda</p>
               <img className="itemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="itemImage" src={lemon}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Vodka</p>
               <img className="itemImage" src={alcohol}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Soda</p>
               <img className="itemImage" src={soda}></img>
             </div>
           </Grid>
           <Grid item xs={2}>
-          <div className="itemBox">
+          <div className="itemBox" onClick={e => onIngredientClick("lemon")}>
               <p>Lemon</p>
               <img className="itemImage" src={lemon}></img>
             </div>
           </Grid>
-          
+
         </Grid>
       </div>
     </React.Fragment>
