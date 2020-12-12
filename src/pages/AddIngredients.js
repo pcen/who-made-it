@@ -12,9 +12,14 @@ import Sparkling from "../assets/sparkling.png";
 import orange from "../assets/orange.png";
 import tonic from "../assets/tonic.png";
 import honey from "../assets/honey.png";
-import ice from "../assets/ice.png";
 import rum from "../assets/rum.png";
 import tequilla from "../assets/tequilla.png";
+import rye from "../assets/rye.png";
+import bourbon from "../assets/bourbon.png";
+import ginger from "../assets/ginger.png";
+import gin from "../assets/gin.png";
+import mint from "../assets/mint.png";
+import tomato from "../assets/tomato.png";
 import recipes from "../Components/Recipes.js";
 import { Button } from "@material-ui/core";
 
@@ -87,19 +92,16 @@ const AddIngredients = (props) => {
     <div className="background">
       <div className="ingredientsTitlePage">What ingredients do you have?</div>
       <div className="ingredientsInstructions">
-        Add anything and everything that you have in your kitchen! Based on your
-        ingredients, we will generate mysterious recipes for you.
+        <h1>
+          Add anything and everything that you have in your kitchen! Based on
+          your ingredients, we will generate mysterious recipes for you.
+        </h1>
+        <p>Click on the ingredients card to select</p>
       </div>
 
       <br></br>
       <br></br>
-      <div className="searchBar">
-        <SearchBar
-        // value={this.state.value}
-        // onChange={(newValue) => this.setState({ value: newValue })}
-        // onRequestSearch={() => doSomethingWith(this.state.value)}
-        />
-      </div>
+
       <br></br>
       <br></br>
       <br></br>
@@ -115,7 +117,6 @@ const AddIngredients = (props) => {
           value="Lemon"
           image={lemon}
           onClick={onIngredientClick}
-          className="card"
         />
 
         <IngredientCard
@@ -167,6 +168,24 @@ const AddIngredients = (props) => {
         <IngredientCard
           value="Orange"
           image={orange}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="bourbon"
+          image={bourbon}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard value="mint" image={mint} onClick={onIngredientClick} />
+        <IngredientCard value="gin" image={gin} onClick={onIngredientClick} />
+        <IngredientCard
+          value="ginger"
+          image={ginger}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard value="rye" image={rye} onClick={onIngredientClick} />
+        <IngredientCard
+          value="tomato"
+          image={tomato}
           onClick={onIngredientClick}
         />
       </Grid>
