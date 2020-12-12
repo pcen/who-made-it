@@ -1,3 +1,9 @@
+.white-card-generate-recipes {
+    background-color: white;
+    padding: 25px;
+    border-radius: 20px;
+}
+
 .drinkName{
     font-size: 40px;
 }

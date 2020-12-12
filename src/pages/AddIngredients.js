@@ -86,6 +86,8 @@ const AddIngredients = (props) => {
     if (possibleRecipes.length >= 3) {
       setUpRecipes(possibleRecipes.slice(0, 3));
       history.push('/generate-recipes');
+    } else {
+      console.log('not enough matching recipes');
     }
   }
 
@@ -188,17 +190,30 @@ const AddIngredients = (props) => {
           image={wine}
           onClick={onIngredientClick}
         />
-        <IngredientCard value="mint" image={mint} onClick={onIngredientClick} />
+        <IngredientCard
+          value="mint"
+          image={mint}
+          onClick={onIngredientClick}
+        />
         <IngredientCard value="gin" image={gin} onClick={onIngredientClick} />
         <IngredientCard
           value="ginger"
           image={ginger}
           onClick={onIngredientClick}
         />
-        <IngredientCard value="rye" image={rye} onClick={onIngredientClick} />
+        <IngredientCard
+          value="rye"
+          image={rye}
+          onClick={onIngredientClick}
+        />
         <IngredientCard
           value="tomato"
           image={tomato}
+          onClick={onIngredientClick}
+        />
+        <IngredientCard
+          value="triple sec"
+          image={alcohol}
           onClick={onIngredientClick}
         />
       </Grid>
