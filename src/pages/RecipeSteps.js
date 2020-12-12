@@ -38,6 +38,8 @@ const RecipeSteps = (props) => {
                 <br></br>
                 {/* Instructions for step 1 */}
                 <div>Find a glass and add the lump of ice</div>
+                {/* Progress Tracker */}
+                <div className="stepsProgress"># Steps Remaining</div>
               </div>
             </div>
           </Grid>
