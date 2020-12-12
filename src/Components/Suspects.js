@@ -1,12 +1,14 @@
+import Recipes from './Recipes';
+
 const Suspects = {
   Elizabeth: {
-    recipe: 'Scotch Tom Collins',
+    recipe: Recipes.drinks.ScotchTomCollins.name,
   },
   Margaret: {
-    recipe: 'Scotch Rickey',
+    recipe: Recipes.drinks.ScotchRickey.name,
   },
   Raymond: {
-    recipe: 'Whiskey Sour',
+    recipe: Recipes.drinks.WhiskeySour.name,
   },
 };
 
