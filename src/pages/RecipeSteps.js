@@ -1,16 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import "../styles/steps.css";
 import '../styles/guesskiller.css';
 import { Grid, Button } from '@material-ui/core';
+import { RecipeContext } from '../App';
 
 // Import Suspect Images
 import Elizabeth from '../assets/beth.png';
 import Margaret from '../assets/marge.png';
 import Raymond from '../assets/ray.png';
 
-//This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
-//To help them figure out who the killer is, as soon as they find out what they are making
+// This page will provide the user with the steps to follow along with the poisoned recipe (minus the poison of coruse)
+// To help them figure out who the killer is, as soon as they find out what they are making
 const RecipeSteps = (props) => {
+  const recipe = useContext(RecipeContext);
+  console.log(recipe);
+
   const [stepNumber, setStepNumber] = useState(0);
 
   return (
