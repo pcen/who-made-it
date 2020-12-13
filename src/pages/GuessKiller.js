@@ -1,33 +1,28 @@
 import React, { useState } from 'react';
 import { Button } from '@material-ui/core';
+import { useHistory, useLocation } from 'react-router-dom';
+import { getURLInt, getURLStr } from '../logic/utils';
 
-//Import suspect pictures
+// Import suspect pictures
 import beth from '../assets/beth.png';
 import marge from '../assets/marge.png';
 import ray from '../assets/ray.png';
 
-//import history for page linking
-import { useHistory, useLocation } from 'react-router-dom';
-
-import { getURLInt, getURLStr } from '../logic/utils';
-
-//Import css styles
+// Import css styles
 import '../styles/guesskiller.css';
 import '../styles/buttons.css';
 
-//Function formats each suspect's image, name, and dish
+// Component for suspect image, name, and dish
 const KillerProfile = props => {
   const { image, name, item, onSelect, selected } = props;
-
   const handleClick = () => { onSelect(name); };
 
   return (
     <div className='killer-profile'>
       <img className="itemImage" src={image}></img>
-      {
-        selected === name ?
-          <div class="personNameSelected">{name}</div> :
-          <div onClick={handleClick} class="personName">{name}</div>
+      {selected === name ?
+        <div class="personNameSelected">{name}</div> :
+        <div onClick={handleClick} class="personName">{name}</div>
       }
       <div className="mixed">mixed the</div>
       <div className="drinkName">{item}</div>

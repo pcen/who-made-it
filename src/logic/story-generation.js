@@ -29,7 +29,6 @@ const generateStory = recipe => {
     which suspect used these ingredients to make the poisonous concoction.
     Have fun and good luck!
   `
-
   return story;
 }
 

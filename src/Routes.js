@@ -1,10 +1,10 @@
+import GenerateRecipes from './pages/GenerateRecipes';
 import AddIngredients from './pages/AddIngredients';
 import GuessKiller from './pages/GuessKiller';
 import RecipeSteps from './pages/RecipeSteps';
-import Home from './pages/Home';
 import TheStory from './pages/TheStory';
 import Finit from './pages/Finit';
-import GenerateRecipes from './pages/GenerateRecipes';
+import Home from './pages/Home';
 
 const Routes = [
   {

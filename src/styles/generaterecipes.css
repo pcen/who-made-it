@@ -1,24 +1,24 @@
 .white-card-generate-recipes {
-    background-color: white;
-    padding: 25px;
-    border-radius: 20px;
+  background-color: white;
+  padding: 25px;
+  border-radius: 20px;
 }
 
 .drinkName{
-    font-size: 40px;
+  font-size: 40px;
 }
 
 .selectedIngredients{
-    font-size: 30px;
+  font-size: 30px;
 }
 
 .descriptiveText{
-    font-size: 25px;
-    max-width: 65%;
-    margin: 0px auto;
+  font-size: 25px;
+  max-width: 65%;
+  margin: 0px auto;
 }
 
 .drinkImage{
-    height: 350px;
-    width: auto;
+  height: 350px;
+  width: auto;
 }

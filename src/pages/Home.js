@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import { Grid } from "@material-ui/core";
 
 import drink from "../assets/drink.jpg";
-import burger from "../assets/burger.png";
-import background from "../assets/background.jpg";
+
 import "../styles/home.css";
+
 const Home = (props) => {
   return (
     <React.Fragment>
@@ -23,6 +23,7 @@ const Home = (props) => {
               src={drink}
             ></img>
             <br></br>
+            {/* Link to start the game */}
             <Link class="homeOptionCardText" to="/add-ingredients?type=drink">
               Make a Drink
             </Link>
@@ -32,8 +33,8 @@ const Home = (props) => {
         <br></br>
         {/* Instructions so we don't confuse everyone too much */}
         <p className="instructions">
-          In Who Mixed It, you select drink ingredients that you have in your kitchen. 
-          Based on these ingredients, you will follow an unknown recipe to create a delicious drink. 
+          In Who Mixed It, you select drink ingredients that you have in your kitchen.
+          Based on these ingredients, you will follow an unknown recipe to create a delicious drink.
           Figuring out what drink you are mixing will help you solve a murder mystery.
         </p>
       </div>

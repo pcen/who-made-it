@@ -45,7 +45,6 @@
   text-decoration: none;
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  /* margin: 1em; */
 }
 
 .ingredientsList {
@@ -56,7 +55,6 @@
 .stepsPanel {
   border-radius: 10px 10px 0px 0px;
   width: 100%;
-  /* margin: 1em; */
 }
 
 .stepsDetails {
@@ -125,4 +123,3 @@
   margin: 0px auto;
   padding: 20px;
 }
-
