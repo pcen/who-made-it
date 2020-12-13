@@ -4,15 +4,16 @@ import { Grid } from "@material-ui/core";
 
 import drink from "../assets/drink.jpg";
 import burger from "../assets/burger.png";
-import background from "../assets/background.png";
+import background from "../assets/background.jpg";
 import "../styles/home.css";
 const Home = (props) => {
   return (
     <React.Fragment>
       <div class="homeBackground"></div>
       <div class="home">
-        <h1>WHO MADE IT?</h1>
-        <h2>What would you like to make today? </h2><br></br>
+        <br></br><br></br>
+        <h1>WHO MIXED IT?</h1>
+        <br></br>
 
         <Grid container direction="row" alignItems="center" justify="center">
           {/* Card option to select drink */}
@@ -23,17 +24,7 @@ const Home = (props) => {
             ></img>
             <br></br>
             <Link class="homeOptionCardText" to="/add-ingredients?type=drink">
-              Drink
-            </Link>
-          </Grid>
-          {/* Forced space between cards */}
-          <Grid item xs={1}></Grid>
-          {/* Card option to select food */}
-          <Grid item xs={3} className="homeOptionCard">
-            <img class="homeOptionCardImage" src={burger}></img>
-            <br></br>
-            <Link class="homeOptionCardText" to="/add-ingredients?type=food">
-              Food
+              Make a Drink
             </Link>
           </Grid>
         </Grid>
@@ -41,9 +32,9 @@ const Home = (props) => {
         <br></br>
         {/* Instructions so we don't confuse everyone too much */}
         <p className="instructions">
-          Choose whether you would like to make a delicious Drink or fantastic
-          Food item today. Based on the ingredients you have in your kitchen,
-          you will solve a mystery!
+          In Who Mixed It, you select drink ingredients that you have in your kitchen. 
+          Based on these ingredients, you will follow an unknown recipe to create a delicious drink. 
+          Figuring out what drink you are mixing will help you solve a murder mystery.
         </p>
       </div>
     </React.Fragment>

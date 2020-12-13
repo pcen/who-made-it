@@ -29,8 +29,9 @@ const KillerProfile = props => {
   return (
     <div className="itemBoxOnePerson">
       <img className="itemImage" src={image}></img>
-      <p class="killerName">{name}</p>
-      <p class="foodName">{recipe}</p>
+      <div class="killerName">{name}</div>
+      <div class="mixed">mixed the</div>
+      <div class="drinkName">{recipe}</div>
     </div>
   )
 }
@@ -77,7 +78,7 @@ const Finit = props => {
           <br></br>
           <br></br>
 
-          <KillerProfile name={killer} recipe={fatalRecipe} />
+          <KillerProfile name={killer} recipe={fatalRecipe} /><br></br>
 
           <div className="storyConclusion">{`The victim once had a secret affair with none other than
             ${killer}. After a brutal separation, ${killer} was quick to get their revenge. They added a drop of poison

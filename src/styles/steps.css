@@ -39,7 +39,6 @@
 
 .stepsSubtitleSuspects{
   text-align: center !important;
-
 }
 
 .ingredientsContainer {
@@ -81,11 +80,12 @@
 
 .personNameSmall {
   font-size: 25px;
-  color: #812a2a;
+  color: black;
 }
 
 .foodNameSmall {
-  font-size: 25px;
+  font-size: 30px;
+  color: #812a2a;
 }
 
 .itemImageSmall {
@@ -99,10 +99,14 @@
   margin: -50px;
 }
 
+.mixed{
+  font-size: 22px;;
+}
+
 .white-card-suspects{
   width: 750px;
   margin-right: 10px;
-  height: 550px;
+  height: 520px;
   align-items: center;
   justify-content: center;
   background-color: white;
@@ -113,14 +117,12 @@
 .white-card-row1{
   width: 500px;
   margin-right: 10px;
-  /* padding: 0px 100px 0px 100px; */
-  height: 510px;
+  height: 480px;
   align-items: center;
   justify-content: center;
   background-color: white;
   border-radius: 20px;
   margin: 0px auto;
-  margin-bottom: 20px;
   padding: 20px;
 }
 

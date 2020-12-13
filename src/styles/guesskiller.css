@@ -56,8 +56,9 @@
   cursor: pointer;
 }
 
-.foodName{
-  font-size: 20px;
+.killer-profile .drinkName{
+  font-size: 22px;
+  color: black;
 }
 
 @font-face {
