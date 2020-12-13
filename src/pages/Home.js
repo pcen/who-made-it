@@ -28,7 +28,7 @@ const Home = (props) => {
             <br></br>
 
             {/* Link to start the game - add ingredients page */}
-            <Link class="homeOptionCardText" to="/add-ingredients?type=drink">
+            <Link class="homeOptionCardText" to="/add-ingredients">
               Make a Drink
             </Link>
           </Grid>
