@@ -7,7 +7,7 @@ import drink from '../assets/drink2.png';
 import '../styles/generaterecipes.css';
 
 const GenerateRecipes = (props) => {
-  const { recipeOptions, recipe, suspects } = props;
+  const { recipeOptions, recipe } = props;
   const history = useHistory();
 
   const toStory = () => {

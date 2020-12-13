@@ -1,40 +1,40 @@
 @import './constants.css';
 
 .buttonGrey{
-  background-color: #C4C4C4 !important;
+  background-color: var(--grey) !important;
   font-family: "Risque" !important;
   font-size: 25px !important;
-  color: black !important;
+  color: var(--black) !important;
   width: 220px !important;
   height: 50px;
   margin: 20px 10px 0px 10px !important;
 }
 
 .buttonBlack{
-  background-color: black !important;
+  background-color: var(--black) !important;
   font-family: "Risque" !important;
   font-size: 25px !important;
-  color: white !important;
+  color: var(--white) !important;
   width: 220px !important;
   height: 50px;
   margin: 20px 10px 0px 10px !important;
 }
 
 .buttonBlackWide{
-  background-color: black !important;
+  background-color: var(--black) !important;
   font-family: "Risque" !important;
   font-size: 25px !important;
-  color: white !important;
+  color: var(--white) !important;
   width: 300px !important;
   height: 50px;
   margin: 20px 10px 0px 10px !important;
 }
 
 .buttonRed{
-  background-color: #812a2a !important;
+  background-color: var(--blood-red) !important;
   font-family: "Risque" !important;
   font-size: 25px !important;
-  color: white !important;
+  color: var(--white) !important;
   width: 220px !important;
   height: 50px;
   margin: 20px 10px 0px 10px !important;
