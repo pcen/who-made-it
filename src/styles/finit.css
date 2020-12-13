@@ -1,35 +1,25 @@
+@import './constants.css';
+
 .itemBoxOnePerson{
   align-items: center;
   margin: 0px auto;
 }
 
 .buttonRedLong{
-  background-color: #812a2a !important;
+  background-color: var(--blood-red) !important;
   font-family: "Risque" !important;
   font-size: 25px !important;
-  color: white !important;
+  color: var(--white) !important;
   width: 380px;
   height: 70px;
   margin: 20px !important;
 }
 
+/* Red background div */
 .redBackground{
-  background-color: #812a2a;
+  background-color: var(--blood-red);
   height: calc(100vh - 70px);
   padding: 70px 100px 0px 100px;
-}
-
-.itemBoxOnePerson{
-  align-items: center;
-  margin: 0px auto;
-}
-
-.buttonRedLong{
-  background-color: #812a2a !important;
-  font-family: "Risque" !important;
-  font-size: 25px !important;
-  color: white !important;
-  margin: 20px !important;
 }
 
 .white-card{
@@ -38,6 +28,7 @@
   border-radius: 20px;
 }
 
+/* Container for concluding story text */
 .storyConclusion{
   font-size: 22px;
   width: 800px;
