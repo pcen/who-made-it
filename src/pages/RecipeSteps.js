@@ -16,8 +16,9 @@ const SuspectProfile = props => {
     <Grid item xs={4}>
       <img alt='Elizabeth' className='itemImageSmall' src={image}></img>
       <br></br>
-      <p class='personNameSmall'>{name}</p>
-      <p class='foodNameSmall'>{item}</p>
+      <div class='personNameSmall'>{name}</div>
+      <div className="mixed">mixed the</div>
+      <div class='foodNameSmall'>{item}</div>
     </Grid>
   );
 }
@@ -56,7 +57,7 @@ const RecipeSteps = (props) => {
     <div className='steps'>
       <br></br><br></br>
       {/* The Title */}
-      <h1>Follow the recipe (without poison) to find out which drink you're making and solve the mystery</h1>
+      <h1>Follow the recipe to find out which drink you're making and solve the mystery</h1>
       <br></br>
       <Grid container direction='row'>
       <div class="white-card-row1">
@@ -89,7 +90,7 @@ const RecipeSteps = (props) => {
           </div>
         </Grid>
         </Grid>
-        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
+        <br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br><br></br>
         <Button variant='contained' className='buttonBlack' onClick={previousStep}>
               Prior Step
             </Button>

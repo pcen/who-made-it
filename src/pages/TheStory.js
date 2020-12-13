@@ -15,8 +15,10 @@ const ActorProfile = props => {
   return (
     <div className='actor-profile'>
       <img className='actor-image' alt={name} src={image} />
+      <br></br>
       <div className='actor-name'>{name}</div>
-      <div>{item}</div>
+      <div>mixed the</div>
+      <div className="drink-red">{item}</div>
     </div>
   );
 }
@@ -33,7 +35,7 @@ const TheStory = (props) => {
 
   return (
     <div className='story-container'>
-      <div className="storyTitle">A Speakeasy Mystery</div>
+      <div className="storyTitle">A Speakeasy Murder Mystery</div>
       <br></br><br></br>
       <div className='story'>{story}</div>
       <br></br>

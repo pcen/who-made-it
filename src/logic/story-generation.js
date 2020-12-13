@@ -22,8 +22,8 @@ const generateStory = recipe => {
   let story = `
     ${day}, ${atLocation}, ${ActorsBecameSuspects}.
     The unfortunate victim was the ${victimDescriptor} ${victim}.
-    ${victimFirstName} was seen enjoying dishes made by each suspect.
-    Below you will find the name of the dish that they each brought.
+    ${victimFirstName} was seen enjoying drinks made by each suspect.
+    Below you will find the name of the drink that they each mixed.
     The detective has a description of an individual who purchased
     ${ingredients} at the local market. We need your help determining
     which suspect used these ingredients to make the poisonous concoction.

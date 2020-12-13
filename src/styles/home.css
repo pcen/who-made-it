@@ -8,11 +8,13 @@
   src: url("../fonts/Risque-Regular.ttf") format("truetype");
 }
 
+
 .homeBackground {
-  background: url("../assets/background.png");
-  opacity: 0.9;
+  background: url("../assets/background.jpg");
   /* Full height */
   min-height: 100%;
+  opacity: 0.9;
+
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -216,7 +218,7 @@
 
 .instructions {
   color: white;
-  font-size: 25px;
+  font-size: 28px;
   width: 780px;
   margin: 0px auto;
   text-align: center;

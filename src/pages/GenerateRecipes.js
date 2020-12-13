@@ -27,14 +27,14 @@ const GenerateRecipes = (props) => {
     <React.Fragment>
       <div className="background">
         <div className="white-card-generate-recipes">
-          <div className="title">Generating recipes...</div>
+          <div className="title">Your Unknown Drink</div>
           <br></br>
           <div className="selectedIngredients">
-            {`Your ingredients: ${commaAndAndSeparate(recipe.ingredients).toLowerCase()}`}
+            {`Ingredients required: ${commaAndAndSeparate(recipe.ingredients).toLowerCase()}`}
           </div>
           <img className="drinkImage" src={drink}></img>
           <br></br><br></br>
-          <div className="descriptiveText">Without knowing which, you will be making one of the following recipes:</div>
+          <div className="descriptiveText">Your unknown drink will be one of these 3:</div>
           <br></br><br></br>
           {/* Three potential recipe options */}
           {recipeOptions.map(r => {
@@ -42,14 +42,14 @@ const GenerateRecipes = (props) => {
           })}
           <br></br><br></br>
           <div className="descriptiveText">
-            The recipe that you will make is the same one that was used to poison a victim. Guessing which recipe you are making will lead you
-            to the killer!
-            So put your detective hat on and prepare to follow along with one of these delicious recipes to help you solve the mystery!
+            The drink that you will make is the same one that was poisoned to kill the victim in the murder mystery. 
+            Guessing the drink correctly based on the recipe will lead you to the killer!
+            So put your detective hat on and solve the mystery!
           </div>
           <br></br><br></br>
 
           <Button variant="contained" className="buttonRedLong" onClick={toStory}>
-            Read about the Mystery
+            Read the Mystery
           </Button>
 
         </div>

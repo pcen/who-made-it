@@ -29,8 +29,8 @@ const KillerProfile = props => {
           <div class="personNameSelected">{name}</div> :
           <div onClick={handleClick} class="personName">{name}</div>
       }
-      <br></br>
-      <div class="foodName">{item}</div>
+      <div className="mixed">mixed the</div>
+      <div className="drinkName">{item}</div>
     </div>
   );
 }
@@ -69,9 +69,7 @@ const GuessKiller = props => {
       <br></br><br></br><br></br><br></br><br></br>
       <div className="white-card">
         <div>
-          <div className="title">Select the Killer</div>
-          <br></br>
-          <div className="subtitle">Be careful because you only get one try!</div>
+          <div className="title">Who Done It?</div>
         </div>
         <br></br>
         <br></br>
