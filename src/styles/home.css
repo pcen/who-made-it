@@ -1,20 +1,19 @@
+/* Figma Fonts */
 @font-face {
   font-family: "Bubblegum Sans";
   src: url("../fonts/BubblegumSans-Regular.otf") format("opentype");
 }
-
 @font-face {
   font-family: "Risque";
   src: url("../fonts/Risque-Regular.ttf") format("truetype");
 }
 
-
+/* home background */
 .homeBackground {
   background: url("../assets/background.jpg");
   /* Full height */
   min-height: 100%;
   opacity: 0.9;
-
   /* Create the parallax scrolling effect */
   background-attachment: fixed;
   background-position: center;
@@ -53,16 +52,9 @@
   color: #ffffff;
   margin: 0px;
   padding-bottom: 0.6em;
-
 }
 
-.area {
-  width: 100%;
-  height: 100%;
-}
-
-/* Setting up the food/drink option cards */
-
+/* Setting up the drink card */
 .homeOptionCard {
   display: flex;
   flex-direction: column;
@@ -81,6 +73,7 @@
   position: relative;
 }
 
+/* drink glass image */
 .homeOptionCardImage {
   width: auto;
   height: 250px;
@@ -89,6 +82,7 @@
   position: relative;
 }
 
+/* drink heading. Clickable */
 .homeOptionCardText {
   font-family: "Risque";
   font-style: normal;
@@ -102,10 +96,12 @@
   position: relative;
 }
 
+/* The heading color change */
 .homeOptionCardText:hover {
   color: black;
 }
 
+/* Styling for the brief game instructions */
 .instructions {
   color: white;
   font-size: 28px;
