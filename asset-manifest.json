@@ -1,21 +1,20 @@
 {
   "files": {
-    "main.css": "/who-made-it/static/css/main.46e49981.chunk.css",
-    "main.js": "/who-made-it/static/js/main.38ca43dc.chunk.js",
-    "main.js.map": "/who-made-it/static/js/main.38ca43dc.chunk.js.map",
+    "main.css": "/who-made-it/static/css/main.5881a9b5.chunk.css",
+    "main.js": "/who-made-it/static/js/main.df71af57.chunk.js",
+    "main.js.map": "/who-made-it/static/js/main.df71af57.chunk.js.map",
     "runtime-main.js": "/who-made-it/static/js/runtime-main.88ce4af5.js",
     "runtime-main.js.map": "/who-made-it/static/js/runtime-main.88ce4af5.js.map",
-    "static/js/2.a25caec4.chunk.js": "/who-made-it/static/js/2.a25caec4.chunk.js",
-    "static/js/2.a25caec4.chunk.js.map": "/who-made-it/static/js/2.a25caec4.chunk.js.map",
+    "static/js/2.9ec6ef76.chunk.js": "/who-made-it/static/js/2.9ec6ef76.chunk.js",
+    "static/js/2.9ec6ef76.chunk.js.map": "/who-made-it/static/js/2.9ec6ef76.chunk.js.map",
     "index.html": "/who-made-it/index.html",
-    "static/css/main.46e49981.chunk.css.map": "/who-made-it/static/css/main.46e49981.chunk.css.map",
-    "static/js/2.a25caec4.chunk.js.LICENSE.txt": "/who-made-it/static/js/2.a25caec4.chunk.js.LICENSE.txt",
+    "static/css/main.5881a9b5.chunk.css.map": "/who-made-it/static/css/main.5881a9b5.chunk.css.map",
+    "static/js/2.9ec6ef76.chunk.js.LICENSE.txt": "/who-made-it/static/js/2.9ec6ef76.chunk.js.LICENSE.txt",
     "static/media/home.css": "/who-made-it/static/media/background.e7cd49d3.jpg",
     "static/media/app.css": "/who-made-it/static/media/Risque-Regular.3bda1522.ttf",
     "static/media/alcohol bottle.f9c04211.png": "/who-made-it/static/media/alcohol bottle.f9c04211.png",
     "static/media/beth.62c253bf.png": "/who-made-it/static/media/beth.62c253bf.png",
     "static/media/bourbon.d5c3fa85.png": "/who-made-it/static/media/bourbon.d5c3fa85.png",
-    "static/media/burger.c91fb0c9.png": "/who-made-it/static/media/burger.c91fb0c9.png",
     "static/media/champagne.92bc728c.png": "/who-made-it/static/media/champagne.92bc728c.png",
     "static/media/cranberry.2f073283.jpg": "/who-made-it/static/media/cranberry.2f073283.jpg",
     "static/media/drink.73ec98bb.jpg": "/who-made-it/static/media/drink.73ec98bb.jpg",
@@ -40,8 +39,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.88ce4af5.js",
-    "static/js/2.a25caec4.chunk.js",
-    "static/css/main.46e49981.chunk.css",
-    "static/js/main.38ca43dc.chunk.js"
+    "static/js/2.9ec6ef76.chunk.js",
+    "static/css/main.5881a9b5.chunk.css",
+    "static/js/main.df71af57.chunk.js"
   ]
 }
