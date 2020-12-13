@@ -1,23 +1,28 @@
+/* White 'card' background */
 .white-card-generate-recipes {
   background-color: white;
   padding: 25px;
   border-radius: 20px;
 }
 
+/* Name of the three recipes, one of which you will be making */
 .drinkName{
   font-size: 40px;
 }
 
+/* Ingredients that will be required for the specific recipe you will be following */
 .selectedIngredients{
   font-size: 30px;
 }
 
+/* Helpful instructions to make you know what to do and what to expect */
 .descriptiveText{
   font-size: 25px;
   max-width: 65%;
   margin: 0px auto;
 }
 
+/* The decorative image */
 .drinkImage{
   height: 350px;
   width: auto;
