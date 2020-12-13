@@ -1,5 +1,17 @@
 import { randFrom, commaAndAndSeparate } from './utils';
 
+{/*
+This file lists all the variable components in the murder mystery story.
+The variables will be randomly selected, created a unique story every time
+The variables include:
+  - The day of the week
+  - An adjective to describe the day
+  - The venue
+  - The suspects
+  - The victim
+*/}
+
+{/* The variables and potential values */}
 const Days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'];
 const DayDescriptors = ['Last', 'One rainy', 'One dark and stormy', 'One dreary'];
 
@@ -11,6 +23,7 @@ const ActorsBecameSuspects = 'Elizabeth, Margaret, and Raymond became suspects i
 const Victims = ['Mr. Robert Hughes', 'Mrs. Betty Green', 'Mr. Charles Clarke', 'Mrs. Dorothy Jones'];
 const VictimDescriptors = ['esteemed', 'benevolent', 'influential', 'controversial']
 
+{/* Randomly selects a value from each variable */}
 const generateStory = recipe => {
   let day = randFrom(DayDescriptors).concat(' ', randFrom(Days));
   let victim = randFrom(Victims);
@@ -19,6 +32,7 @@ const generateStory = recipe => {
   let atLocation = randFrom(Locations);
   let ingredients = commaAndAndSeparate(recipe.ingredients);
 
+  {/* Inserts the variables into the story */}
   let story = `
     ${day}, ${atLocation}, ${ActorsBecameSuspects}.
     The unfortunate victim was the ${victimDescriptor} ${victim}.
