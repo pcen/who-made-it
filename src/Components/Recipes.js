@@ -29,7 +29,7 @@ const Recipes = {
     CapeCodder: {
       ingredients: ['cranberry juice', 'vodka', 'lime', 'ice'],
       steps: [
-        'add 1 shot of vodka to a glass',
+        'add 1 shot of vodka to a highball glass',
         'add 1-2 ice cubes',
         'squeeze in 3/4 ounce lime juice',
         'add 3 ounces of cranberry juice',
@@ -55,13 +55,14 @@ const Recipes = {
       name: 'White Wine Spritzer',
     },
     Margarita: {
-      ingredients: ['tequila', 'lime', 'ice', 'salt'],
+      ingredients: ['tequila', 'lime', 'ice', 'salt','triple sec'],
       steps: [
-        'run a lime wedge around rim of glass',
+        'moisten the rim of a glass with a lime wedge',
         'dip the rim in a coarse salt',
-        'pour one shot of tequila into glass',
-        'add 1-2 ice cubes',
-        'add a lime wedge'
+        'fill a cocktail shaker with fresh ice',
+        'add tequila, triple sec, and lime juice',
+        'cover and shake vigorously until outside of the shaker has froster',
+        'strain into the prepared glass and garnish with a slice of lime',
       ],
       name: "Margarita",
     },
