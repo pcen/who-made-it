@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Button } from '@material-ui/core';
 import { useHistory, useLocation } from 'react-router-dom';
 import { getURLInt, getURLStr } from '../logic/utils';
@@ -32,7 +32,7 @@ const KillerProfile = props => {
 
 //This is the main function for the guess killer page
 const GuessKiller = props => {
-  const { recipe, suspects, guess, setGuess } = props;
+  const { suspects, guess, setGuess } = props;
   const history = useHistory();
 
   const [selectedSuspect, setSelectedSuspect] = useState('');
@@ -58,6 +58,12 @@ const GuessKiller = props => {
       history.push(`/recipe-steps?step=${step}&guessed=true`);
     }
   };
+
+  useEffect(() => {
+    if (Object.keys(guess).length !== 0) {
+      setSelectedSuspect(guess.suspect);
+    }
+  }, []);
 
   return (
     <div className="guess-killer-container">
