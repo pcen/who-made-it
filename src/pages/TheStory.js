@@ -24,21 +24,27 @@ const ActorProfile = props => {
   );
 }
 
+//This is the main function for the story page
 const TheStory = (props) => {
   const { recipe, suspects } = props;
   const history = useHistory();
   let story = generateStory(recipe);
 
+  // Link to the recipe steps page
   const toSteps = () => {
     history.push('/recipe-steps?step=1&guessed=false');
   };
 
+  // Layoout of story page
   return (
     <div className='story-container'>
       <div className="storyTitle">A Speakeasy Murder Mystery</div>
       <br></br><br></br>
+      {/* Surface the background story */}
       <div className='story'>{story}</div>
       <br></br>
+
+      {/* Button to see the recipe */}
       <Button variant='contained' className='buttonBlack' onClick={toSteps}>
         Begin!
       </Button>

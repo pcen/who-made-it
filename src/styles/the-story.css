@@ -10,7 +10,6 @@
   background-color: #812a2a;
   padding: 50px;
   height: 100vh;
-
 }
 
 .story {
@@ -18,18 +17,18 @@
   color: white;
 }
 
+/* The Suspects  */
 .actors-container {
   width: 65%;
   background-color: var(--white);
   align-items: center;
   padding: 5px 20px 5px 20px;
   border-radius: 20px;
-
   justify-content: center;
   margin: 0px auto;
-
 }
 
+/* Individual Suspects */
 .actor-profile {
   display: flex;
   flex-direction: column;
@@ -74,6 +73,7 @@
   height: 465px;
 }
 
+/* Name of the drink */
 .drink-red{
   color: #812a2a;
   font-size: 30px;
