@@ -1,3 +1,19 @@
+// This file stores a database of all drink recipes including their:
+//    - Name of Drink
+//    - Ingredients Required
+//    - Steps to make the drink
+//
+// After selecing the ingredients that you have in your kitchen, three recipes that you can make will be selected from this list
+// One of these selected recipes will be the one that you make
+//
+// The layout of each item is as follows
+// Drink: {
+//    Ingredients List []
+//    Steps []
+//    Name
+// }
+
+
 const Recipes = {
   drinks: {
     TomCollins: {
