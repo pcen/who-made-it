@@ -26,8 +26,8 @@ import vermouth from '../assets/vermouth.jpg';
 import champagne from '../assets/champagne.png';
 
 import { Button } from "@material-ui/core";
-import { getURLStr, arrayInSet, randFrom } from '../logic/utils';
-import { useHistory, useLocation } from "react-router-dom";
+import { arrayInSet, randFrom } from '../logic/utils';
+import { useHistory } from "react-router-dom";
 
 const IngredientCard = (props) => {
   const { value, image, onClick } = props;
@@ -51,8 +51,7 @@ const IngredientCard = (props) => {
 const AddIngredients = (props) => {
   const assumedIngredients = ['ice', 'salt', 'sugar'];
   const [selected, setSelected] = useState(new Set(assumedIngredients));
-  const type = getURLStr('type', useLocation());
-  const recipes = type === 'drink' ? Recipes.drinks : Recipes.food;
+  const recipes = Recipes.drinks;
   const history = useHistory();
 
   const onIngredientClick = (value, adding) => {

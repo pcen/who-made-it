@@ -42,7 +42,7 @@ const Recipes = {
       ingredients: ['tequila', 'lime', 'ice', 'salt'],
       steps: [
         'run a lime wedge around rim of glass',
-        'dip the rim in a course salt',
+        'dip the rim in a coarse salt',
         'pour one shot of tequila into glass',
         'add 1-2 ice cubes',
         'add a lime wedge'
